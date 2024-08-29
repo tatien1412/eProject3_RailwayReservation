@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj": {}
+    "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation-1\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj": {
+    "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation-1\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
+        "projectUniqueName": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation-1\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
         "projectName": "RailwayTransaction",
-        "projectPath": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
+        "projectPath": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation-1\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
         "packagesPath": "C:\\Users\\tango\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\obj\\",
+        "outputPath": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation-1\\Back-end\\RailwayTransaction\\RailwayTransaction\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tango\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,9 +46,45 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.7.3, )"
             }
           },
           "imports": [
