@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace RailwayTransaction.Domain.Entities
+﻿namespace RailwayTransaction.Domain.Entities
 {
     public class Schedule
     {
