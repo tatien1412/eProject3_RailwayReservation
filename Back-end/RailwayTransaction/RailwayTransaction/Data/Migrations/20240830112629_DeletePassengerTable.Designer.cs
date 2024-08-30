@@ -6,14 +6,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-
 #nullable disable
 
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240830085218_initâ")]
-    partial class initâ
+    [Migration("20240830112629_DeletePassengerTable")]
+    partial class DeletePassengerTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,43 +55,6 @@ namespace RailwayTransaction.Migrations
                         .IsUnique();
 
                     b.ToTable("Fares");
-                });
-
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Passenger", b =>
-                {
-                    b.Property<int>("PassengerID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PassengerID"));
-
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CoachNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Gender")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(1)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PnrNo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SeatNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("PassengerID");
-
-                    b.HasIndex("PnrNo");
-
-                    b.ToTable("Passengers");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Reservation", b =>
@@ -193,38 +155,6 @@ namespace RailwayTransaction.Migrations
                     b.ToTable("Schedules");
                 });
 
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Ticket", b =>
-                {
-                    b.Property<int>("PnrNo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PnrNo"));
-
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Gender")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(1)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ReservationID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TotalPassengers")
-                        .HasColumnType("int");
-
-                    b.HasKey("PnrNo");
-
-                    b.HasIndex("ReservationID");
-
-                    b.ToTable("Tickets");
-                });
-
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Train", b =>
                 {
                     b.Property<int>("TrainID")
@@ -274,6 +204,38 @@ namespace RailwayTransaction.Migrations
                     b.ToTable("Stations");
                 });
 
+            modelBuilder.Entity("Ticket", b =>
+                {
+                    b.Property<int>("PnrNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PnrNo"));
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ReservationID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalPassengers")
+                        .HasColumnType("int");
+
+                    b.HasKey("PnrNo");
+
+                    b.HasIndex("ReservationID");
+
+                    b.ToTable("Tickets");
+                });
+
             modelBuilder.Entity("User", b =>
                 {
                     b.Property<int>("UserID")
@@ -308,17 +270,6 @@ namespace RailwayTransaction.Migrations
                         .IsRequired();
 
                     b.Navigation("Reservation");
-                });
-
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Passenger", b =>
-                {
-                    b.HasOne("RailwayTransaction.Domain.Entities.Ticket", "Ticket")
-                        .WithMany("Passengers")
-                        .HasForeignKey("PnrNo")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Ticket");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Reservation", b =>
@@ -379,12 +330,12 @@ namespace RailwayTransaction.Migrations
                     b.Navigation("Train");
                 });
 
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Ticket", b =>
+            modelBuilder.Entity("Ticket", b =>
                 {
                     b.HasOne("RailwayTransaction.Domain.Entities.Reservation", "Reservation")
                         .WithMany("Tickets")
                         .HasForeignKey("ReservationID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Reservation");
@@ -401,11 +352,6 @@ namespace RailwayTransaction.Migrations
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Schedule", b =>
                 {
                     b.Navigation("Reservations");
-                });
-
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Ticket", b =>
-                {
-                    b.Navigation("Passengers");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Train", b =>

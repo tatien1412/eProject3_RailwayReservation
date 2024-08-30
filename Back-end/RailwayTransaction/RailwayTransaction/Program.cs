@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using RailwayTransaction.Data.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
