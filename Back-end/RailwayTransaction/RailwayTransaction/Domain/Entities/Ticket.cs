@@ -1,4 +1,4 @@
-﻿using RailwayTransaction.Domain.Entities;
+﻿namespace RailwayTransaction.Domain.Entities;
 using System.ComponentModel.DataAnnotations;
 
 public class Ticket
