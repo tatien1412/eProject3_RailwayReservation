@@ -1,6 +1,4 @@
-﻿using static System.Collections.Specialized.BitVector32;
-using System.Diagnostics;
-
+﻿
 namespace RailwayTransaction.Domain.Entities
 {
     public class Reservation

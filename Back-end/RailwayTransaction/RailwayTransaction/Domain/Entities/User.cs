@@ -1,4 +1,4 @@
-﻿using RailwayTransaction.Domain.Entities;
+﻿namespace RailwayTransaction.Domain.Entities;
 
 public class User
 {
