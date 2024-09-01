@@ -1,13 +1,14 @@
-﻿using RailwayTransaction.Domain.Entities;
-
-public class Station
+﻿namespace RailwayTransaction.Domain.Entities
 {
-    public int StationID { get; set; }
-    public string StationCode { get; set; }
-    public string StationName { get; set; }
-    public string RailwayDivisionName { get; set; }
+    public class Station
+    {
+        public int StationID { get; set; }
+        public string StationCode { get; set; }
+        public string StationName { get; set; }
+        public string RailwayDivisionName { get; set; }
 
-    // Navigation properties
-    public ICollection<Reservation> FromReservations { get; set; }
-    public ICollection<Reservation> ToReservations { get; set; }
+        // Navigation properties
+        public ICollection<Reservation> FromReservations { get; set; }
+        public ICollection<Reservation> ToReservations { get; set; }
+    }
 }
