@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\StationController.cs",
               "ToolTip": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation-1\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\StationController.cs",
               "RelativeToolTip": "RailwayTransaction\\Controllers\\StationController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAADwvw4AAAAJAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAADwvxkAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T17:40:50.219Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Station.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:36:47.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:36:47.962Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Station\\CreateStationCommandHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:34:31.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:34:31.199Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\MasterManagement\\Station\\GetAllStationsQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:32:18.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:32:18.837Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "RailwayTransaction\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:28:33.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:28:33.284Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Station\\DeleteStationCommandHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:27:02.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:27:02.446Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Station\\UpdateStationCommandHandler.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:26:58.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:26:58.403Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Station\\GetAllStationsQueryHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:23:09.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:23:09.08Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Station\\GetStationByIdQueryHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:22:37.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T17:22:37.458Z"
             }
           ]
         }
