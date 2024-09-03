@@ -1,11 +1,12 @@
-﻿
+﻿using RailwayTransaction.Domain.Entities.Dtos;
+
 namespace RailwayTransaction.Domain.Entities
 {
     public class Reservation
     {
         public int ReservationID { get; set; }
         public int PnrNo { get; set; }
-        public int UserID { get; set; }
+        public string UserID { get; set; }
         public int TrainNo { get; set; }
         public int ScheduleID { get; set; }
         public int FromStationID { get; set; }
@@ -17,7 +18,7 @@ namespace RailwayTransaction.Domain.Entities
         public string CancellationStatus { get; set; }
 
         // Navigation properties
-        public User User { get; set; }
+        public AppUser User { get; set; }
         public Train Train { get; set; }
         public Station FromStation { get; set; }
         public Station ToStation { get; set; }

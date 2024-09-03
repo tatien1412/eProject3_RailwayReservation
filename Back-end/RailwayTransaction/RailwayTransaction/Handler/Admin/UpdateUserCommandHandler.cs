@@ -22,7 +22,7 @@ namespace RailwayTransaction.Handler.Admin
             }
 
             userExist.FullName = command.FullName;
-            userExist.UserName = command.U
+            userExist.UserName = command.UserName;
             userExist.Email = command.Email;
             userExist.PasswordHash = command.Password;
             userExist.PhoneNumber = command.PhoneNumber;

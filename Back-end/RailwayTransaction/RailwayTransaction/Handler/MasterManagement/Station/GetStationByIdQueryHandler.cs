@@ -8,9 +8,9 @@ namespace RailwayTransaction.Handler.MasterManagement.Station
 {
     public class GetStationByIdQueryHandler : IRequestHandler<GetStationByIdQuery, Domain.Entities.Station>
     {
-        private readonly IRepository<Domain.Entities.Station> _stationRepository;
+        private readonly IRepository<Domain.Entities.Station, int> _stationRepository;
 
-        public GetStationByIdQueryHandler(IRepository<Domain.Entities.Station> stationRepository)
+        public GetStationByIdQueryHandler(IRepository<Domain.Entities.Station, int> stationRepository)
         {
             _stationRepository = stationRepository;
         }

@@ -7,9 +7,9 @@ namespace RailwayTransaction.Handler.MasterManagement.Station
 {
     public class DeleteStationCommandHandler : IRequestHandler<DeleteStationCommand>
     {
-        private readonly IRepository<Domain.Entities.Station> _stationRepository;
+        private readonly IRepository<Domain.Entities.Station, int> _stationRepository;
 
-        public DeleteStationCommandHandler(IRepository<Domain.Entities.Station> stationRepository)
+        public DeleteStationCommandHandler(IRepository<Domain.Entities.Station,int> stationRepository)
         {
             _stationRepository = stationRepository;
         }
