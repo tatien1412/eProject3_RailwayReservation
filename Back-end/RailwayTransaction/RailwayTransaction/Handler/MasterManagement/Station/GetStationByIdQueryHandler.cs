@@ -8,16 +8,16 @@ namespace RailwayTransaction.Handler.MasterManagement.Station
 {
     public class GetStationByIdQueryHandler : IRequestHandler<GetStationByIdQuery, Domain.Entities.Station>
     {
-        private readonly IRepository<Domain.Entities.Station> _stationRepository;
+        private readonly IRepository<Domain.Entities.Station> _trainRepository;
 
         public GetStationByIdQueryHandler(IRepository<Domain.Entities.Station> stationRepository)
         {
-            _stationRepository = stationRepository;
+            _trainRepository = stationRepository;
         }
 
         public async Task<Domain.Entities.Station> Handle(GetStationByIdQuery request, CancellationToken cancellationToken)
         {
-            var station = await _stationRepository.GetByIdAsync(request.StationID);
+            var station = await _trainRepository.GetByIdAsync(request.StationID);
 
             if (station == null)
             {
