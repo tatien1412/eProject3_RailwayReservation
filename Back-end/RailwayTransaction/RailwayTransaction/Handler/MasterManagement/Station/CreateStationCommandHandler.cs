@@ -6,9 +6,9 @@ namespace RailwayTransaction.Handler.MasterManagement.Station
 {
     public class CreateStationCommandHandler : IRequestHandler<CreateStationCommand, int>
     {
-        private readonly IRepository<Domain.Entities.Station> _stationRepository;
+        private readonly IRepository<Domain.Entities.Station,int> _stationRepository;
 
-        public CreateStationCommandHandler(IRepository<Domain.Entities.Station> stationRepository)
+        public CreateStationCommandHandler(IRepository<Domain.Entities.Station, int> stationRepository)
         {
             _stationRepository = stationRepository;
         }

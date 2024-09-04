@@ -6,9 +6,9 @@ namespace RailwayTransaction.Handler.MasterManagement.Train
 {
     public class CreateTrainCommandHandler : IRequestHandler<CreateTrainCommand, int>
     {
-        private readonly IRepository<Domain.Entities.Train> _trainRepository;
+        private readonly IRepository<Domain.Entities.Train, int> _trainRepository;
 
-        public CreateTrainCommandHandler(IRepository<Domain.Entities.Train> trainRepository)
+        public CreateTrainCommandHandler(IRepository<Domain.Entities.Train, int> trainRepository)
         {
             _trainRepository = trainRepository;
         }

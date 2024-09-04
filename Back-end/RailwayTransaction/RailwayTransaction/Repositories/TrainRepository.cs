@@ -4,7 +4,7 @@ using RailwayTransaction.Domain.Interface;
 
 namespace RailwayTransaction.Repositories
 {
-    public class TrainRepository : IRepository<Train>
+    public class TrainRepository : IRepository<Train, int>
     {
         private readonly ApplicationDbContext _context;
 
@@ -23,10 +23,14 @@ namespace RailwayTransaction.Repositories
             return await _context.Trains.ToListAsync();
         }
 
-        public async Task AddAsync(Train entity)
+        public async Task<Train> AddAsync(Train entity)
         {
-            await _context.Trains.AddAsync(entity);
+
+            var result = await _context.Trains.AddAsync(entity);
+
             await _context.SaveChangesAsync();
+
+            return result.Entity;
         }
 
         public async Task UpdateAsync(Train entity)

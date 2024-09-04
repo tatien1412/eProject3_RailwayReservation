@@ -8,9 +8,9 @@ namespace RailwayTransaction.Handler.MasterManagement.Train
 {
     public class GetTrainByIdQueryHandler : IRequestHandler<GetTrainByIdQuery, Domain.Entities.Train>
     {
-        private readonly IRepository<Domain.Entities.Train> _trainRepository;
+        private readonly IRepository<Domain.Entities.Train, int> _trainRepository;
 
-        public GetTrainByIdQueryHandler(IRepository<Domain.Entities.Train> trainRepository)
+        public GetTrainByIdQueryHandler(IRepository<Domain.Entities.Train, int> trainRepository)
         {
             _trainRepository = trainRepository;
         }
