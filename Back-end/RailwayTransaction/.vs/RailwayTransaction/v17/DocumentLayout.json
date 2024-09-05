@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\tango\\onedrive - hanoi university of science and technology\\project_sem3\\source code\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\tango\\onedrive - hanoi university of science and technology\\project_sem3\\source code\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -90,11 +94,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "TrainController.cs",
+              "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\TrainController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\TrainController.cs",
+              "ToolTip": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\TrainController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\TrainController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T10:48:21.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "RailwayTransaction\\Properties\\launchSettings.json",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
               "RelativeDocumentMoniker": "RailwayTransaction\\appsettings.json",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UpdateUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\Admin\\UpdateUserCommand.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\Admin\\UpdateUserCommand.cs",
@@ -131,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Reservation.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Reservation.cs",
@@ -143,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\AppUser.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\AppUser.cs",
@@ -155,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\Configuration\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Data\\Configuration\\ApplicationDbContext.cs",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UpdateUserCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Admin\\UpdateUserCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Admin\\UpdateUserCommandHandler.cs",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "StationRepository.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\StationRepository.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\StationRepository.cs",
@@ -191,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "UsersRepository.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\UsersRepository.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\UsersRepository.cs",
@@ -203,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Program.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Program.cs",
@@ -215,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Interface\\IRepository.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Interface\\IRepository.cs",
@@ -227,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "20240831060922_Initiall.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\Migrations\\20240831060922_Initiall.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Data\\Migrations\\20240831060922_Initiall.cs",
@@ -239,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CreateStationCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\CreateStationCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Station\\CreateStationCommandHandler.cs",
@@ -251,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DeleteStationCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\DeleteStationCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Station\\DeleteStationCommandHandler.cs",
@@ -263,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GetAllStationsQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\GetAllStationsQueryHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Station\\GetAllStationsQueryHandler.cs",
@@ -275,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GetStationByIdQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\GetStationByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Station\\GetStationByIdQueryHandler.cs",
@@ -287,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UpdateStationCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\UpdateStationCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Station\\UpdateStationCommandHandler.cs",
@@ -299,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GetAllStationsQuery.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\MasterManagement\\Station\\GetAllStationsQuery.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\MasterManagement\\Station\\GetAllStationsQuery.cs",
@@ -311,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Station.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Station.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Station.cs",
@@ -323,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StationController.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive - Hanoi University of Science and Technology\\PROJECT_SEM3\\Source Code\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\StationController.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\StationController.cs",
