@@ -17,8 +17,10 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 var JWTSetting = builder.Configuration.GetSection("JWTSetting");
 // Add services to the container.
+builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<IRepository<Station, int>, StationRepository>();
+builder.Services.AddScoped<IRepository<Train, int>, TrainRepository>();
 builder.Services.AddScoped<IRepository<AppUser,string>, UsersRepository>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
