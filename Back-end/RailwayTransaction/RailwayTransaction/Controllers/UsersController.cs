@@ -7,6 +7,7 @@ using RailwayTransaction.Application.Commands.MasterManagement.Station;
 using RailwayTransaction.Application.Queries.Admin;
 using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Entities.Dtos;
+using RailwayTransaction.Handler.Admin;
 
 namespace RailwayTransaction.Controllers
 {
@@ -64,13 +65,16 @@ namespace RailwayTransaction.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(string id, [FromBody] UpdateUserCommand command)
         {
-            if (id != command.Id)
+            command.Id = id; 
+
+            var result = await _mediator.Send(command);
+
+            if (result == Unit.Value)
             {
-                return BadRequest("Id user mismatch");
+                return NoContent(); // Thành công nhưng không có nội dung trả về
             }
 
-            await _mediator.Send(command);
-            return NoContent();
+            return BadRequest("Failed to update user");
         }
 
         [HttpDelete("{id}")]
