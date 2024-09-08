@@ -1,17 +1,28 @@
-﻿namespace RailwayTransaction.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace RailwayTransaction.Domain.Entities
 {
     public class Schedule
     {
-        public int ScheduleID { get; set; }
-        public int TrainNo { get; set; }
-        public int StartStationID { get; set; }
-        public int EndStationID { get; set; }
-        public TimeSpan DepartureTime { get; set; }
-        public TimeSpan ArrivalTime { get; set; }
-        public string DayOfWeek { get; set; }
+        [Key]
+        public int ScheduleID { get; set; }  // Khóa chính
 
-        // Navigation property
+        // Khóa ngoại đến bảng Train
+        [ForeignKey("Train")]
+        public int TrainID { get; set; }
         public Train Train { get; set; }
-        public ICollection<Reservation> Reservations { get; set; }
+
+        // Khóa ngoại đến bảng TrainRoute
+        [ForeignKey("TrainTrainRoute")]
+        public int TrainRouteID { get; set; }
+        public TrainRoute TrainRoute { get; set; }
+
+        public TimeSpan DepartureTime { get; set; }  // Thời gian khởi hành từ ga đầu
+        public TimeSpan ArrivalTime { get; set; }    // Thời gian dự kiến đến ga cuối
+
+        // Ngày trong tuần chuyến tàu hoạt động
+        [MaxLength(50)]
+        public string DayOfWeek { get; set; }
     }
 }

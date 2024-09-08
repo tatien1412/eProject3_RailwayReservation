@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Entities.Dtos;
 using RailwayTransaction.Domain.Interface;
@@ -22,8 +23,7 @@ builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<IRepository<Station, int>, StationRepository>();
 builder.Services.AddScoped<IRepository<Train, int>, TrainRepository>();
 builder.Services.AddScoped<IRepository<Schedule, int>, ScheduleRepository>();
-builder.Services.AddScoped<IRepository<Fare, int>, FareRepository>();
-builder.Services.AddScoped<IRepository<AppUser,string>, UsersRepository>();
+builder.Services.AddScoped<IRepository<AppUser, string>, UsersRepository>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

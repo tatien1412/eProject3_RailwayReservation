@@ -17,9 +17,8 @@ namespace RailwayTransaction.Handler.MasterManagement.Schedule
         {
             var schedule = new Domain.Entities.Schedule
             {
-                TrainNo = request.TrainNo,
-                StartStationID = request.StartStationID,
-                EndStationID = request.EndStationID,
+                TrainID = request.TrainID,
+                TrainRouteID = request.TrainRouteID,
                 DepartureTime = request.DepartureTime,
                 ArrivalTime = request.ArrivalTime,
                 DayOfWeek = request.DayOfWeek

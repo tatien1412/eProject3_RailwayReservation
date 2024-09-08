@@ -1,14 +1,25 @@
-﻿namespace RailwayTransaction.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace RailwayTransaction.Domain.Entities
 {
     public class Station
     {
-        public int StationID { get; set; }
-        public string StationCode { get; set; }
-        public string StationName { get; set; }
-        public string RailwayDivisionName { get; set; }
+        [Key]
+        public int StationID { get; set; }  // Khóa chính
 
-        // Navigation properties
-        public ICollection<Reservation> FromReservations { get; set; }
-        public ICollection<Reservation> ToReservations { get; set; }
+        [Required]
+        [MaxLength(10)]
+        public string StationCode { get; set; }  // Mã ga
+
+        [Required]
+        [MaxLength(100)]
+        public string StationName { get; set; }  // Tên ga
+
+        [MaxLength(100)]
+        public string RailwayDivisionName { get; set; }  // Tên đơn vị quản lý
+
+        // Navigation Property: Một ga có thể thuộc nhiều tuyến đường
+        public ICollection<RouteStation> RouteStations { get; set; }
+
     }
 }

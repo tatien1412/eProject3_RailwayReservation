@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Interface;
 
