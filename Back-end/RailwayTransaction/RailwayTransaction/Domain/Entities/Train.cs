@@ -12,4 +12,3 @@
         public ICollection<Reservation> Reservations { get; set; }
     }
 }
-s

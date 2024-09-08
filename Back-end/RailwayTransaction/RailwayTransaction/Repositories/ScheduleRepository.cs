@@ -27,9 +27,7 @@ namespace RailwayTransaction.Repositories
         {
 
             var result = await _context.Schedules.AddAsync(entity);
-
             await _context.SaveChangesAsync();
-
             return result.Entity;
         }
 

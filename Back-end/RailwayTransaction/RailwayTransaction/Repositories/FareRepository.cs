@@ -25,11 +25,8 @@ namespace RailwayTransaction.Repositories
 
         public async Task<Fare> AddAsync(Fare entity)
         {
-
             var result = await _context.Fares.AddAsync(entity);
-
             await _context.SaveChangesAsync();
-
             return result.Entity;
         }
 
