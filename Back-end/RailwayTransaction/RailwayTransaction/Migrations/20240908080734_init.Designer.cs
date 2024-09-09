@@ -5,14 +5,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using RailwayTransaction.Data.DataContext;
 
 #nullable disable
 
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240831060922_Initiall")]
-    partial class Initiall
+    [Migration("20240908080734_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -157,6 +158,32 @@ namespace RailwayTransaction.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Compartment", b =>
+                {
+                    b.Property<int>("CompartmentID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CompartmentID"));
+
+                    b.Property<string>("CompartmentType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("NumberOfSeats")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TrainID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CompartmentID");
+
+                    b.HasIndex("TrainID");
+
+                    b.ToTable("Compartments");
+                });
+
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Dtos.AppUser", b =>
                 {
                     b.Property<string>("Id")
@@ -225,39 +252,6 @@ namespace RailwayTransaction.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Fare", b =>
-                {
-                    b.Property<int>("FareID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FareID"));
-
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("CompartmentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Distance")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ReservationID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TrainType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("FareID");
-
-                    b.HasIndex("ReservationID")
-                        .IsUnique();
-
-                    b.ToTable("Fares");
-                });
-
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Reservation", b =>
                 {
                     b.Property<int>("ReservationID")
@@ -266,60 +260,56 @@ namespace RailwayTransaction.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReservationID"));
 
-                    b.Property<string>("CancellationStatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CoachNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("DateOfJourney")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("Fare")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("FromStationID")
-                        .HasColumnType("int");
-
                     b.Property<int>("PnrNo")
                         .HasColumnType("int");
 
-                    b.Property<int>("ScheduleID")
+                    b.Property<decimal>("TotalFare")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("TripID")
                         .HasColumnType("int");
-
-                    b.Property<int?>("ScheduleID1")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SeatNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ToStationID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TrainNo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserID")
-                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("ReservationID");
 
-                    b.HasIndex("FromStationID");
+                    b.HasIndex("AppUserId");
 
-                    b.HasIndex("ScheduleID");
+                    b.HasIndex("PnrNo");
 
-                    b.HasIndex("ScheduleID1");
-
-                    b.HasIndex("ToStationID");
-
-                    b.HasIndex("TrainNo");
-
-                    b.HasIndex("UserID");
+                    b.HasIndex("TripID");
 
                     b.ToTable("Reservations");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.RouteStation", b =>
+                {
+                    b.Property<int>("RouteStationID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RouteStationID"));
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StationID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TrainRouteID")
+                        .HasColumnType("int");
+
+                    b.HasKey("RouteStationID");
+
+                    b.HasIndex("StationID");
+
+                    b.HasIndex("TrainRouteID");
+
+                    b.ToTable("RouteStations");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Schedule", b =>
@@ -335,25 +325,66 @@ namespace RailwayTransaction.Migrations
 
                     b.Property<string>("DayOfWeek")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<TimeSpan>("DepartureTime")
                         .HasColumnType("time");
 
-                    b.Property<int>("EndStationID")
+                    b.Property<int>("TrainID")
                         .HasColumnType("int");
 
-                    b.Property<int>("StartStationID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TrainNo")
+                    b.Property<int>("TrainRouteID")
                         .HasColumnType("int");
 
                     b.HasKey("ScheduleID");
 
-                    b.HasIndex("TrainNo");
+                    b.HasIndex("TrainID");
+
+                    b.HasIndex("TrainRouteID");
 
                     b.ToTable("Schedules");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Seat", b =>
+                {
+                    b.Property<int>("SeatID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SeatID"));
+
+                    b.Property<int>("CompartmentID")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Fare")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ReservationID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SeatNumber")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("SeatStatus")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("SeatType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("SeatID");
+
+                    b.HasIndex("CompartmentID");
+
+                    b.HasIndex("ReservationID");
+
+                    b.ToTable("Seats");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Station", b =>
@@ -366,15 +397,18 @@ namespace RailwayTransaction.Migrations
 
                     b.Property<string>("RailwayDivisionName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("StationCode")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("StationName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("StationID");
 
@@ -400,15 +434,10 @@ namespace RailwayTransaction.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ReservationID")
-                        .HasColumnType("int");
-
                     b.Property<int>("TotalPassengers")
                         .HasColumnType("int");
 
                     b.HasKey("PnrNo");
-
-                    b.HasIndex("ReservationID");
 
                     b.ToTable("Tickets");
                 });
@@ -424,17 +453,84 @@ namespace RailwayTransaction.Migrations
                     b.Property<int>("NumberOfCompartments")
                         .HasColumnType("int");
 
-                    b.Property<string>("Route")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("TrainName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("TrainRouteDetails")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("TrainRouteID")
+                        .HasColumnType("int");
 
                     b.HasKey("TrainID");
 
+                    b.HasIndex("TrainRouteID");
+
                     b.ToTable("Trains");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.TrainRoute", b =>
+                {
+                    b.Property<int>("TrainRouteID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TrainRouteID"));
+
+                    b.Property<string>("TrainRouteName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("TrainRouteID");
+
+                    b.ToTable("TrainRoutes");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Trip", b =>
+                {
+                    b.Property<int>("TripID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TripID"));
+
+                    b.Property<TimeSpan>("ArrivalTime")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("DepartureTime")
+                        .HasColumnType("time");
+
+                    b.Property<int>("EndStationID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReservationID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ScheduleID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StartStationID")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("TravelTime")
+                        .HasColumnType("time");
+
+                    b.HasKey("TripID");
+
+                    b.HasIndex("EndStationID");
+
+                    b.HasIndex("ReservationID");
+
+                    b.HasIndex("ScheduleID");
+
+                    b.HasIndex("StartStationID");
+
+                    b.ToTable("Trips");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -488,83 +584,146 @@ namespace RailwayTransaction.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Fare", b =>
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Compartment", b =>
                 {
-                    b.HasOne("RailwayTransaction.Domain.Entities.Reservation", "Reservation")
-                        .WithOne("FareDetails")
-                        .HasForeignKey("RailwayTransaction.Domain.Entities.Fare", "ReservationID")
+                    b.HasOne("RailwayTransaction.Domain.Entities.Train", "Train")
+                        .WithMany("Compartments")
+                        .HasForeignKey("TrainID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Reservation");
+                    b.Navigation("Train");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Reservation", b =>
                 {
-                    b.HasOne("RailwayTransaction.Domain.Entities.Station", "FromStation")
-                        .WithMany("FromReservations")
-                        .HasForeignKey("FromStationID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                    b.HasOne("RailwayTransaction.Domain.Entities.Dtos.AppUser", null)
+                        .WithMany("Reservations")
+                        .HasForeignKey("AppUserId");
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.Schedule", "Schedule")
+                    b.HasOne("RailwayTransaction.Domain.Entities.Ticket", "Ticket")
                         .WithMany()
-                        .HasForeignKey("ScheduleID")
+                        .HasForeignKey("PnrNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RailwayTransaction.Domain.Entities.Trip", "Trip")
+                        .WithMany("Reservations")
+                        .HasForeignKey("TripID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.Schedule", null)
-                        .WithMany("Reservations")
-                        .HasForeignKey("ScheduleID1");
+                    b.Navigation("Ticket");
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.Station", "ToStation")
-                        .WithMany("ToReservations")
-                        .HasForeignKey("ToStationID")
+                    b.Navigation("Trip");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.RouteStation", b =>
+                {
+                    b.HasOne("RailwayTransaction.Domain.Entities.Station", "Station")
+                        .WithMany("RouteStations")
+                        .HasForeignKey("StationID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.Train", "Train")
-                        .WithMany("Reservations")
-                        .HasForeignKey("TrainNo")
-                        .OnDelete(DeleteBehavior.Restrict)
+                    b.HasOne("RailwayTransaction.Domain.Entities.TrainRoute", "TrainRoute")
+                        .WithMany("RouteStations")
+                        .HasForeignKey("TrainRouteID")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.Dtos.AppUser", "User")
-                        .WithMany("Reservations")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Restrict);
+                    b.Navigation("Station");
 
-                    b.Navigation("FromStation");
-
-                    b.Navigation("Schedule");
-
-                    b.Navigation("ToStation");
-
-                    b.Navigation("Train");
-
-                    b.Navigation("User");
+                    b.Navigation("TrainRoute");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Schedule", b =>
                 {
                     b.HasOne("RailwayTransaction.Domain.Entities.Train", "Train")
                         .WithMany("Schedules")
-                        .HasForeignKey("TrainNo")
+                        .HasForeignKey("TrainID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("RailwayTransaction.Domain.Entities.TrainRoute", "TrainRoute")
+                        .WithMany()
+                        .HasForeignKey("TrainRouteID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Train");
+
+                    b.Navigation("TrainRoute");
                 });
 
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Ticket", b =>
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Seat", b =>
                 {
+                    b.HasOne("RailwayTransaction.Domain.Entities.Compartment", "Compartment")
+                        .WithMany("Seats")
+                        .HasForeignKey("CompartmentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("RailwayTransaction.Domain.Entities.Reservation", "Reservation")
-                        .WithMany("Tickets")
+                        .WithMany("Seats")
                         .HasForeignKey("ReservationID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.Navigation("Compartment");
+
                     b.Navigation("Reservation");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Train", b =>
+                {
+                    b.HasOne("RailwayTransaction.Domain.Entities.TrainRoute", "TrainRoute")
+                        .WithMany()
+                        .HasForeignKey("TrainRouteID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TrainRoute");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Trip", b =>
+                {
+                    b.HasOne("RailwayTransaction.Domain.Entities.Station", "EndStation")
+                        .WithMany()
+                        .HasForeignKey("EndStationID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("RailwayTransaction.Domain.Entities.Reservation", "Reservation")
+                        .WithMany()
+                        .HasForeignKey("ReservationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RailwayTransaction.Domain.Entities.Schedule", "Schedule")
+                        .WithMany()
+                        .HasForeignKey("ScheduleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RailwayTransaction.Domain.Entities.Station", "StartStation")
+                        .WithMany()
+                        .HasForeignKey("StartStationID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("EndStation");
+
+                    b.Navigation("Reservation");
+
+                    b.Navigation("Schedule");
+
+                    b.Navigation("StartStation");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Compartment", b =>
+                {
+                    b.Navigation("Seats");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Dtos.AppUser", b =>
@@ -574,29 +733,29 @@ namespace RailwayTransaction.Migrations
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Reservation", b =>
                 {
-                    b.Navigation("FareDetails")
-                        .IsRequired();
-
-                    b.Navigation("Tickets");
-                });
-
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Schedule", b =>
-                {
-                    b.Navigation("Reservations");
+                    b.Navigation("Seats");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Station", b =>
                 {
-                    b.Navigation("FromReservations");
-
-                    b.Navigation("ToReservations");
+                    b.Navigation("RouteStations");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Train", b =>
                 {
-                    b.Navigation("Reservations");
+                    b.Navigation("Compartments");
 
                     b.Navigation("Schedules");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.TrainRoute", b =>
+                {
+                    b.Navigation("RouteStations");
+                });
+
+            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Trip", b =>
+                {
+                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }
