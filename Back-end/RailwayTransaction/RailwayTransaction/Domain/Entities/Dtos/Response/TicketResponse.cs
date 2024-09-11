@@ -3,8 +3,6 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Response
 {
     public class TicketResponse
     {
-        [Key]
-        public int PnrNo { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
         public char Gender { get; set; }

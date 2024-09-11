@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using RailwayTransaction.Application.Queries.MasterManagement.Train;
 using RailwayTransaction.Domain.Interface;
 
+using RailwayTransaction.Application.Queries.MasterManagement.Train;
 namespace RailwayTransaction.Handler.MasterManagement.Train
 {
     public class GetAllTrainsQueryHandler : IRequestHandler<GetAllTrainsQuery, List<Domain.Entities.Train>>
