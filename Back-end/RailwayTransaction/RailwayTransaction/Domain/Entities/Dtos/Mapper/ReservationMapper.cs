@@ -1,5 +1,6 @@
 ﻿using RailwayTransaction.Domain.Entities.Dtos;
-using RailwayTransaction.Domain.Entities.Dtos.Response;
+using RailwayTransaction.Domain.Entities.Dtos.Response.dependent;
+using RailwayTransaction.Domain.Entities.Dtos.Response.independent;
 
 namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
 {
@@ -9,40 +10,31 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
         {
             return new ReservationResponse
             {
+                ReservationID = reservation.ReservationID,
                 TripID = reservation.TripID,
                 PnrNo = reservation.PnrNo,
                 DateOfJourney = reservation.DateOfJourney,
                 TotalFare = reservation.TotalFare,
             };
         }
-        //public static Reservation ConvertToResponseAll(Reservation reservation,
-        //                                                AppUser appUser, 
-        //                                                Train train, 
-        //                                                Station fromStation, 
-        //                                                Station toStation, 
-        //                                                Schedule schedule, 
-        //                                                Fare fare, 
-        //                                                List<Ticket> tickets)
-        //{
-        //    return new Reservation
-        //    {
-        //        ReservationID = reservation.ReservationID,
-        //        PnrNo = reservation.PnrNo,
-        //        SeatNo = reservation.SeatNo,
-        //        DateOfJourney = reservation.DateOfJourney,
-        //        CoachNo = reservation.CoachNo,
-        //        CancellationStatus = reservation.CancellationStatus,
+        public static ReservationResponse_joined ConvertToResponseAll(Reservation reservation,
+                                                        Trip trip,
+                                                        Ticket ticket,
+                                                        List<Seat> seats)
+        {
+            return new ReservationResponse_joined
+            {
+                ReservationID = reservation.ReservationID,
+                TripID = reservation.TripID,
+                PnrNo = reservation.PnrNo,
+                DateOfJourney = reservation.DateOfJourney,
+                TotalFare = reservation.TotalFare,
 
-        //        User = appUser,
-        //        Train = train,
-        //        FromStation = fromStation,
-        //        ToStation = toStation,
-        //        Schedule = schedule,
-        //        FareDetails = fare,
-        //        Tickets = tickets
-
-        //    };
-        //}
+                Trip = TripMapper.ConvertToResponse(trip),
+                Ticket = TicketMapper.ConvertToResponse(ticket),
+                Seats = seats.Where(s => s.ReservationID == reservation.ReservationID).Select(s => SeatMapper.ConvertToResponse(s)).ToList(),
+            };
+        }
 
     }
 }

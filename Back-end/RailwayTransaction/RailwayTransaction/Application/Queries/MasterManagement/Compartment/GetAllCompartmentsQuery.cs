@@ -3,7 +3,7 @@
 
 namespace RailwayTransaction.Application.Queries.MasterManagement.Compartment
 {
-    public class GetAllCompartmentsQuery : IRequest<List<Domain.Entities.Compartment>>
+    public class GetAllCompartmentsQuery : IRequest<List<Domain.Entities.Dtos.Response.independent.CompartmentResponse>>
     {
     }
 }
