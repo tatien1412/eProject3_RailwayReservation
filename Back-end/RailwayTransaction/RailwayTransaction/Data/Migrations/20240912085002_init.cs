@@ -202,6 +202,33 @@ namespace RailwayTransaction.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Reservations",
+                columns: table => new
+                {
+                    ReservationID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PnrNo = table.Column<int>(type: "int", nullable: false),
+                    DateOfJourney = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    TotalFare = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    AppUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Reservations", x => x.ReservationID);
+                    table.ForeignKey(
+                        name: "FK_Reservations_AspNetUsers_AppUserId",
+                        column: x => x.AppUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Reservations_Tickets_PnrNo",
+                        column: x => x.PnrNo,
+                        principalTable: "Tickets",
+                        principalColumn: "PnrNo",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "RouteStations",
                 columns: table => new
                 {
@@ -209,7 +236,7 @@ namespace RailwayTransaction.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TrainRouteID = table.Column<int>(type: "int", nullable: false),
                     StationID = table.Column<int>(type: "int", nullable: false),
-                    Order = table.Column<int>(type: "int", nullable: false)
+                    OrderInRoute = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -298,34 +325,6 @@ namespace RailwayTransaction.Migrations
                         principalTable: "Trains",
                         principalColumn: "TrainID",
                         onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Reservations",
-                columns: table => new
-                {
-                    ReservationID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    TripID = table.Column<int>(type: "int", nullable: false),
-                    PnrNo = table.Column<int>(type: "int", nullable: false),
-                    DateOfJourney = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    TotalFare = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    AppUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Reservations", x => x.ReservationID);
-                    table.ForeignKey(
-                        name: "FK_Reservations_AspNetUsers_AppUserId",
-                        column: x => x.AppUserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Reservations_Tickets_PnrNo",
-                        column: x => x.PnrNo,
-                        principalTable: "Tickets",
-                        principalColumn: "PnrNo",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -456,11 +455,6 @@ namespace RailwayTransaction.Migrations
                 column: "PnrNo");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Reservations_TripID",
-                table: "Reservations",
-                column: "TripID");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_RouteStations_StationID",
                 table: "RouteStations",
                 column: "StationID");
@@ -514,35 +508,11 @@ namespace RailwayTransaction.Migrations
                 name: "IX_Trips_StartStationID",
                 table: "Trips",
                 column: "StartStationID");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Reservations_Trips_TripID",
-                table: "Reservations",
-                column: "TripID",
-                principalTable: "Trips",
-                principalColumn: "TripID",
-                onDelete: ReferentialAction.Restrict);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Reservations_AspNetUsers_AppUserId",
-                table: "Reservations");
-
-            migrationBuilder.DropForeignKey(
-                name: "FK_Schedules_Trains_TrainID",
-                table: "Schedules");
-
-            migrationBuilder.DropForeignKey(
-                name: "FK_Reservations_Tickets_PnrNo",
-                table: "Reservations");
-
-            migrationBuilder.DropForeignKey(
-                name: "FK_Reservations_Trips_TripID",
-                table: "Reservations");
-
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -565,22 +535,13 @@ namespace RailwayTransaction.Migrations
                 name: "Seats");
 
             migrationBuilder.DropTable(
+                name: "Trips");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "Compartments");
-
-            migrationBuilder.DropTable(
-                name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "Trains");
-
-            migrationBuilder.DropTable(
-                name: "Tickets");
-
-            migrationBuilder.DropTable(
-                name: "Trips");
 
             migrationBuilder.DropTable(
                 name: "Reservations");
@@ -590,6 +551,15 @@ namespace RailwayTransaction.Migrations
 
             migrationBuilder.DropTable(
                 name: "Stations");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Tickets");
+
+            migrationBuilder.DropTable(
+                name: "Trains");
 
             migrationBuilder.DropTable(
                 name: "TrainRoutes");

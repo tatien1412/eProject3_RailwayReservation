@@ -67,13 +67,6 @@ namespace RailwayTransaction.Data.DataContext
                 .HasForeignKey(s => s.ReservationID)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // 7. Trip - Reservation: Một Trip liên kết với nhiều Reservation
-            modelBuilder.Entity<Trip>()
-                .HasMany(t => t.Reservations)
-                .WithOne(r => r.Trip)
-                .HasForeignKey(r => r.TripID)
-                .OnDelete(DeleteBehavior.Restrict);
-
             // 8. Trip - Station: Liên kết giữa Trip và ga xuất phát/ga đến
             modelBuilder.Entity<Trip>()
                 .HasOne(t => t.StartStation)

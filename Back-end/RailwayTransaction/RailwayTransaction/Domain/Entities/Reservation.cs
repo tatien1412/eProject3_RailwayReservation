@@ -9,10 +9,6 @@ namespace RailwayTransaction.Domain.Entities
         [Key]
         public int ReservationID { get; set; }
 
-        [ForeignKey("Trip")]
-        public int TripID { get; set; }
-        public Trip Trip { get; set; }
-
         [ForeignKey("Ticket")]
         public int PnrNo { get; set; }
         public Ticket Ticket { get; set; }

@@ -12,7 +12,7 @@ using RailwayTransaction.Data.DataContext;
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240908080734_init")]
+    [Migration("20240912085002_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -272,16 +272,11 @@ namespace RailwayTransaction.Migrations
                     b.Property<decimal>("TotalFare")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("TripID")
-                        .HasColumnType("int");
-
                     b.HasKey("ReservationID");
 
                     b.HasIndex("AppUserId");
 
                     b.HasIndex("PnrNo");
-
-                    b.HasIndex("TripID");
 
                     b.ToTable("Reservations");
                 });
@@ -294,7 +289,7 @@ namespace RailwayTransaction.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RouteStationID"));
 
-                    b.Property<int>("Order")
+                    b.Property<int>("OrderInRoute")
                         .HasColumnType("int");
 
                     b.Property<int>("StationID")
@@ -607,15 +602,7 @@ namespace RailwayTransaction.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.Trip", "Trip")
-                        .WithMany("Reservations")
-                        .HasForeignKey("TripID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.Navigation("Ticket");
-
-                    b.Navigation("Trip");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.RouteStation", b =>
@@ -751,11 +738,6 @@ namespace RailwayTransaction.Migrations
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.TrainRoute", b =>
                 {
                     b.Navigation("RouteStations");
-                });
-
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Trip", b =>
-                {
-                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }
