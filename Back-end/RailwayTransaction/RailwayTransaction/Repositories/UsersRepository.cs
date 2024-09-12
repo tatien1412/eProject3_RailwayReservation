@@ -20,7 +20,8 @@ namespace RailwayTransaction.Repositories
 
         public async Task<AppUser> GetByIdAsync(string id)
         {
-            return await _context.Users.Where(u => u.Id == id).FirstOrDefaultAsync();
+            //return await _context.Users.Where(u => u.Id == id).FirstOrDefaultAsync();
+            return await _context.Users.FindAsync(id);
         }
         public async Task<AppUser> AddAsync(AppUser entity)
         {

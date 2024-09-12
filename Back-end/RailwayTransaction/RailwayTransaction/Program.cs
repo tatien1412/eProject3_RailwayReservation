@@ -20,9 +20,16 @@ var JWTSetting = builder.Configuration.GetSection("JWTSetting");
 // Add services to the container.
 builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
-builder.Services.AddScoped<IRepository<Station, int>, StationRepository>();
-builder.Services.AddScoped<IRepository<Train, int>, TrainRepository>();
+builder.Services.AddScoped<IRepository<Compartment, int>, CompartmentRepository>();
+builder.Services.AddScoped<IRepository<Reservation, int>, ReservationRepository>();
+builder.Services.AddScoped<IRepository<RouteStation, int>, RouteStationRepository>();
 builder.Services.AddScoped<IRepository<Schedule, int>, ScheduleRepository>();
+builder.Services.AddScoped<IRepository<Seat, int>, SeatRepository>();
+builder.Services.AddScoped<IRepository<Station, int>, StationRepository>();
+builder.Services.AddScoped<IRepository<Ticket, int>, TicketRepository>();
+builder.Services.AddScoped<IRepository<Train, int>, TrainRepository>();
+builder.Services.AddScoped<IRepository<TrainRoute, int>, TrainRouteRepository>();
+builder.Services.AddScoped<IRepository<Trip, int>, TripRepository>();
 builder.Services.AddScoped<IRepository<AppUser, string>, UsersRepository>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
