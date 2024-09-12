@@ -29,6 +29,5 @@ namespace RailwayTransaction.Domain.Entities
 
         public TimeSpan TravelTime { get; set; } // Thời gian di chuyển dự kiến
 
-        public ICollection<Reservation> Reservations { get; set; }
     }
 }

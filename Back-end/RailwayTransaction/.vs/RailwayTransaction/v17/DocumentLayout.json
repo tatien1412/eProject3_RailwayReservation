@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\railwaytransaction\\handler\\mastermanagement\\compartment\\getcompartmentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\compartment\\getcompartmentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\railwaytransaction\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\railwaytransaction\\handler\\mastermanagement\\compartment\\getallcompartmentsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -497,6 +497,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\railwaytransaction\\application\\queries\\mastermanagement\\routestation\\getallroutestationsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\mastermanagement\\routestation\\getallroutestationsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 1e0f315f23b7f8728a7d9eec84d6584e0e065733
     }
   ],
   "DocumentGroupContainers": [
@@ -506,7 +507,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
@@ -518,18 +519,18 @@
               "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\MasterManagement\\Compartment\\GetCompartmentByIdQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T09:31:08.187Z",
+              "WhenOpened": "2024-09-11T17:13:36.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetAllCompartmentsQuery.cs",
-              "DocumentMoniker": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\MasterManagement\\Compartment\\GetAllCompartmentsQuery.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\MasterManagement\\Compartment\\GetAllCompartmentsQuery.cs",
-              "ToolTip": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\MasterManagement\\Compartment\\GetAllCompartmentsQuery.cs",
-              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\MasterManagement\\Compartment\\GetAllCompartmentsQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA5AAAA",
+              "DocumentIndex": 6,
+              "Title": "ScheduleMapper.cs",
+              "DocumentMoniker": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
+              "ToolTip": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T09:30:44.431Z",
               "EditorCaption": ""
@@ -1223,7 +1224,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 19,
+              "Title": "ScheduleRepository.cs",
+              "DocumentMoniker": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\ScheduleRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\ScheduleRepository.cs",
+              "ToolTip": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\ScheduleRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\ScheduleRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T14:18:37.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "TripController.cs",
               "DocumentMoniker": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\TripController.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\TripController.cs",

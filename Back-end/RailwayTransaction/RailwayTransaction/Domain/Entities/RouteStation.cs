@@ -19,6 +19,6 @@ namespace RailwayTransaction.Domain.Entities
         public int StationID { get; set; }
         public Station Station { get; set; }
 
-        public int Order { get; set; }  // Thứ tự của ga trong tuyến (số bé nhất là ga đầu, số lớn nhất là ga cuối)
+        public int OrderInRoute { get; set; }  // Thứ tự của ga trong tuyến (số bé nhất là ga đầu, số lớn nhất là ga cuối)
     }
 }
