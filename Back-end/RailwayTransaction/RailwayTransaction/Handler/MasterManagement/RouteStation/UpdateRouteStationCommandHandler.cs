@@ -25,7 +25,7 @@ namespace RailwayTransaction.Handler.MasterManagement.RouteStation
 
             routeStation.TrainRouteID = request.RouteStationID;
             routeStation.StationID = request.StationID;
-            routeStation.Order = request.Order;
+            routeStation.OrderInRoute = request.OrderInRoute;
 
             await _routeStationRepository.UpdateAsync(routeStation);
 

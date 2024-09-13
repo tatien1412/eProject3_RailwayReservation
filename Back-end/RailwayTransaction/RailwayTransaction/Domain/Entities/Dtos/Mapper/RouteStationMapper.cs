@@ -13,7 +13,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 RouteStationID = routeStation.RouteStationID,
                 TrainRouteID = routeStation.TrainRouteID,
                 StationID = routeStation.StationID,
-                Order = routeStation.Order,
+                OrderInRoute = routeStation.OrderInRoute,
             };
         }
         public static RouteStationResponse_joined ConvertToResponseAll(RouteStation routeStation,
@@ -25,7 +25,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 RouteStationID = routeStation.RouteStationID,
                 TrainRouteID = routeStation.TrainRouteID,
                 StationID = routeStation.StationID,
-                Order = routeStation.Order,
+                OrderInRoute = routeStation.OrderInRoute,
 
                 TrainRoute = TrainRouteMapper.ConvertToResponse(trainRoute),
                 Station = StationMapper.ConvertToResponse(station),

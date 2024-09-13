@@ -1,12 +1,13 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using RailwayTransaction.Application.Queries.MasterManagement.Ticket;
+using RailwayTransaction.Domain.Entities.Dtos.Mapper;
 using RailwayTransaction.Domain.Interface;
 
 
 namespace RailwayTransaction.Handler.MasterManagement.Ticket
 {
-    public class GetTicketByIdQueryHandler : IRequestHandler<GetTicketByIdQuery, Domain.Entities.Ticket>
+    public class GetTicketByIdQueryHandler : IRequestHandler<GetTicketByIdQuery, Domain.Entities.Dtos.Response.dependent.TicketResponse_joined>
     {
         private readonly IRepository<Domain.Entities.Ticket, int> _ticketRepository;
 
@@ -15,16 +16,16 @@ namespace RailwayTransaction.Handler.MasterManagement.Ticket
             _ticketRepository = ticketRepository;
         }
 
-        public async Task<Domain.Entities.Ticket> Handle(GetTicketByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Domain.Entities.Dtos.Response.dependent.TicketResponse_joined> Handle(GetTicketByIdQuery request, CancellationToken cancellationToken)
         {
-            var Ticket = await _ticketRepository.GetByIdAsync(request.TicketID);
+            var ticket = await _ticketRepository.GetByIdAsync(request.TicketID);
 
-            if (Ticket == null)
+            if (ticket == null)
             {
                 throw new Exception("Ticket not found");
             }
 
-            return Ticket;
+            return TicketMapper.ConvertToResponseAll(ticket);
         }
     }
 }

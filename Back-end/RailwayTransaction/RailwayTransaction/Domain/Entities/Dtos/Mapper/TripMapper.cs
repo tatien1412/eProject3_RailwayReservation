@@ -24,8 +24,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                                                     Reservation reservation,
                                                     Schedule schedule,
                                                     Station startStation,
-                                                    Station endStation,
-                                                    List<Reservation> reservations)
+                                                    Station endStation)
         {
             return new TripResponse_joined
             {
@@ -42,7 +41,6 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 Schedule = ScheduleMapper.ConvertToResponse(schedule),
                 StartStation = StationMapper.ConvertToResponse(startStation),
                 EndStation = StationMapper.ConvertToResponse(endStation),
-                Reservations = reservations.Where(s => s.TripID == trip.TripID).Select(r => ReservationMapper.ConvertToResponse(r)).ToList(),
 
             };
         }

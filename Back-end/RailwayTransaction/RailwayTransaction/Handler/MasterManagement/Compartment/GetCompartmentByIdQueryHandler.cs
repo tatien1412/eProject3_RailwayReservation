@@ -25,12 +25,12 @@ namespace RailwayTransaction.Handler.MasterManagement.Compartment
         public async Task<Domain.Entities.Dtos.Response.dependent.CompartmentResponse_joined> Handle(GetCompartmentByIdQuery request, CancellationToken cancellationToken)
         {
             var compartment = await _compartmentRepository.GetByIdAsync(request.CompartmentID);
-            var train = await _trainRepository.GetByIdAsync(compartment.TrainID);
-            List<Domain.Entities.Seat> seats =  (await _seatRepository.GetAllAsync()).ToList();
             if (compartment == null)
             {
                 throw new Exception("Compartment not found");
             }
+            var train = await _trainRepository.GetByIdAsync(compartment.TrainID);
+            List<Domain.Entities.Seat> seats =  (await _seatRepository.GetAllAsync()).ToList();
 
             return CompartmentMapper.ConvertToResponseAll(compartment, train, seats);
         }

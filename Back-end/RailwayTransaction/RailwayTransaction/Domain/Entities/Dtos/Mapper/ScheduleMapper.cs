@@ -24,6 +24,8 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
             return new ScheduleResponse_joined
             {
                 ScheduleID = schedule.ScheduleID,
+                TrainID = schedule.TrainID,
+                TrainRouteID = schedule.TrainRouteID,
                 DepartureTime = schedule.DepartureTime,
                 ArrivalTime = schedule.ArrivalTime,
                 DayOfWeek = schedule.DayOfWeek,

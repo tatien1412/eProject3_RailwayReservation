@@ -18,7 +18,6 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Response.dependent
         public ScheduleResponse Schedule { get; set; }
         public StationResponse StartStation { get; set; }
         public StationResponse EndStation { get; set; }
-        public ICollection<ReservationResponse> Reservations { get; set; }
 
     }
 }
