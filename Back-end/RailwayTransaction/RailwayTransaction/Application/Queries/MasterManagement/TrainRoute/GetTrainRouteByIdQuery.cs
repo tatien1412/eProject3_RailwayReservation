@@ -2,7 +2,7 @@
 
 namespace RailwayTransaction.Application.Queries.MasterManagement.TrainRoute
 {
-    public class GetTrainRouteByIdQuery : IRequest<Domain.Entities.TrainRoute>
+    public class GetTrainRouteByIdQuery : IRequest<Domain.Entities.Dtos.Response.dependent.TrainRouteResponse_joined>
     {
         public int trainRouteID { get; set; }
 

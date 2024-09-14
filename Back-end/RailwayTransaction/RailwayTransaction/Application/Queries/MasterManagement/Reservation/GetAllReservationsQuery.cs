@@ -3,7 +3,7 @@
 
 namespace RailwayTransaction.Application.Queries.MasterManagement.Reservation
 {
-    public class GetAllReservationsQuery : IRequest<List<Domain.Entities.Reservation>>
+    public class GetAllReservationsQuery : IRequest<List<Domain.Entities.Dtos.Response.independent.ReservationResponse>>
     {
     }
 }

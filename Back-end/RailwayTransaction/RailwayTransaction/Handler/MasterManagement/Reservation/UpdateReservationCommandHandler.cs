@@ -23,7 +23,6 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
                 throw new Exception("Reservation not found");
             }
 
-            reservation.TripID = request.ReservationID;
             reservation.PnrNo = request.PnrNo;
             reservation.DateOfJourney = request.DateOfJourney;
             reservation.TotalFare = request.TotalFare;

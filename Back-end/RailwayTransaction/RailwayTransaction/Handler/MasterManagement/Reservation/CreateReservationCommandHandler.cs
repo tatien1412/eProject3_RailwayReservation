@@ -17,7 +17,6 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
         {
             var reservation = new Domain.Entities.Reservation
             {
-               TripID = request.TripID,
                PnrNo = request.PnrNo,
                DateOfJourney = request.DateOfJourney,
                TotalFare = request.TotalFare,

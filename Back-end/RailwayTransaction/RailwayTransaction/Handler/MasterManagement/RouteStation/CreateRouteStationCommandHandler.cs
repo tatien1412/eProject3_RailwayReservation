@@ -19,7 +19,7 @@ namespace RailwayTransaction.Handler.MasterManagement.RouteStation
             {
                 TrainRouteID = request.TrainRouteID,
                 StationID = request.StationID,
-                Order = request.Order,
+                OrderInRoute = request.OrderInRoute,
             };
 
             await _routeStationRepository.AddAsync(routeStation);

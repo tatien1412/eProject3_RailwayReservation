@@ -1,4 +1,5 @@
-﻿using RailwayTransaction.Domain.Entities.Dtos.Response;
+﻿using RailwayTransaction.Domain.Entities.Dtos.Response.dependent;
+using RailwayTransaction.Domain.Entities.Dtos.Response.independent;
 
 namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
 {
@@ -8,6 +9,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
         {
             return new ScheduleResponse
             {
+                ScheduleID = schedule.ScheduleID,
                 TrainID = schedule.TrainID,
                 TrainRouteID = schedule.TrainRouteID,
                 DepartureTime = schedule.DepartureTime,
@@ -15,20 +17,22 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 DayOfWeek = schedule.DayOfWeek,
             };
         }
-        //public static Schedule ConvertToResponseAll(Schedule schedule,
-        //                                            Train train,
-        //                                            List<Reservation> reservations)
-        //{
-        //    return new Schedule
-        //    {
-        //        ScheduleID = schedule.ScheduleID,
-        //        DepartureTime = schedule.DepartureTime,
-        //        ArrivalTime = schedule.ArrivalTime,
-        //        DayOfWeek = schedule.DayOfWeek,
+        public static ScheduleResponse_joined ConvertToResponseAll(Schedule schedule,
+                                                    Train train,
+                                                    TrainRoute trainRoute)
+        {
+            return new ScheduleResponse_joined
+            {
+                ScheduleID = schedule.ScheduleID,
+                TrainID = schedule.TrainID,
+                TrainRouteID = schedule.TrainRouteID,
+                DepartureTime = schedule.DepartureTime,
+                ArrivalTime = schedule.ArrivalTime,
+                DayOfWeek = schedule.DayOfWeek,
 
-        //        Train = train,
-        //        Reservations    = reservations
-        //    };
-        //}
+                Train = TrainMapper.ConvertToResponse(train),
+                TrainRoute = TrainRouteMapper.ConvertToResponse(trainRoute),
+            };
+        }
     }
 }
