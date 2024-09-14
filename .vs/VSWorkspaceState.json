@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Back-end",
+    "\\Back-end\\RailwayTransaction",
+    "\\Back-end\\RailwayTransaction\\RailwayTransaction",
+    "\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application",
+    "\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands",
+    "\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\Admin"
+  ],
+  "SelectedNode": "\\Back-end\\RailwayTransaction\\RailwayTransaction.sln",
+  "PreviewInSolutionExplorer": false
+}

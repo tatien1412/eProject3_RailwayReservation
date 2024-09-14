@@ -9,11 +9,19 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RailwayTransaction
 build_property.RootNamespace = RailwayTransaction
+<<<<<<< HEAD
 build_property.ProjectDir = D:\Quy Project\Project 3\eProject3_RailwayReservation\Back-end\RailwayTransaction\RailwayTransaction\
+=======
+build_property.ProjectDir = D:\Duong\hoc\aptech\proj3\eProject3_RailwayReservation\Back-end\RailwayTransaction\RailwayTransaction\
+>>>>>>> b1cdfa87a5157caf4d23636350ebb128445bd938
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = D:\Quy Project\Project 3\eProject3_RailwayReservation\Back-end\RailwayTransaction\RailwayTransaction
+=======
+build_property.MSBuildProjectDirectory = D:\Duong\hoc\aptech\proj3\eProject3_RailwayReservation\Back-end\RailwayTransaction\RailwayTransaction
+>>>>>>> b1cdfa87a5157caf4d23636350ebb128445bd938
 build_property._RazorSourceGeneratorDebug = 

@@ -2,7 +2,7 @@
 
 namespace RailwayTransaction.Application.Queries.MasterManagement.Schedule
 {
-    public class GetScheduleByIdQuery : IRequest<Domain.Entities.Schedule>
+    public class GetScheduleByIdQuery : IRequest<Domain.Entities.Dtos.Response.dependent.ScheduleResponse_joined>
     {
         public int ScheduleID { get; set; }
 

@@ -10,7 +10,4 @@ public class Ticket
     public char Gender { get; set; }
     public int TotalPassengers { get; set; }
 
-    // Foreign key
-    public int ReservationID { get; set; }
-    public Reservation Reservation { get; set; }
 }

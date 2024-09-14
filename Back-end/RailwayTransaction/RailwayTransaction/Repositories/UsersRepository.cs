@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Entities.Dtos;
 using RailwayTransaction.Domain.Interface;
@@ -19,7 +20,8 @@ namespace RailwayTransaction.Repositories
 
         public async Task<AppUser> GetByIdAsync(string id)
         {
-            return await _context.Users.Where(u => u.Id == id).FirstOrDefaultAsync();
+            //return await _context.Users.Where(u => u.Id == id).FirstOrDefaultAsync();
+            return await _context.Users.FindAsync(id);
         }
         public async Task<AppUser> AddAsync(AppUser entity)
         {

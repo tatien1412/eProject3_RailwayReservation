@@ -3,7 +3,7 @@
 
 namespace RailwayTransaction.Application.Queries.MasterManagement.Station
 {
-    public class GetAllStationsQuery : IRequest<List<Domain.Entities.Station>>
+    public class GetAllStationsQuery : IRequest<List<Domain.Entities.Dtos.Response.independent.StationResponse>>
     {
     }
 }
