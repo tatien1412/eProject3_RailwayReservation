@@ -13,7 +13,7 @@ namespace RailwayTransaction.Domain.Entities
         public string TrainName { get; set; }
 
         [MaxLength(255)]
-        public string TrainRouteDetails { get; set; }
+        public string TrainStatus { get; set; }
 
         public int NumberOfCompartments { get; set; }
 

@@ -12,7 +12,7 @@ namespace RailwayTransaction.Domain.Entities
         [ForeignKey("Ticket")]
         public int PnrNo { get; set; }
         public Ticket Ticket { get; set; }
-        public DateTime DateOfJourney { get; set; }
+        public String DateOfJourney { get; set; }
 
         // Thông tin về các ga đi và đến đã được loại bỏ vì lưu trong bảng Trip
         public decimal TotalFare { get; set; }  // Tổng tiền vé

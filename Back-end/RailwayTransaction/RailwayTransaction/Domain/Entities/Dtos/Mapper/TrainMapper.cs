@@ -12,7 +12,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
             {
                 TrainID = train.TrainID,
                 TrainName = train.TrainName,
-                TrainRouteDetails = train.TrainRouteDetails,
+                TrainStatus = train.TrainStatus,
                 TrainRouteID = train.TrainRouteID,
                 NumberOfCompartments = train.NumberOfCompartments,
             };
@@ -26,7 +26,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
             {
                 TrainID = train.TrainID,
                 TrainName = train.TrainName,
-                TrainRouteDetails = train.TrainRouteDetails,
+                TrainStatus = train.TrainStatus,
                 TrainRouteID = train.TrainRouteID,
                 NumberOfCompartments = train.NumberOfCompartments,
 

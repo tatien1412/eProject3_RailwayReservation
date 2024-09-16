@@ -208,7 +208,7 @@ namespace RailwayTransaction.Migrations
                     ReservationID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PnrNo = table.Column<int>(type: "int", nullable: false),
-                    DateOfJourney = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateOfJourney = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TotalFare = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     AppUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
@@ -262,7 +262,7 @@ namespace RailwayTransaction.Migrations
                     TrainID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TrainName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    TrainRouteDetails = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    TrainStatus = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     NumberOfCompartments = table.Column<int>(type: "int", nullable: false),
                     TrainRouteID = table.Column<int>(type: "int", nullable: false)
                 },

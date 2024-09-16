@@ -260,8 +260,9 @@ namespace RailwayTransaction.Migrations
                     b.Property<string>("AppUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("DateOfJourney")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("DateOfJourney")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PnrNo")
                         .HasColumnType("int");
@@ -450,13 +451,13 @@ namespace RailwayTransaction.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrainRouteDetails")
+                    b.Property<int>("TrainRouteID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TrainStatus")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("TrainRouteID")
-                        .HasColumnType("int");
 
                     b.HasKey("TrainID");
 

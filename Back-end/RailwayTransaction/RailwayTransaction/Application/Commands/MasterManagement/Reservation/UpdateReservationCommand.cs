@@ -8,7 +8,7 @@ namespace RailwayTransaction.Application.Commands.MasterManagement.Reservation
     {
         public int ReservationID { get; set; }
         public int PnrNo { get; set; }
-        public DateTime DateOfJourney { get; set; }
+        public String DateOfJourney { get; set; }
         public decimal TotalFare { get; set; }  // Tổng tiền vé
 
     }
