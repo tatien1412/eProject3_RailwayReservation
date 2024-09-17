@@ -20,7 +20,6 @@ namespace RailwayTransaction.Handler.MasterManagement.Seat
                 CompartmentID = request.CompartmentID,
                 SeatNumber = request.SeatNumber,
                 SeatStatus = request.SeatStatus,
-                SeatType = request.SeatType,
                 Fare = request.Fare,
                 ReservationID = request.ReservationID,
 

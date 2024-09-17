@@ -1,0 +1,7 @@
+Buổi 4: 10/9/2024
+Mục tiêu
+1. Review document
+2. Review slide
+3. Review code
+
+mỗi function phải có: input, output, proccess

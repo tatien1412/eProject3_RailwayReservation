@@ -1,0 +1,41 @@
+<div class="hero" style="background-image: url('/images/new3.jpg');">
+    <div class="pt-40">
+      <div class="container bg-opacity-40 bg-gray-900 mx-auto p-6 max-w-lg text-white rounded-lg">
+        <h2 class="text-3xl font-bold mb-6">Update Station</h2>
+        <form [formGroup]="stationForm" (ngSubmit)="onSubmit()">
+          <div class="mb-4">
+            <label for="stationCode" class="block text-white font-bold mb-2">Station Code</label>
+            <input id="stationCode" formControlName="stationCode" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>  
+            <div *ngIf="stationForm.get('stationCode')?.invalid && stationForm.get('stationCode')?.touched" class="text-red-500">
+              Station Code is required.
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="stationName" class="block text-white font-bold mb-2">Station Name</label>
+            <input id="stationName" formControlName="stationName" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <div *ngIf="stationForm.get('stationName')?.invalid && stationForm.get('stationName')?.touched" class="text-red-500">
+              Station Name is required.
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="railwayDivisionName" class="block text-white font-bold mb-2">Railway Division</label>
+            <input id="railwayDivisionName" formControlName="railwayDivisionName" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <div *ngIf="stationForm.get('railwayDivisionName')?.invalid && stationForm.get('railwayDivisionName')?.touched" class="text-red-500">
+              Railway Division is required.
+            </div>
+          </div>
+
+          <button type="submit" [disabled]="stationForm.invalid" class="bg-blue-500 hover:bg-blue-700 mr-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Update Station
+          </button>
+          <button 
+            class="mt-6 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" 
+            (click)="goBack()">
+            Back to Stations
+        </button>
+        </form>
+      </div>
+    </div>
+</div>

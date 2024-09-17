@@ -34,7 +34,10 @@ namespace RailwayTransaction.Handler.Admin
                 {
                     Id = user.Id,
                     FullName = user.FullName,
+                    UserName = user.UserName,
                     Email = user.Email,
+                    PhoneNumber = user.PhoneNumber,
+                    Password = user.PasswordHash,
                     Role = string.Join(", ", role),
                 };
 

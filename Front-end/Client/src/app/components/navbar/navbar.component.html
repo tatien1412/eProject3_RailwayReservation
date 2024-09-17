@@ -1,0 +1,70 @@
+<div>
+  <mat-toolbar color="primary" class="navbar-custom" style="padding: 10px 50px; background-color: transparent; position: fixed; top: 0; width: 100%; z-index: 1000;">
+    <a routerLink="/" style="color: white; font-weight: bold;">RailWay</a>
+    <div class="w-full"></div>
+
+    <!-- Kiểm tra nếu người dùng đã đăng nhập -->
+    <div *ngIf="isLoggedIn()">
+      <div *ngIf="authService.getUserDetail() as userDetail">
+        <div class="flex gap-5 items-center">
+          <!-- Nếu người dùng là Admin -->
+          <a *ngIf="userDetail?.role.includes('Admin')" mat-button routerLink="/users" style="color: white;">
+            <mat-icon>groups</mat-icon>
+            Users
+          </a>
+          <a *ngIf="userDetail?.role.includes('Admin')" mat-button routerLink="/roles" style="color: white;">
+            <mat-icon>settings</mat-icon>
+            Roles
+          </a>
+
+          <!-- Nếu người dùng là Master Management -->
+          <a *ngIf="userDetail?.role.includes('MasterManagement')" mat-button routerLink="/stations" style="color: white;">
+            <mat-icon>home</mat-icon>
+            Stations
+          </a>
+          <a *ngIf="userDetail?.role.includes('MasterManagement')" mat-button routerLink="/trains" style="color: white;">
+            <mat-icon>train</mat-icon>
+            Trains
+          </a>
+
+          <a [matMenuTriggerFor]="menu" class="flex gap-2 cursor-pointer items-center">
+            <!-- Hiển thị ký tự đầu tiên của tên người dùng nếu tồn tại -->
+            <div class="bg-blue-100 font-bold shadow-md rounded-full w-5 h-5 p-5 flex justify-center items-center">
+              {{userDetail?.fullName?.charAt(0)?.toUpperCase() || 'U'}}
+            </div>
+            <div class="flex flex-col">
+              <!-- Hiển thị toàn bộ tên người dùng -->
+              <h1 class="p-0 m-0 font-medium" style="color: white;">
+                {{userDetail?.fullName}}
+              </h1>
+              <!-- Hiển thị vai trò của người dùng -->
+              <p class="p-0 m-0 font-medium text-xs" style="color: white;">
+                {{userDetail?.role}}
+              </p>
+            </div>
+          </a>
+
+          <!-- Menu khi click vào tài khoản -->
+          <mat-menu #menu="matMenu">
+            <button [routerLink]="['account',userDetail.id]" mat-menu-item>
+              <mat-icon>account_circle</mat-icon>
+              <span>View Profile</span>
+            </button>
+            <button (click)="logout()" mat-menu-item>
+              <mat-icon>logout</mat-icon>
+              <span>Logout</span>
+            </button>
+          </mat-menu>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nếu người dùng chưa đăng nhập, hiển thị nút Login -->
+    <div *ngIf="!isLoggedIn()">
+      <div class="flex gap-5 items-center">
+        <a mat-button routerLink="/login" style="color: white">Login</a>
+      </div>
+    </div>
+
+  </mat-toolbar>
+</div>

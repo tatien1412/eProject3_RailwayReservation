@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Compartment;
 using RailwayTransaction.Application.Commands.MasterManagement.Compartment;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "MasterManagement")]
     [ApiController]
     [Route("api/[controller]")]
     public class CompartmentController : ControllerBase
@@ -47,7 +49,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Create a new Compartment
-        [HttpPost]
+        [HttpPost("create")]
         public async Task<IActionResult> CreateCompartment([FromBody] CreateCompartmentCommand command)
         {
             if (!ModelState.IsValid)

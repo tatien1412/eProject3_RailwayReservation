@@ -1,0 +1,55 @@
+<div class="flex items-center flex-col h-screen hero" style="background-image: url('/images/new.png'); background-size: cover; background-position: center;">
+    <div class="w-full max-w-5xl py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg" style="margin-top: 80px;">
+        <h1 class="text-4xl font-extrabold text-white text-center mb-4">Trains Management</h1>
+        <div class="flex justify-end mb-4">
+            <button class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg shadow-lg" (click)="onAddTrain()">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+            <table class="min-w-full table-auto rounded-lg overflow-hidden">
+                <thead class="bg-blue-500 text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Train Name</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Route Name</th> <!-- Hiển thị route name -->
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Compartments</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr *ngFor="let train of paginatedTrains$ | async; trackBy: trackById">
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.trainName }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.trainRouteName }}</td> <!-- Hiển thị trainRouteName -->
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.numberOfCompartments }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-4 rounded-lg shadow-lg mr-2" (click)="onDetailTrain(train.trainID)">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-1 px-4 rounded-lg shadow-lg mr-2" (click)="onUpdateTrain(train.trainID)">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded-lg shadow-lg" (click)="viewTrainDetail(train.trainID)">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="flex justify-between items-center mt-6 text-white">
+            <button 
+              class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg" 
+              [disabled]="currentPage === 1" 
+              (click)="onPreviousPage()">
+                Previous
+            </button>
+            <span class="text-lg font-semibold">Page {{currentPage}}</span>
+            <button 
+              class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg" 
+              (click)="onNextPage()">
+                Next
+            </button>
+        </div>
+    </div>
+</div>

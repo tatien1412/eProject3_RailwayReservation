@@ -41,14 +41,19 @@ namespace RailwayTransaction.Handler.Login
             // Lấy danh sách vai trò của người dùng
             var roles = await _userManager.GetRolesAsync(user);
 
-            // Tạo claims từ các vai trò
+            // Tạo claims từ các vai trò và thông tin người dùng
             var claims = new List<Claim>
-            {
-                new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
+    {
+            new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim("id", user.Id),                // Thêm ID của người dùng vào payload
+            new Claim("name", user.FullName),        // Thêm FullName của người dùng vào payload
+    };
 
-            claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
+            if (roles != null && roles.Any())
+            {
+                claims.AddRange(roles.Select(role => new Claim("role", role)));
+            }
 
             // Tạo Token
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWTSetting:securityKey"]));
@@ -65,5 +70,6 @@ namespace RailwayTransaction.Handler.Login
             // Trả về token
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
     }
 }

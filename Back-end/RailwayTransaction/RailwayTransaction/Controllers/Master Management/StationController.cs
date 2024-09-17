@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Station;
 using RailwayTransaction.Application.Commands.MasterManagement.Station;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "MasterManagement")]
     [ApiController]
     [Route("api/[controller]")]
     public class StationController : ControllerBase
@@ -17,7 +19,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get all stations
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<IActionResult> GetAllStations()
         {
             var query = new GetAllStationsQuery();
@@ -32,7 +34,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get station by ID
-        [HttpGet("{id}")]
+        [HttpGet("detail/{id}")]
         public async Task<IActionResult> GetStationById(int id)
         {
             var query = new GetStationByIdQuery(id);
@@ -47,7 +49,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Create a new station
-        [HttpPost]
+        [HttpPost("create")]
         public async Task<IActionResult> CreateStation([FromBody] CreateStationCommand command)
         {
             if (!ModelState.IsValid)
@@ -60,7 +62,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Update an existing station
-        [HttpPut("{id}")]
+        [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateStation(int id, [FromBody] UpdateStationCommand command)
         {
             if (id != command.StationID)
@@ -73,7 +75,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Delete a station
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteStation(int id)
         {
             await _mediator.Send(new DeleteStationCommand { StationID = id });

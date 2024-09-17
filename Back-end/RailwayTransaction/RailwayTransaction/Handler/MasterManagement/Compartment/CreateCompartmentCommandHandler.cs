@@ -19,6 +19,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Compartment
             {
                 TrainID = request.TrainID,
                 CompartmentType = request.CompartmentType,
+                SeatType = request.SeatType,
                 NumberOfSeats = request.NumberOfSeats,
             };
 
