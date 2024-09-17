@@ -11,27 +11,23 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
             {
                 ScheduleID = schedule.ScheduleID,
                 TrainID = schedule.TrainID,
-                TrainRouteID = schedule.TrainRouteID,
                 DepartureTime = schedule.DepartureTime,
                 ArrivalTime = schedule.ArrivalTime,
                 DayOfWeek = schedule.DayOfWeek,
             };
         }
         public static ScheduleResponse_joined ConvertToResponseAll(Schedule schedule,
-                                                    Train train,
-                                                    TrainRoute trainRoute)
+                                                    Train train)
         {
             return new ScheduleResponse_joined
             {
                 ScheduleID = schedule.ScheduleID,
                 TrainID = schedule.TrainID,
-                TrainRouteID = schedule.TrainRouteID,
                 DepartureTime = schedule.DepartureTime,
                 ArrivalTime = schedule.ArrivalTime,
                 DayOfWeek = schedule.DayOfWeek,
 
                 Train = TrainMapper.ConvertToResponse(train),
-                TrainRoute = TrainRouteMapper.ConvertToResponse(trainRoute),
             };
         }
     }
