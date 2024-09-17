@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Schedule;
 using RailwayTransaction.Application.Commands.MasterManagement.Schedule;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "MasterManagement")]
     [ApiController]
     [Route("api/[controller]")]
     public class ScheduleController : ControllerBase
@@ -47,7 +49,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Create a new schedule
-        [HttpPost]
+        [HttpPost("create")]
         public async Task<IActionResult> CreateSchedule([FromBody] CreateScheduleCommand command)
         {
             if (!ModelState.IsValid)

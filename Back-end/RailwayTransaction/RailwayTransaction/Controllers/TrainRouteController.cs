@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.TrainRoute;
 using RailwayTransaction.Application.Commands.MasterManagement.TrainRoute;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "MasterManagement")]
     [ApiController]
     [Route("api/[controller]")]
     public class TrainRouteController : ControllerBase
@@ -17,7 +19,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get all TrainRoutes
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<IActionResult> GetAllTrainRoutes()
         {
             var query = new GetAllTrainRoutesQuery();

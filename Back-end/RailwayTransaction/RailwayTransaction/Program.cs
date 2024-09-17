@@ -28,14 +28,9 @@ builder.Services.AddScoped<IRepository<Seat, int>, SeatRepository>();
 builder.Services.AddScoped<IRepository<Station, int>, StationRepository>();
 builder.Services.AddScoped<IRepository<Ticket, int>, TicketRepository>();
 builder.Services.AddScoped<IRepository<Train, int>, TrainRepository>();
-<<<<<<< HEAD
-builder.Services.AddScoped<IRepository<Schedule, int>, ScheduleRepository>();
-builder.Services.AddScoped<IRepository<AppUser,string>, UsersRepository>();
-=======
 builder.Services.AddScoped<IRepository<TrainRoute, int>, TrainRouteRepository>();
 builder.Services.AddScoped<IRepository<Trip, int>, TripRepository>();
 builder.Services.AddScoped<IRepository<AppUser, string>, UsersRepository>();
->>>>>>> b1cdfa87a5157caf4d23636350ebb128445bd938
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

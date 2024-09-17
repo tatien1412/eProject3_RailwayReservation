@@ -23,6 +23,13 @@ namespace RailwayTransaction.Handler.Admin
 
         public async Task<UserDetail> Handle(CreateUserCommand command, CancellationToken cancellationToken)
         {
+            // Kiểm tra xem user đã tồn tại hay chưa
+            var existingUser = await _userManager.FindByNameAsync(command.UserName);
+            if (existingUser != null)
+            {
+                throw new Exception($"Username '{command.UserName}' is already taken.");
+            }
+
             var appUser = new AppUser
             {
                 FullName = command.FullName,
@@ -56,7 +63,7 @@ namespace RailwayTransaction.Handler.Admin
             var roleResult = await _userManager.AddToRoleAsync(appUser, command.Role);
             if (!roleResult.Succeeded)
             {
-                throw new Exception("Error assigning role to user"); // Xử lý lỗi nếu gán vai trò thất bại
+                throw new Exception("Error assigning role to user");
             }
 
             var userDetail = new UserDetail
@@ -65,12 +72,13 @@ namespace RailwayTransaction.Handler.Admin
                 FullName = appUser.FullName,
                 UserName = appUser.UserName,
                 Email = appUser.Email,
-                Password = appUser.PasswordHash,  
+                Password = appUser.PasswordHash,
                 PhoneNumber = appUser.PhoneNumber,
-                Role = command.Role  
+                Role = command.Role
             };
 
             return userDetail;
         }
+
     }
 }
