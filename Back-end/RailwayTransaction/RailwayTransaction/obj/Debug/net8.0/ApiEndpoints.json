@@ -806,7 +806,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.UsersController",
+    "ContainingType": "RailwayTransaction.Controllers.Admin.UsersController",
     "Method": "GetAll",
     "RelativePath": "api/Users",
     "HttpMethod": "GET",
@@ -816,7 +816,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.UsersController",
+    "ContainingType": "RailwayTransaction.Controllers.Admin.UsersController",
     "Method": "AddUser",
     "RelativePath": "api/Users",
     "HttpMethod": "POST",
@@ -832,7 +832,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.UsersController",
+    "ContainingType": "RailwayTransaction.Controllers.Admin.UsersController",
     "Method": "GetById",
     "RelativePath": "api/Users/{id}",
     "HttpMethod": "GET",
@@ -848,7 +848,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.UsersController",
+    "ContainingType": "RailwayTransaction.Controllers.Admin.UsersController",
     "Method": "UpdateUser",
     "RelativePath": "api/Users/{id}",
     "HttpMethod": "PUT",
@@ -869,7 +869,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.UsersController",
+    "ContainingType": "RailwayTransaction.Controllers.Admin.UsersController",
     "Method": "DeleteStation",
     "RelativePath": "api/Users/{id}",
     "HttpMethod": "DELETE",

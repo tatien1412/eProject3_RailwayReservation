@@ -9,9 +9,9 @@ using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Entities.Dtos;
 using RailwayTransaction.Handler.Admin;
 
-namespace RailwayTransaction.Controllers
+namespace RailwayTransaction.Controllers.Admin
 {
-    [Authorize (Roles="Admin")]
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -22,7 +22,7 @@ namespace RailwayTransaction.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]  
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var userList = await _mediator.Send(new GetAllUsersQuery());
@@ -36,7 +36,7 @@ namespace RailwayTransaction.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
-            var userDetail = await _mediator.Send(new GetUserDetailQuery() {Id = id});
+            var userDetail = await _mediator.Send(new GetUserDetailQuery() { Id = id });
             if (userDetail == null)
             {
                 return NotFound("User not found");
@@ -65,7 +65,7 @@ namespace RailwayTransaction.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(string id, [FromBody] UpdateUserCommand command)
         {
-            command.Id = id; 
+            command.Id = id;
 
             var result = await _mediator.Send(command);
 
