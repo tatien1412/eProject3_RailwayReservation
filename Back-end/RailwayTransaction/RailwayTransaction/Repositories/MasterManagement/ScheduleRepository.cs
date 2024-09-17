@@ -5,7 +5,7 @@ using RailwayTransaction.Domain.Interface;
 
 namespace RailwayTransaction.Repositories.MasterManagement
 {
-    public class ScheduleRepository : Repository<Schedule>
+    public class ScheduleRepository : Repository<Schedule, int>
     {
         public ScheduleRepository(ApplicationDbContext context) : base(context)
         {

@@ -6,7 +6,7 @@ using RailwayTransaction.Domain.Interface;
 namespace RailwayTransaction.Repositories.MasterManagement
 {
 
-    public class StationRepository : Repository<Station>
+    public class StationRepository : Repository<Station, int>
     {
         public StationRepository(ApplicationDbContext context) : base(context)
         {
