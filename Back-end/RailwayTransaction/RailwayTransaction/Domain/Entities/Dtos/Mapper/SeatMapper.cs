@@ -14,7 +14,6 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 CompartmentID = seat.CompartmentID,
                 SeatNumber = seat.SeatNumber,
                 SeatStatus = seat.SeatStatus,
-                SeatType = seat.SeatType,
                 Fare = seat.Fare,
                 ReservationID = seat.ReservationID,
             };
@@ -29,7 +28,6 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 CompartmentID = seat.CompartmentID,
                 SeatNumber = seat.SeatNumber,
                 SeatStatus = seat.SeatStatus,
-                SeatType = seat.SeatType,
                 Fare = seat.Fare,
                 ReservationID = seat.ReservationID,
 

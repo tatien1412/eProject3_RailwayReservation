@@ -26,7 +26,6 @@ namespace RailwayTransaction.Handler.MasterManagement.Seat
             seat.CompartmentID = request.CompartmentID;
             seat.SeatNumber = request.SeatNumber;
             seat.SeatStatus = request.SeatStatus;
-            seat.SeatType = request.SeatType;
             seat.Fare = request.Fare;
             seat.ReservationID = request.ReservationID;
 
