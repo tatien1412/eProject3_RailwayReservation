@@ -13,6 +13,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 CompartmentID = compartment.CompartmentID,
                 TrainID = compartment.TrainID,
                 CompartmentType = compartment.CompartmentType,
+                SeatType= compartment.SeatType,
                 NumberOfSeats = compartment.NumberOfSeats,
             };
         }
@@ -28,6 +29,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 CompartmentType = compartment.CompartmentType,
                 NumberOfSeats = compartment.NumberOfSeats,
 
+                SeatType = compartment.SeatType,
                 Train = TrainMapper.ConvertToResponse(train),
                 Seats = seats.Where(s => s.CompartmentID == compartment.CompartmentID).Select(s => SeatMapper.ConvertToResponse(s)).ToList(),
 

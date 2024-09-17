@@ -1,12 +1,12 @@
 ﻿using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 
-namespace RailwayTransaction.Repositories
+namespace RailwayTransaction.Repositories.MasterManagement
 {
     public class TicketRepository : Repository<Ticket>
     {
-        public TicketRepository(ApplicationDbContext context) : base (context)
-        { 
+        public TicketRepository(ApplicationDbContext context) : base(context)
+        {
         }
     }
 }

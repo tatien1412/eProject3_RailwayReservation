@@ -18,7 +18,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Train
             var train = new Domain.Entities.Train
             {
                 TrainName = request.TrainName,
-                TrainRouteDetails = request.TrainRouteDetails,
+                TrainStatus = request.TrainStatus,
                 TrainRouteID = request.TrainRouteID,
                 NumberOfCompartments = request.NumberOfCompartments
             };

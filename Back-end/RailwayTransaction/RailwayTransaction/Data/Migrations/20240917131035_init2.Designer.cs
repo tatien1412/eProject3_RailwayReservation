@@ -12,8 +12,8 @@ using RailwayTransaction.Data.DataContext;
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240912085002_init")]
-    partial class init
+    [Migration("20240917131035_init2")]
+    partial class init2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -174,6 +174,11 @@ namespace RailwayTransaction.Migrations
                     b.Property<int>("NumberOfSeats")
                         .HasColumnType("int");
 
+                    b.Property<string>("SeatType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<int>("TrainID")
                         .HasColumnType("int");
 
@@ -263,8 +268,9 @@ namespace RailwayTransaction.Migrations
                     b.Property<string>("AppUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("DateOfJourney")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("DateOfJourney")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PnrNo")
                         .HasColumnType("int");
@@ -368,11 +374,6 @@ namespace RailwayTransaction.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<string>("SeatType")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
                     b.HasKey("SeatID");
 
                     b.HasIndex("CompartmentID");
@@ -453,13 +454,13 @@ namespace RailwayTransaction.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrainRouteDetails")
+                    b.Property<int>("TrainRouteID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TrainStatus")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("TrainRouteID")
-                        .HasColumnType("int");
 
                     b.HasKey("TrainID");
 

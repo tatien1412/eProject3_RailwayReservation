@@ -3,7 +3,7 @@ using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Interface;
 
-namespace RailwayTransaction.Repositories
+namespace RailwayTransaction.Repositories.MasterManagement
 {
     public class TrainRepository : Repository<Train>
     {

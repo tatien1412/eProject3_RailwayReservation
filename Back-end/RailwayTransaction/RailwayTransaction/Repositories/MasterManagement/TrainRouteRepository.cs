@@ -1,12 +1,12 @@
 ﻿using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 
-namespace RailwayTransaction.Repositories
+namespace RailwayTransaction.Repositories.MasterManagement
 {
     public class TrainRouteRepository : Repository<TrainRoute>
     {
-        public TrainRouteRepository(ApplicationDbContext context) : base (context)
-        { 
+        public TrainRouteRepository(ApplicationDbContext context) : base(context)
+        {
         }
     }
 }

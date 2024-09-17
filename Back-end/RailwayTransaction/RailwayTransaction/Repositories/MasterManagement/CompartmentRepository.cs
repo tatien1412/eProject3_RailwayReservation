@@ -1,12 +1,12 @@
 ﻿using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 
-namespace RailwayTransaction.Repositories
+namespace RailwayTransaction.Repositories.MasterManagement
 {
     public class CompartmentRepository : Repository<Compartment>
     {
-        public CompartmentRepository(ApplicationDbContext context) : base (context)
-        { 
+        public CompartmentRepository(ApplicationDbContext context) : base(context)
+        {
         }
     }
 }

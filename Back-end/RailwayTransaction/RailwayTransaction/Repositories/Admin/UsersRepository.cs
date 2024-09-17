@@ -4,12 +4,12 @@ using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Entities.Dtos;
 using RailwayTransaction.Domain.Interface;
 
-namespace RailwayTransaction.Repositories
+namespace RailwayTransaction.Repositories.Admin
 {
     public class UsersRepository : IRepository<AppUser, string>
     {
         private readonly ApplicationDbContext _context;
-        public UsersRepository(ApplicationDbContext context) 
+        public UsersRepository(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -25,7 +25,7 @@ namespace RailwayTransaction.Repositories
         }
         public async Task<AppUser> AddAsync(AppUser entity)
         {
-            var result = await _context.Users.AddAsync(entity);  
+            var result = await _context.Users.AddAsync(entity);
             await _context.SaveChangesAsync();
             return result.Entity;
         }

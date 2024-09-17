@@ -9,9 +9,13 @@ using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Entities.Dtos;
 using RailwayTransaction.Handler.Admin;
 
-namespace RailwayTransaction.Controllers
+namespace RailwayTransaction.Controllers.Admin
 {
+<<<<<<< HEAD:Back-end/RailwayTransaction/RailwayTransaction/Controllers/UsersController.cs
     [Authorize (Roles="Admin, MasterManagement")]
+=======
+    [Authorize(Roles = "Admin")]
+>>>>>>> 3c199aca0e4ed3fd6f46400c29c1e11c3edc146b:Back-end/RailwayTransaction/RailwayTransaction/Controllers/Admin/UsersController.cs
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -22,7 +26,11 @@ namespace RailwayTransaction.Controllers
             _mediator = mediator;
         }
 
+<<<<<<< HEAD:Back-end/RailwayTransaction/RailwayTransaction/Controllers/UsersController.cs
         [HttpGet("getall")]  
+=======
+        [HttpGet]
+>>>>>>> 3c199aca0e4ed3fd6f46400c29c1e11c3edc146b:Back-end/RailwayTransaction/RailwayTransaction/Controllers/Admin/UsersController.cs
         public async Task<IActionResult> GetAll()
         {
             var userList = await _mediator.Send(new GetAllUsersQuery());
@@ -36,7 +44,7 @@ namespace RailwayTransaction.Controllers
         [HttpGet("detail/{id}")]
         public async Task<IActionResult> GetById(string id)
         {
-            var userDetail = await _mediator.Send(new GetUserDetailQuery() {Id = id});
+            var userDetail = await _mediator.Send(new GetUserDetailQuery() { Id = id });
             if (userDetail == null)
             {
                 return NotFound("User not found");
@@ -65,7 +73,7 @@ namespace RailwayTransaction.Controllers
         [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateUser(string id, [FromBody] UpdateUserCommand command)
         {
-            command.Id = id; 
+            command.Id = id;
 
             var result = await _mediator.Send(command);
 

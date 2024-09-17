@@ -25,7 +25,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Train
 
             train.TrainName = request.TrainName;
             train.TrainRouteID = request.TrainRouteID;
-            train.TrainRouteDetails = request.TrainRouteDetails;
+            train.TrainStatus = request.TrainStatus;
             train.NumberOfCompartments = request.NumberOfCompartments;
             await _trainRepository.UpdateAsync(train);
 

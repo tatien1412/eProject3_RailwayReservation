@@ -12,8 +12,8 @@ using RailwayTransaction.Data.DataContext;
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240911173742_db_v1.1")]
-    partial class db_v11
+    [Migration("20240916145032_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -263,8 +263,9 @@ namespace RailwayTransaction.Migrations
                     b.Property<string>("AppUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("DateOfJourney")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("DateOfJourney")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PnrNo")
                         .HasColumnType("int");
@@ -272,16 +273,11 @@ namespace RailwayTransaction.Migrations
                     b.Property<decimal>("TotalFare")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("TripID")
-                        .HasColumnType("int");
-
                     b.HasKey("ReservationID");
 
                     b.HasIndex("AppUserId");
 
                     b.HasIndex("PnrNo");
-
-                    b.HasIndex("TripID");
 
                     b.ToTable("Reservations");
                 });
@@ -294,7 +290,7 @@ namespace RailwayTransaction.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RouteStationID"));
 
-                    b.Property<int>("Order")
+                    b.Property<int>("OrderInRoute")
                         .HasColumnType("int");
 
                     b.Property<int>("StationID")
@@ -458,13 +454,13 @@ namespace RailwayTransaction.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrainRouteDetails")
+                    b.Property<int>("TrainRouteID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TrainStatus")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("TrainRouteID")
-                        .HasColumnType("int");
 
                     b.HasKey("TrainID");
 
@@ -607,15 +603,7 @@ namespace RailwayTransaction.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.Trip", "Trip")
-                        .WithMany("Reservations")
-                        .HasForeignKey("TripID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.Navigation("Ticket");
-
-                    b.Navigation("Trip");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.RouteStation", b =>
@@ -751,11 +739,6 @@ namespace RailwayTransaction.Migrations
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.TrainRoute", b =>
                 {
                     b.Navigation("RouteStations");
-                });
-
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.Trip", b =>
-                {
-                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }
