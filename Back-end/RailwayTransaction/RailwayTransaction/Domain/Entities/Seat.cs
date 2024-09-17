@@ -17,10 +17,7 @@ namespace RailwayTransaction.Domain.Entities
 
         [MaxLength(20)]
         public string SeatStatus { get; set; }
-
-        [MaxLength(50)]
-        public string SeatType { get; set; }  // Loại ghế (ví dụ: Ghế mềm, Ghế cứng)
-
+       
         public decimal Fare { get; set; }  // Giá vé, được tính dựa trên loại ghế, khoang và khoảng cách
 
         // Khóa ngoại đến bảng Reservation
