@@ -1,0 +1,30 @@
+<div class="flex items-center flex-col pt-40 h-screen hero" style="background-image: url('/images/bg.jpg');">
+    <div class="h-screen items-center">
+        <div class="container mx-auto my-8 p-8 bg-white bg-opacity-40 shadow-md rounded-md max-w-md">
+            <h1 class="text-3xl  font-bold mb-4 text-center">
+                Account Detail
+            </h1>
+            <div *ngIf="accountDetail$ | async as user">
+                <div class="text-center">
+                    <div class="rounded-full bg-blue-500 my-4 text-4xl w-2/4 h-2/4 inline-flex items-center justify-center font-bold text-white">
+                        {{user.fullName[0] | uppercase}}
+                    </div>
+                </div>
+                <hr class="py-4 border-slate-400">
+                <div class="grid grid-cols-2 gap-4 ">
+                    <div class=" font-bold">Full Name</div>
+                    <div class=" font-medium">{{user.fullName | titlecase}}</div>
+    
+                    <div class=" font-bold">Email</div>
+                    <div class=" font-medium">{{user.email | titlecase}}</div>
+    
+                    <div class=" font-bold">Role</div>
+                    <div class=" font-medium">{{user.role | titlecase}}</div>
+    
+                    <div class=" font-bold">Phone</div>
+                    <div class=" font-medium">{{user.phoneNumber || '-'}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

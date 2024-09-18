@@ -45,7 +45,21 @@ namespace RailwayTransaction.Handler.Admin
                 // Xóa vai trò hiện tại
                 await _userManager.RemoveFromRolesAsync(userExist, currentRoles);
             }
+            // Thêm vai trò mới nếu có
+            if (!string.IsNullOrEmpty(command.Role))
+            {
+                var roleExist = await _roleManager.RoleExistsAsync(command.Role);
+                if (!roleExist)
+                {
+                    throw new Exception($"Role '{command.Role}' does not exist.");
+                }
 
+                var roleResult = await _userManager.AddToRoleAsync(userExist, command.Role);
+                if (!roleResult.Succeeded)
+                {
+                    throw new Exception("Failed to add user to role");
+                }
+            }
             // Lưu các thay đổi
             var result = await _userManager.UpdateAsync(userExist);
             if (!result.Succeeded)

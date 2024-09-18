@@ -4574,19 +4574,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tango\\.nuget\\packages\\": {}
+<<<<<<< HEAD
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\LEGION\\.nuget\\packages\\": {},
+>>>>>>> e76cc9d36e928a94ca539996cf3d00449c7bea1b
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tango\\OneDrive\\Desktop\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
+<<<<<<< HEAD
+      "projectUniqueName": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
       "projectName": "RailwayTransaction",
-      "projectPath": "C:\\Users\\tango\\OneDrive\\Desktop\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
-      "packagesPath": "C:\\Users\\tango\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tango\\OneDrive\\Desktop\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\obj\\",
+      "projectPath": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\obj\\",
+=======
+      "projectUniqueName": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
+      "projectName": "RailwayTransaction",
+      "projectPath": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\RailwayTransaction.csproj",
+      "packagesPath": "C:\\Users\\LEGION\\.nuget\\packages\\",
+      "outputPath": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\obj\\",
+>>>>>>> e76cc9d36e928a94ca539996cf3d00449c7bea1b
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tango\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\LEGION\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e76cc9d36e928a94ca539996cf3d00449c7bea1b
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4594,7 +4615,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4678,8 +4698,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+>>>>>>> e76cc9d36e928a94ca539996cf3d00449c7bea1b
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -23,7 +23,6 @@ namespace RailwayTransaction.Handler.MasterManagement.Schedule
                 throw new Exception("Schedule not found");
             }
             schedule.TrainID = request.TrainID;
-            schedule.TrainRouteID = request.TrainRouteID;
             schedule.DepartureTime = request.DepartureTime;
             schedule.ArrivalTime = request.ArrivalTime;
             schedule.DayOfWeek = request.DayOfWeek;

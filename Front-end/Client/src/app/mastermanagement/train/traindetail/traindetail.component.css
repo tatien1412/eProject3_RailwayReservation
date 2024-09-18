@@ -1,0 +1,11 @@
+.hero {
+    height: 130vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+.no-opacity {
+    opacity: 1; /* Ghi đè opacity của phần tử cha */
+    z-index: 10; /* Đảm bảo nút nằm trên các phần tử khác */
+    position: relative;
+    }

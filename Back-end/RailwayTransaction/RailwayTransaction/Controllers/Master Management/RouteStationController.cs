@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.RouteStation;
 using RailwayTransaction.Application.Commands.MasterManagement.RouteStation;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "MasterManagement")]
     [ApiController]
     [Route("api/[controller]")]
     public class RouteStationController : ControllerBase

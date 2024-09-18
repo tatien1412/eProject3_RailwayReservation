@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tango\\OneDrive\\Desktop\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\",
+  "WorkspaceRootPath": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\tango\\onedrive\\desktop\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\getseatbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\getseatbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,6 +46,74 @@
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\tango\\onedrive\\desktop\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\admin\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\admin\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\triprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\triprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\trainrouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\trainrouterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\trainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\trainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\seatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\schedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\schedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\routestationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\routestationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\mastermanagement\\compartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\mastermanagement\\compartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\schedule\\getschedulebyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\schedule\\getschedulebyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\admin\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\admin\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+>>>>>>> 554bc4a538096959dfe9529f2f62ead8d4de5d3d
     }
   ],
   "DocumentGroupContainers": [
@@ -54,6 +123,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -110,10 +180,26 @@
               "ViewState": "AgIAABgAAAAAAAAAAAAlwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T13:47:28.297Z",
+=======
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TripRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TripRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\TripRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TripRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\TripRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:50.855Z",
+>>>>>>> 554bc4a538096959dfe9529f2f62ead8d4de5d3d
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "SeatMapper.cs",
               "DocumentMoniker": "C:\\Users\\tango\\OneDrive\\Desktop\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\SeatMapper.cs",
@@ -199,8 +285,212 @@
               "ToolTip": "C:\\Users\\tango\\OneDrive\\Desktop\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\CreateCompartmentCommandHandler.cs",
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\CreateCompartmentCommandHandler.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAowCMAAABnAAAAAAAAAA==",
+=======
+              "DocumentIndex": 2,
+              "Title": "TrainRouteRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TrainRouteRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\TrainRouteRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TrainRouteRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\TrainRouteRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABCAAAA",
+>>>>>>> 554bc4a538096959dfe9529f2f62ead8d4de5d3d
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T13:08:28.543Z",
+              "WhenOpened": "2024-09-17T13:55:44.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrainRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TrainRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\TrainRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TrainRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\TrainRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:42.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TicketRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TicketRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\TicketRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\TicketRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\TicketRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:39.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StationRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\StationRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\StationRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\StationRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\StationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:37.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeatRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\SeatRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\SeatRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\SeatRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\SeatRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:34.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\Admin\\UsersRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\Admin\\UsersRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\Admin\\UsersRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\Admin\\UsersRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:49:29.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScheduleRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\ScheduleRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\ScheduleRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\ScheduleRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\ScheduleRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:31.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RouteStationRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\RouteStationRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\RouteStationRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\RouteStationRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\RouteStationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:28.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReservationRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\ReservationRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\ReservationRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\ReservationRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\ReservationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:25.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CompartmentRepository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\CompartmentRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\MasterManagement\\CompartmentRepository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\MasterManagement\\CompartmentRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\MasterManagement\\CompartmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:55:18.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Repositories\\Repository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Repositories\\Repository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:52:33.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetScheduleByIdQueryHandler.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\GetScheduleByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\GetScheduleByIdQueryHandler.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\GetScheduleByIdQueryHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\GetScheduleByIdQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:41:17.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:39:36.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Admin\\UsersController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Admin\\UsersController.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Admin\\UsersController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Admin\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:37:19.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
+              "RelativeDocumentMoniker": "RailwayTransaction\\appsettings.json",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
+              "RelativeToolTip": "RailwayTransaction\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-17T13:36:11.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginCommand.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\Login\\LoginCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\Login\\LoginCommand.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\Login\\LoginCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\Login\\LoginCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:35:45.358Z",
               "EditorCaption": ""
             }
           ]

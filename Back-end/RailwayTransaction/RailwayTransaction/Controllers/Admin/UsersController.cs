@@ -11,7 +11,8 @@ using RailwayTransaction.Handler.Admin;
 
 namespace RailwayTransaction.Controllers.Admin
 {
-    [Authorize(Roles = "Admin")]
+
+    [Authorize (Roles="Admin, MasterManagement")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -22,7 +23,7 @@ namespace RailwayTransaction.Controllers.Admin
             _mediator = mediator;
         }
 
-        [HttpGet]
+        [HttpGet("getall")]  
         public async Task<IActionResult> GetAll()
         {
             var userList = await _mediator.Send(new GetAllUsersQuery());
@@ -33,7 +34,7 @@ namespace RailwayTransaction.Controllers.Admin
             return Ok(userList);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("detail/{id}")]
         public async Task<IActionResult> GetById(string id)
         {
             var userDetail = await _mediator.Send(new GetUserDetailQuery() { Id = id });
@@ -44,7 +45,7 @@ namespace RailwayTransaction.Controllers.Admin
             return Ok(userDetail);
         }
 
-        [HttpPost]
+        [HttpPost("create")]
         public async Task<IActionResult> AddUser([FromBody] CreateUserCommand command)
         {
             if (!ModelState.IsValid)
@@ -62,7 +63,7 @@ namespace RailwayTransaction.Controllers.Admin
             return Ok(newUser);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateUser(string id, [FromBody] UpdateUserCommand command)
         {
             command.Id = id;
@@ -77,11 +78,17 @@ namespace RailwayTransaction.Controllers.Admin
             return BadRequest("Failed to update user");
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteStation(string id)
         {
             await _mediator.Send(new DeleteUserCommand { Id = id });
             return NoContent();
+        }
+        [HttpGet("roles")]
+        public async Task<ActionResult<List<RoleResponse>>> GetAllRoles()
+        {
+            var roles = await _mediator.Send(new GetAllRolesQuery());
+            return Ok(roles);
         }
     }
 }

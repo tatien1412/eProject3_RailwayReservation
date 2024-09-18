@@ -5,7 +5,7 @@ using RailwayTransaction.Domain.Interface;
 
 namespace RailwayTransaction.Repositories
 {
-    public class Repository<T> : IRepository<T, int> where T : class
+    public class Repository<T, TKey> : IRepository<T, TKey> where T : class 
     {
         public readonly ApplicationDbContext _context;
         public readonly DbSet<T> _entity;
@@ -15,7 +15,7 @@ namespace RailwayTransaction.Repositories
             _context = context;
             _entity = context.Set<T>();
         }
-        public async Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(TKey id)
         {
             return await _entity.FindAsync(id);
         }

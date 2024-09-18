@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Train;
 using RailwayTransaction.Application.Commands.MasterManagement.Train;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "MasterManagement")]
     [ApiController]
     [Route("api/[controller]")]
     public class TrainController : ControllerBase
@@ -17,7 +19,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get all trains
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<IActionResult> GetAllTrains()
         {
             var query = new GetAllTrainsQuery();
@@ -32,7 +34,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get train by ID
-        [HttpGet("{id}")]
+        [HttpGet("detail/{id}")]
         public async Task<IActionResult> GetTrainById(int id)
         {
             var query = new GetTrainByIdQuery(id);
@@ -47,7 +49,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Create a new train
-        [HttpPost]
+        [HttpPost("create")]
         public async Task<IActionResult> CreateTrain([FromBody] CreateTrainCommand command)
         {
             if (!ModelState.IsValid)
@@ -60,7 +62,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Update an existing train
-        [HttpPut("{id}")]
+        [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateTrain(int id, [FromBody] UpdateTrainCommand command)
         {
             if (id != command.TrainID)
@@ -73,7 +75,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Delete a train
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteTrain(int id)
         {
             await _mediator.Send(new DeleteTrainCommand { TrainID = id });
