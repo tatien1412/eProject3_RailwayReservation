@@ -38,3 +38,4 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
         }
     }
 }
+

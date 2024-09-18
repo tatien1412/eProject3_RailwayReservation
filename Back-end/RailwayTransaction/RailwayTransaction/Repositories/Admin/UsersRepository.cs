@@ -39,5 +39,10 @@ namespace RailwayTransaction.Repositories.Admin
             _context.Users.Remove(entity);
             await _context.SaveChangesAsync();
         }
+
+        public Task AddRangeAsync(IEnumerable<AppUser> entities)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

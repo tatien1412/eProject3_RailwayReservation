@@ -7,6 +7,7 @@ namespace RailwayTransaction.Repositories.MasterManagement
     {
         public SeatRepository(ApplicationDbContext context) : base(context)
         {
+
         }
     }
 }
