@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
-    [Authorize(Roles = "MasterManagement")]
+    [Authorize(Roles = "Master Manager")]
     [ApiController]
     [Route("api/[controller]")]
     public class ScheduleController : ControllerBase

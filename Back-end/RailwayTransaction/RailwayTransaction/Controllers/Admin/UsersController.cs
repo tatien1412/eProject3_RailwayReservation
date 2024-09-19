@@ -12,7 +12,7 @@ using RailwayTransaction.Handler.Admin;
 namespace RailwayTransaction.Controllers.Admin
 {
 
-    [Authorize (Roles="Admin, MasterManagement")]
+    [Authorize (Roles="Admin, Master Manager, Transaction Staff")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
