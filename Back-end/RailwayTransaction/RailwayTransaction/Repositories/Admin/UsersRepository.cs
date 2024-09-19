@@ -12,6 +12,11 @@ namespace RailwayTransaction.Repositories.Admin
         public UsersRepository(ApplicationDbContext context) : base(context)
         {
         }
+
+        public Task AddRangeAsync(IEnumerable<AppUser> entities)
+        {
+            throw new NotImplementedException();
+        }
     }
     //public class UsersRepository : IRepository<AppUser, string>
     //{

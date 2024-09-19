@@ -22,7 +22,7 @@ namespace RailwayTransaction.Domain.Entities
 
         // Khóa ngoại đến bảng Reservation
         [ForeignKey("Reservation")]
-        public int ReservationID { get; set; }
+        public int? ReservationID { get; set; }
         public Reservation Reservation { get; set; }
     }
 }
