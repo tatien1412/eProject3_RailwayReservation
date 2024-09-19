@@ -13,11 +13,6 @@ namespace RailwayTransaction.Domain.Entities
         public int TrainID { get; set; }
         public Train Train { get; set; }
 
-        // Khóa ngoại đến bảng TrainRoute
-        [ForeignKey("TrainTrainRoute")]
-        public int TrainRouteID { get; set; }
-        public TrainRoute TrainRoute { get; set; }
-
         public TimeSpan DepartureTime { get; set; }  // Thời gian khởi hành từ ga đầu
         public TimeSpan ArrivalTime { get; set; }    // Thời gian dự kiến đến ga cuối
 
