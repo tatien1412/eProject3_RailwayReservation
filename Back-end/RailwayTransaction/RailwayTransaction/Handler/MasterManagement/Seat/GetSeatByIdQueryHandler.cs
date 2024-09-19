@@ -34,8 +34,15 @@ namespace RailwayTransaction.Handler.MasterManagement.Seat
             }
 
             var compartment = await _compartmentRepository.GetByIdAsync(seat.CompartmentID);
-            var reservation = await _reservationRepository.GetByIdAsync(seat.ReservationID);
+
+            Domain.Entities.Reservation? reservation = null;
+            if (seat.ReservationID.HasValue)
+            {
+                reservation = await _reservationRepository.GetByIdAsync(seat.ReservationID.Value);  // Chỉ lấy nếu có giá trị
+            }
+
             return SeatMapper.ConvertToResponseAll(seat, compartment, reservation);
         }
+
     }
 }

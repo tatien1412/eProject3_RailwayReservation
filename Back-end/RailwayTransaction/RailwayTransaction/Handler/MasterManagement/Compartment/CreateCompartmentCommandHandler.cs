@@ -42,8 +42,6 @@ namespace RailwayTransaction.Handler.MasterManagement.Compartment
                 Fare = CalculateFare(compartment.CompartmentType, compartment.SeatType)
             }).ToList();
 
-
-
             await _seatRepository.AddRangeAsync(seats);
 
 

@@ -4,7 +4,7 @@ using RailwayTransaction.Domain.Interface;
 
 namespace RailwayTransaction.Handler.MasterManagement.Seat
 {
-    public class CreateSeatCommandHandler : IRequestHandler<CreateSeatCommand, int>
+    public class CreateSeatCommandHandler : IRequestHandler<CreateSeatCommand, int?>
     {
         private readonly IRepository<Domain.Entities.Seat, int> _seatRepository;
 
@@ -13,7 +13,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Seat
             _seatRepository = seatRepository;
         }
 
-        public async Task<int> Handle(CreateSeatCommand request, CancellationToken cancellationToken)
+        public async Task<int?> Handle(CreateSeatCommand request, CancellationToken cancellationToken)
         {
             var seat = new Domain.Entities.Seat
             {

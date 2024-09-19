@@ -17,12 +17,12 @@ namespace RailwayTransaction.Domain.Entities
 
         [MaxLength(20)]
         public string SeatStatus { get; set; }
-       
-        public decimal Fare { get; set; }  // Giá vé, được tính dựa trên loại ghế, khoang và khoảng cách
 
-        // Khóa ngoại đến bảng Reservation
+        public decimal Fare { get; set; }
+
+        // Khóa ngoại đến bảng Reservation, cho phép null
         [ForeignKey("Reservation")]
-        public int? ReservationID { get; set; }
-        public Reservation Reservation { get; set; }
+        public int? ReservationID { get; set; }  // Đây là sự thay đổi
+        public Reservation? Reservation { get; set; }  // Cũng cần nullable ở đây
     }
 }
