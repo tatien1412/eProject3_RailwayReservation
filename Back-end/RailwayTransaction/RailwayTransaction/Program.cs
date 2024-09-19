@@ -21,6 +21,7 @@ var JWTSetting = builder.Configuration.GetSection("JWTSetting");
 // Add services to the container.
 builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IRepository<CashTransaction, int>, CashTransactionRepository>();
 builder.Services.AddScoped<IRepository<Compartment, int>, CompartmentRepository>();
 builder.Services.AddScoped<IRepository<Reservation, int>, ReservationRepository>();
 builder.Services.AddScoped<IRepository<RouteStation, int>, RouteStationRepository>();

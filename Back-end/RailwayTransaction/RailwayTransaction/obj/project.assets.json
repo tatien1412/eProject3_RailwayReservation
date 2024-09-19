@@ -4681,5 +4681,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
+<<<<<<< HEAD
   }
+=======
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Duong\\hoc\\aptech\\proj3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
+>>>>>>> 59cd3f6cbdf9032cff6f549680c4c8aea06180e0
 }
