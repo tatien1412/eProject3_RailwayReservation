@@ -33,7 +33,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Schedule
             }
 
             var train = await _trainRepository.GetByIdAsync(schedule.TrainID);
-            var trainRoute = await _trainRouteRepository.GetByIdAsync(schedule.TrainRouteID);
+            //var trainRoute = await _trainRouteRepository.GetByIdAsync(schedule.TrainRouteID);
             return ScheduleMapper.ConvertToResponseAll(schedule, train);
         }
     }

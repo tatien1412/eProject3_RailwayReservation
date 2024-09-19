@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RailwayTransaction.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -285,6 +285,7 @@ namespace RailwayTransaction.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TrainID = table.Column<int>(type: "int", nullable: false),
                     CompartmentType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    SeatType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     NumberOfSeats = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -305,20 +306,13 @@ namespace RailwayTransaction.Migrations
                     ScheduleID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TrainID = table.Column<int>(type: "int", nullable: false),
-                    TrainRouteID = table.Column<int>(type: "int", nullable: false),
-                    DepartureTime = table.Column<TimeSpan>(type: "time", nullable: false),
-                    ArrivalTime = table.Column<TimeSpan>(type: "time", nullable: false),
+                    DepartureTime = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ArrivalTime = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DayOfWeek = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Schedules", x => x.ScheduleID);
-                    table.ForeignKey(
-                        name: "FK_Schedules_TrainRoutes_TrainRouteID",
-                        column: x => x.TrainRouteID,
-                        principalTable: "TrainRoutes",
-                        principalColumn: "TrainRouteID",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Schedules_Trains_TrainID",
                         column: x => x.TrainID,
@@ -336,7 +330,6 @@ namespace RailwayTransaction.Migrations
                     CompartmentID = table.Column<int>(type: "int", nullable: false),
                     SeatNumber = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     SeatStatus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    SeatType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Fare = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ReservationID = table.Column<int>(type: "int", nullable: false)
                 },
@@ -468,11 +461,6 @@ namespace RailwayTransaction.Migrations
                 name: "IX_Schedules_TrainID",
                 table: "Schedules",
                 column: "TrainID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Schedules_TrainRouteID",
-                table: "Schedules",
-                column: "TrainRouteID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Seats_CompartmentID",

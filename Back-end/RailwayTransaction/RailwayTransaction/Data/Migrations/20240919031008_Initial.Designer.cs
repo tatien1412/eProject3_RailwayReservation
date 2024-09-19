@@ -12,8 +12,8 @@ using RailwayTransaction.Data.DataContext;
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240917131035_init2")]
-    partial class init2
+    [Migration("20240919031008_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -321,28 +321,25 @@ namespace RailwayTransaction.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ScheduleID"));
 
-                    b.Property<TimeSpan>("ArrivalTime")
-                        .HasColumnType("time");
+                    b.Property<string>("ArrivalTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DayOfWeek")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<TimeSpan>("DepartureTime")
-                        .HasColumnType("time");
+                    b.Property<string>("DepartureTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TrainID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TrainRouteID")
                         .HasColumnType("int");
 
                     b.HasKey("ScheduleID");
 
                     b.HasIndex("TrainID");
-
-                    b.HasIndex("TrainRouteID");
 
                     b.ToTable("Schedules");
                 });
@@ -633,15 +630,7 @@ namespace RailwayTransaction.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.TrainRoute", "TrainRoute")
-                        .WithMany()
-                        .HasForeignKey("TrainRouteID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Train");
-
-                    b.Navigation("TrainRoute");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Seat", b =>

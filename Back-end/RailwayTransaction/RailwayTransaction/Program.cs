@@ -1,4 +1,4 @@
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -35,7 +35,15 @@ builder.Services.AddScoped<IRepository<AppUser, string>, UsersRepository>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = true;            // Yêu cầu có chữ số
+    options.Password.RequiredLength = 6;             // Độ dài tối thiểu
+    options.Password.RequireNonAlphanumeric = false; // Không yêu cầu ký tự đặc biệt
+    options.Password.RequireUppercase = true;        // Yêu cầu chữ in hoa
+    options.Password.RequireLowercase = true;        // Yêu cầu chữ thường
+    options.Password.RequiredUniqueChars = 1;
+}).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 builder.Services.AddAuthentication(opt =>
 {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

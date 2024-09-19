@@ -12,8 +12,8 @@ using RailwayTransaction.Data.DataContext;
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240916145032_init")]
-    partial class init
+    [Migration("20240919103943_seatnew")]
+    partial class seatnew
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -174,6 +174,11 @@ namespace RailwayTransaction.Migrations
                     b.Property<int>("NumberOfSeats")
                         .HasColumnType("int");
 
+                    b.Property<string>("SeatType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<int>("TrainID")
                         .HasColumnType("int");
 
@@ -316,28 +321,25 @@ namespace RailwayTransaction.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ScheduleID"));
 
-                    b.Property<TimeSpan>("ArrivalTime")
-                        .HasColumnType("time");
+                    b.Property<string>("ArrivalTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DayOfWeek")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<TimeSpan>("DepartureTime")
-                        .HasColumnType("time");
+                    b.Property<string>("DepartureTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TrainID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TrainRouteID")
                         .HasColumnType("int");
 
                     b.HasKey("ScheduleID");
 
                     b.HasIndex("TrainID");
-
-                    b.HasIndex("TrainRouteID");
 
                     b.ToTable("Schedules");
                 });
@@ -356,7 +358,7 @@ namespace RailwayTransaction.Migrations
                     b.Property<decimal>("Fare")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("ReservationID")
+                    b.Property<int?>("ReservationID")
                         .HasColumnType("int");
 
                     b.Property<string>("SeatNumber")
@@ -368,11 +370,6 @@ namespace RailwayTransaction.Migrations
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("SeatType")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("SeatID");
 
@@ -633,15 +630,7 @@ namespace RailwayTransaction.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.TrainRoute", "TrainRoute")
-                        .WithMany()
-                        .HasForeignKey("TrainRouteID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Train");
-
-                    b.Navigation("TrainRoute");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Seat", b =>
@@ -655,8 +644,7 @@ namespace RailwayTransaction.Migrations
                     b.HasOne("RailwayTransaction.Domain.Entities.Reservation", "Reservation")
                         .WithMany("Seats")
                         .HasForeignKey("ReservationID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Compartment");
 
