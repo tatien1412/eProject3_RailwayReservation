@@ -3,7 +3,7 @@ using RailwayTransaction.Domain.Entities;
 
 namespace RailwayTransaction.Repositories.MasterManagement
 {
-    public class TrainRouteRepository : Repository<TrainRoute>
+    public class TrainRouteRepository : Repository<TrainRoute, int>
     {
         public TrainRouteRepository(ApplicationDbContext context) : base(context)
         {

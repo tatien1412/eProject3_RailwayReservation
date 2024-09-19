@@ -11,11 +11,8 @@ using RailwayTransaction.Handler.Admin;
 
 namespace RailwayTransaction.Controllers.Admin
 {
-<<<<<<< HEAD:Back-end/RailwayTransaction/RailwayTransaction/Controllers/UsersController.cs
+
     [Authorize (Roles="Admin, MasterManagement")]
-=======
-    [Authorize(Roles = "Admin")]
->>>>>>> 3c199aca0e4ed3fd6f46400c29c1e11c3edc146b:Back-end/RailwayTransaction/RailwayTransaction/Controllers/Admin/UsersController.cs
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -26,11 +23,7 @@ namespace RailwayTransaction.Controllers.Admin
             _mediator = mediator;
         }
 
-<<<<<<< HEAD:Back-end/RailwayTransaction/RailwayTransaction/Controllers/UsersController.cs
         [HttpGet("getall")]  
-=======
-        [HttpGet]
->>>>>>> 3c199aca0e4ed3fd6f46400c29c1e11c3edc146b:Back-end/RailwayTransaction/RailwayTransaction/Controllers/Admin/UsersController.cs
         public async Task<IActionResult> GetAll()
         {
             var userList = await _mediator.Send(new GetAllUsersQuery());
