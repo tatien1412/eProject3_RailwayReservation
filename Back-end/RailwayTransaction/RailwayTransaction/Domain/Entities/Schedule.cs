@@ -13,8 +13,15 @@ namespace RailwayTransaction.Domain.Entities
         public int TrainID { get; set; }
         public Train Train { get; set; }
 
-        public TimeSpan DepartureTime { get; set; }  // Thời gian khởi hành từ ga đầu
-        public TimeSpan ArrivalTime { get; set; }    // Thời gian dự kiến đến ga cuối
+        // Khóa ngoại đến bảng TrainRoute
+        //[ForeignKey("TrainTrainRoute")]
+        //public int TrainRouteID { get; set; }
+        //public TrainRoute TrainRoute { get; set; }
+
+        [RegularExpression(@"^([01]\d|2[0-3]):([0-5]\d)$", ErrorMessage = "Invalid time format. Must be HH:mm.")]
+        public string DepartureTime { get; set; }  // Thời gian khởi hành từ ga đầu
+        [RegularExpression(@"^([01]\d|2[0-3]):([0-5]\d)$", ErrorMessage = "Invalid time format. Must be HH:mm.")]
+        public string ArrivalTime { get; set; }    // Thời gian dự kiến đến ga cuối
 
         // Ngày trong tuần chuyến tàu hoạt động
         [MaxLength(50)]

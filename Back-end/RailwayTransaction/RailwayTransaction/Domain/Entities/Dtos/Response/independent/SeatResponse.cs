@@ -11,6 +11,6 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Response.independent
         public string SeatStatus { get; set; }
         public string SeatType { get; set; } 
         public decimal Fare { get; set; } 
-        public int ReservationID { get; set; }
+        public int? ReservationID { get; set; }
     }
 }

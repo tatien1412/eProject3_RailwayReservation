@@ -39,5 +39,11 @@ namespace RailwayTransaction.Repositories
             _entity.Remove(entity);
             await _context.SaveChangesAsync();
         }
+
+        public async Task AddRangeAsync(IEnumerable<T> entities)
+        {
+            await _entity.AddRangeAsync(entities);  
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -27,9 +27,14 @@ namespace RailwayTransaction.Handler.Admin
             var existingUser = await _userManager.FindByNameAsync(command.UserName);
             if (existingUser != null)
             {
-                throw new Exception($"Username '{command.UserName}' is already taken.");
+                throw new BadHttpRequestException($"Username '{command.UserName}' is already taken.");
             }
-
+            // Kiểm tra xem user đã tồn tại với cùng email hay chưa
+            var existingEmailUser = await _userManager.FindByEmailAsync(command.Email);
+            if (existingEmailUser != null)
+            {
+                throw new BadHttpRequestException($"Email '{command.Email}' is already in use.");
+            }
             var appUser = new AppUser
             {
                 FullName = command.FullName,

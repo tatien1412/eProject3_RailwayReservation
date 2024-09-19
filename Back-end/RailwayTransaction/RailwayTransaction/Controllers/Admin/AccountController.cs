@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Commands.Login;
 using RailwayTransaction.Domain.Entities.Dtos;
 
-namespace RailwayTransaction.Controllers
+namespace RailwayTransaction.Controllers.Admin
 {
     [Authorize]
     [Route("api/[controller]")]
@@ -23,7 +23,7 @@ namespace RailwayTransaction.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginCommand command)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
