@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using RailwayTransaction.Application.Commands.MasterManagement.Trip;
 using RailwayTransaction.Domain.Interface;
 
-namespace RailwayTransaction.Handler.MasterManagement.Train
+namespace RailwayTransaction.Handler.MasterManagement.Trip
 {
     public class UpdateTripCommandHandler : IRequestHandler<UpdateTripCommand>
     {
