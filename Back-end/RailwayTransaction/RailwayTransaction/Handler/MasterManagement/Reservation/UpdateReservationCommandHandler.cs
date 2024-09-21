@@ -17,25 +17,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
             _cashTransactionRepository = cashTransactionRepository;
         }
 
-        private async Task<int> CalculateDistanceAsync(int tripId)
-        {
-            // Lấy thông tin Trip từ bảng Trip
-            var trip = await _tripRepository.GetByIdAsync(tripId);
-
-            if (trip == null)
-            {
-                throw new Exception("Trip not found");
-            }
-
-            // Lấy thông tin ga khởi hành và ga kết thúc từ RouteStation
-            var startStation = await _routeStationRepository.GetByStationIdAsync(trip.StartStationID);
-            var endStation = await _routeStationRepository.GetByStationIdAsync(trip.EndStationID);
-
-            // Tính toán khoảng cách dựa trên OrderInRoute của các ga
-            int distance = Math.Abs(endStation.OrderInRoute - startStation.OrderInRoute);
-
-            return distance;
-        }
+      
 
 
         public async Task<Unit> Handle(UpdateReservationCommand request, CancellationToken cancellationToken)
