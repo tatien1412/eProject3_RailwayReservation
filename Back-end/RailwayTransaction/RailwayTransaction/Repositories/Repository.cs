@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Interface;
+using System.Linq.Expressions;
 
 namespace RailwayTransaction.Repositories
 {
@@ -23,6 +24,12 @@ namespace RailwayTransaction.Repositories
         {
             return await _entity.ToListAsync();
         }
+
+        public async Task<IEnumerable<T>> GetAllAsyncWithPredicate(Expression<Func<T, bool>> predicate)
+        {
+            return await _entity.Where(predicate).ToListAsync();
+        }
+
         public async Task<T> AddAsync(T entity)
         {
             var result = await _entity.AddAsync(entity);
@@ -43,6 +50,12 @@ namespace RailwayTransaction.Repositories
         public async Task AddRangeAsync(IEnumerable<T> entities)
         {
             await _entity.AddRangeAsync(entities);  
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task RemoveRangeAsync(IEnumerable<T> entities)
+        {
+            _entity.RemoveRange(entities);
             await _context.SaveChangesAsync();
         }
     }

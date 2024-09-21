@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RailwayTransaction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59cd3f6cbdf9032cff6f549680c4c8aea06180e0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e66a16dde3b186f7e2b561a965b8200c56c8baf4")]
+>>>>>>> adc07b01dfe9b0aa481e06088be7685aed5550f6
 [assembly: System.Reflection.AssemblyProductAttribute("RailwayTransaction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RailwayTransaction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

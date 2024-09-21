@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using RailwayTransaction.Application.Commands.MasterManagement.Reservation;
 using RailwayTransaction.Domain.Interface;
+using RailwayTransaction.Repositories.MasterManagement;
 
 namespace RailwayTransaction.Handler.MasterManagement.Reservation
 {
@@ -15,6 +16,9 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
             _reservationRepository = reservationRepository;
             _cashTransactionRepository = cashTransactionRepository;
         }
+
+      
+
 
         public async Task<Unit> Handle(UpdateReservationCommand request, CancellationToken cancellationToken)
         {
