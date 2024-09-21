@@ -19,7 +19,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get all Compartments
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<IActionResult> GetAllCompartments()
         {
             var query = new GetAllCompartmentsQuery();
@@ -34,7 +34,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get Compartment by ID
-        [HttpGet("{id}")]
+        [HttpGet("detail/{id}")]
         public async Task<IActionResult> GetCompartmentById(int id)
         {
             var query = new GetCompartmentByIdQuery(id);
@@ -62,7 +62,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Update an existing Compartment
-        [HttpPut("{id}")]
+        [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateCompartment(int id, [FromBody] UpdateCompartmentCommand command)
         {
             if (id != command.CompartmentID)
@@ -75,7 +75,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Delete a Compartment
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteCompartment(int id)
         {
             await _mediator.Send(new DeleteCompartmentCommand { CompartmentID = id });
