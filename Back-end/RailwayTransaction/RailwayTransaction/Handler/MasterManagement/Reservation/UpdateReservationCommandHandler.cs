@@ -35,6 +35,33 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
 
             await _reservationRepository.UpdateAsync(reservation);
 
+            Domain.Entities.CashTransaction cashTransaction = (await _cashTransactionRepository.GetAllAsync()).Where(c => c.DateOftransaction.Equals(reservation.DateOfJourney)).FirstOrDefault();
+            if (cashTransaction == null)
+            {
+                var new_CashTransaction = new Domain.Entities.CashTransaction
+                {
+                    CashReceived = (reservation.TotalFare < request.TotalFare) ?(request.TotalFare- reservation.TotalFare):0,
+                    CashRefunded = (reservation.TotalFare > request.TotalFare) ? (reservation.TotalFare - request.TotalFare) : 0,
+                    DateOftransaction = reservation.DateOfJourney,
+                };
+                await _cashTransactionRepository.AddAsync(new_CashTransaction);
+            }
+            else
+            {
+                if(reservation.TotalFare < request.TotalFare)
+                {
+                    
+                    cashTransaction.CashReceived += request.TotalFare - reservation.TotalFare;
+                    cashTransaction.CashRefunded = cashTransaction.CashRefunded;
+                }
+                else
+                {
+                    cashTransaction.CashReceived = cashTransaction.CashReceived;
+                    cashTransaction.CashRefunded += reservation.TotalFare - request.TotalFare;
+                }
+                cashTransaction.DateOftransaction = reservation.DateOfJourney;
+                await _cashTransactionRepository.UpdateAsync(cashTransaction);
+            }
             return Unit.Value;
         }
     }

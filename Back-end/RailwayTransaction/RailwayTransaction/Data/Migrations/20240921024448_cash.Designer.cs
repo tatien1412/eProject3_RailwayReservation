@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RailwayTransaction.Data.DataContext;
 
@@ -11,9 +12,11 @@ using RailwayTransaction.Data.DataContext;
 namespace RailwayTransaction.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240921024448_cash")]
+    partial class cash
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -155,29 +158,6 @@ namespace RailwayTransaction.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.CashTransaction", b =>
-                {
-                    b.Property<int>("CashTransactionID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CashTransactionID"));
-
-                    b.Property<decimal>("CashReceived")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("CashRefunded")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("DateOftransaction")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CashTransactionID");
-
-                    b.ToTable("CashTransactions");
-                });
-
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Compartment", b =>
                 {
                     b.Property<int>("CompartmentID")
@@ -288,9 +268,6 @@ namespace RailwayTransaction.Migrations
                     b.Property<string>("AppUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("CashTransactionID")
-                        .HasColumnType("int");
-
                     b.Property<string>("DateOfJourney")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -304,8 +281,6 @@ namespace RailwayTransaction.Migrations
                     b.HasKey("ReservationID");
 
                     b.HasIndex("AppUserId");
-
-                    b.HasIndex("CashTransactionID");
 
                     b.HasIndex("PnrNo");
 
@@ -619,18 +594,11 @@ namespace RailwayTransaction.Migrations
                         .WithMany("Reservations")
                         .HasForeignKey("AppUserId");
 
-                    b.HasOne("RailwayTransaction.Domain.Entities.CashTransaction", "CashTransaction")
-                        .WithMany("Reservations")
-                        .HasForeignKey("CashTransactionID")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("RailwayTransaction.Domain.Entities.Ticket", "Ticket")
                         .WithMany()
                         .HasForeignKey("PnrNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("CashTransaction");
 
                     b.Navigation("Ticket");
                 });
@@ -727,11 +695,6 @@ namespace RailwayTransaction.Migrations
                     b.Navigation("Schedule");
 
                     b.Navigation("StartStation");
-                });
-
-            modelBuilder.Entity("RailwayTransaction.Domain.Entities.CashTransaction", b =>
-                {
-                    b.Navigation("Reservations");
                 });
 
             modelBuilder.Entity("RailwayTransaction.Domain.Entities.Compartment", b =>

@@ -19,5 +19,9 @@ namespace RailwayTransaction.Domain.Entities
 
         // Navigation property: Một vé có thể đặt nhiều ghế
         public ICollection<Seat> Seats { get; set; }
+
+
+        public int? CashTransactionID { get; set; }
+        public CashTransaction CashTransaction { get; set; }
     }
 }
