@@ -21,6 +21,7 @@ var JWTSetting = builder.Configuration.GetSection("JWTSetting");
 // Add services to the container.
 builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IRepository<CashTransaction, int>, CashTransactionRepository>();
 builder.Services.AddScoped<IRepository<Compartment, int>, CompartmentRepository>();
 builder.Services.AddScoped<IRepository<Reservation, int>, ReservationRepository>();
 builder.Services.AddScoped<IRepository<RouteStation, int>, RouteStationRepository>();
@@ -41,7 +42,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     options.Password.RequiredLength = 6;             // Độ dài tối thiểu
     options.Password.RequireNonAlphanumeric = false; // Không yêu cầu ký tự đặc biệt
     options.Password.RequireUppercase = true;        // Yêu cầu chữ in hoa
-    options.Password.RequireLowercase = true;        // Yêu cầu chữ thường
+    options.Password.RequireLowercase = true;        
     options.Password.RequiredUniqueChars = 1;
 }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 builder.Services.AddAuthentication(opt =>

@@ -87,7 +87,6 @@ namespace RailwayTransaction.Data.DataContext
                 .WithMany(t => t.Schedules)
                 .HasForeignKey(s => s.TrainID)
                 .OnDelete(DeleteBehavior.Cascade);  // Hoặc sử dụng DeleteBehavior.NoAction để tránh vòng lặp
-
         }
     }
 }
