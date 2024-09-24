@@ -17,6 +17,7 @@ namespace RailwayTransaction.Data.DataContext
         public DbSet<RouteStation> RouteStations { get; set; }
         public DbSet<Station> Stations { get; set; }
         public DbSet<Train> Trains { get; set; }
+        public DbSet<CashTransaction> CashTransactions { get; set; }
         public DbSet<Compartment> Compartments { get; set; }
         public DbSet<Seat> Seats { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
@@ -67,6 +68,12 @@ namespace RailwayTransaction.Data.DataContext
                 .HasForeignKey(s => s.ReservationID)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<Reservation>()
+                .HasOne(r => r.CashTransaction)
+                .WithMany(c => c.Reservations)
+                .HasForeignKey(c => c.CashTransactionID)
+                .OnDelete(DeleteBehavior.Restrict);
+
             // 8. Trip - Station: Liên kết giữa Trip và ga xuất phát/ga đến
             modelBuilder.Entity<Trip>()
                 .HasOne(t => t.StartStation)
@@ -86,7 +93,15 @@ namespace RailwayTransaction.Data.DataContext
                 .HasOne(s => s.Train)
                 .WithMany(t => t.Schedules)
                 .HasForeignKey(s => s.TrainID)
-                .OnDelete(DeleteBehavior.Cascade);  // Hoặc sử dụng DeleteBehavior.NoAction để tránh vòng lặp
+                .OnDelete(DeleteBehavior.Cascade);
+
+
+            //10. Cấu hình quan hệ giữa CashTransaction và Reservation
+            modelBuilder.Entity<CashTransaction>()
+                .HasMany(r => r.Reservations)
+                .WithOne(c => c.CashTransaction)
+                .HasForeignKey(c => c.CashTransactionID)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

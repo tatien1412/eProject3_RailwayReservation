@@ -26,6 +26,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Schedule
             schedule.DepartureTime = request.DepartureTime;
             schedule.ArrivalTime = request.ArrivalTime;
             schedule.DayOfWeek = request.DayOfWeek;
+            schedule.DateOfTravel = request.DateOfTravel;
             await _scheduleRepository.UpdateAsync(schedule);
 
             return Unit.Value;

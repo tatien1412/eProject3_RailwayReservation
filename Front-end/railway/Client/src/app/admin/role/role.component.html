@@ -1,0 +1,21 @@
+<div class="flex items-center flex-col h-screen hero" style="background-image: url('/images/new.png'); background-size: cover; background-position: center;">
+    <div class="w-full max-w-5xl py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg" style="margin-top: 80px;">
+        <h1 class="text-4xl font-extrabold text-white text-center mb-4">All Roles</h1>
+        <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+            <table class="min-w-full table-auto rounded-lg overflow-hidden">
+                <thead class="bg-blue-500 text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Role Name</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Total Users</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr *ngFor="let role of roles$ | async">
+                        <td class="px-6 py-4 whitespace-nowrap">{{ role.name }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ role.totalUsers }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

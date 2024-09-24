@@ -21,7 +21,8 @@ namespace RailwayTransaction.Handler.MasterManagement.Schedule
                 //TrainRouteID = request.TrainRouteID,
                 DepartureTime = request.DepartureTime,
                 ArrivalTime = request.ArrivalTime,
-                DayOfWeek = request.DayOfWeek
+                DayOfWeek = request.DayOfWeek,
+                DateOfTravel = request.DateOfTravel,
             };
 
             await _scheduleRepository.AddAsync(schedule);

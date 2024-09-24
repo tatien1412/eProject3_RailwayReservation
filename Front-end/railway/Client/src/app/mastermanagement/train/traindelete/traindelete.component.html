@@ -1,0 +1,100 @@
+<div class="hero" style="background-image: url('/images/new1.jpg');">
+  <div class="container mx-auto p-6 pt-40 max-w-4xl">
+    <div *ngIf="trainDetail$ | async as trainDetail; else loading">
+      <h2 class="text-3xl font-bold mb-6 text-white text-center">Delete Train</h2>
+
+      <!-- Train Details Section -->
+      <div class="mb-6 bg-white shadow-md rounded-lg p-6" style="background-color: rgba(255, 255, 255, 0.7);">
+        <h3 class="text-2xl font-bold mb-4 text-gray-700">Train</h3>
+        <div class="grid grid-cols-2 gap-4"> <!-- Chia thành 2 cột -->
+          <div>
+            <p class="text-lg">
+              <span class="font-semibold">Train ID:</span> {{ trainDetail.trainID }}
+            </p>
+            <p class="text-lg">
+              <span class="font-semibold">Train Name:</span> {{ trainDetail.trainName }}
+            </p>
+            <p class="text-lg">
+              <span class="font-semibold">Train Route Name:</span> {{ trainDetail.trainRoute.trainRouteName }}
+            </p>
+          </div>
+          <div>
+            <p class="text-lg">
+              <span class="font-semibold">Number of Compartments:</span> {{ trainDetail.numberOfCompartments }}
+            </p>
+            <p class="text-lg">
+              <span class="font-semibold">Train Status:</span> {{ trainDetail.trainStatus }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Schedule Table Section -->
+      <div class="mb-6 bg-white shadow-md rounded-lg p-6" style="background-color: rgba(255, 255, 255, 0.7);">
+        <h3 class="text-2xl font-bold mb-4 text-gray-700">Schedules</h3>
+        <table class="min-w-full bg-white border-separate border-spacing-0" style="border-radius: 8px; overflow: hidden;"> <!-- Thêm border-radius -->
+          <thead>
+            <tr class="bg-gray-200 border-b">
+              <th class="py-2 border-r">Day of Week</th> <!-- Thêm border-r cho đường ngăn cách -->
+              <th class="py-2 border-r">Departure Time</th> <!-- Thêm border-r -->
+              <th class="py-2 border-r">Arrival Time</th>
+              <th class="py-2 border-r">Date Of Travel</th> 
+              <th class="py-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let schedule of trainDetail.schedules" class="border-b">
+              <td class="text-center py-2 border-r">{{ schedule.dayOfWeek }}</td>
+              <td class="text-center py-2 border-r">{{ schedule.departureTime }}</td>
+              <td class="text-center py-2 border-r">{{ schedule.arrivalTime }}</td>
+              <td class="text-center py-2">{{ schedule.dateOfTravel }}</td>
+              <td class="text-center py-2">
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" (click)="deleteSchedule(schedule.scheduleID)">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Compartment Table Section -->
+      <div class="mb-4 bg-white shadow-md rounded-lg p-6 w-full" style="background-color: rgba(255, 255, 255, 0.7); max-height: 300px; overflow-y: auto;">
+        <h3 class="text-2xl font-bold mb-4 text-gray-700">Compartments</h3>
+        <table class="min-w-full bg-white border-separate border-spacing-0" style="border-radius: 8px; overflow: hidden;"> <!-- Thêm border-radius -->
+          <thead>
+            <tr class="bg-gray-200 border-b">
+              <th class="py-2 border-r">Compartment ID</th> <!-- Thêm border-r cho đường ngăn cách -->
+              <th class="py-2 border-r">Compartment Type</th>
+              <th class="py-2 border-r">Seat Type</th>
+              <th class="py-2 border-r">Number of Seats</th>
+              <th class="py-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let compartment of trainDetail.compartments" class="border-b">
+              <td class="text-center py-2 border-r">{{ compartment.compartmentID }}</td>
+              <td class="text-center py-2 border-r">{{ compartment.compartmentType }}</td>
+              <td class="text-center py-2 border-r">{{ compartment.seatType }}</td>
+              <td class="text-center py-2 border-r">{{ compartment.numberOfSeats }}</td>
+              <td class="text-center py-2">
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" (click)="deleteCompartment(compartment.compartmentID)">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Nút điều hướng -->
+      <button class="mt-4 mr-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="goBack()">Back to Trains</button>
+      <button class="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" (click)="confirmDelete(trainDetail.trainID)">
+        Delete Train
+      </button>
+    </div>    
+    <ng-template #loading>
+      <p class="text-center text-gray-500">Loading train details...</p>
+    </ng-template>
+  </div>
+</div>
