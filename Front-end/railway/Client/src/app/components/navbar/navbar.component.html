@@ -27,6 +27,16 @@
             Trains
           </a>
 
+          <!-- Nếu người dùng là Transaction Staff -->
+          <a *ngIf="userDetail?.role.includes('Transaction Staff')" mat-button routerLink="/booking" style="color: white;">
+            <mat-icon>confirmation_number</mat-icon>
+            Booking
+          </a>
+          <a *ngIf="userDetail?.role.includes('Transaction Staff')" mat-button routerLink="/dashboard" style="color: white;">
+            <mat-icon>event</mat-icon>
+            Daily
+          </a>
+
           <a [matMenuTriggerFor]="menu" class="flex gap-2 cursor-pointer items-center">
             <!-- Hiển thị ký tự đầu tiên của tên người dùng nếu tồn tại -->
             <div class="bg-blue-100 font-bold shadow-md rounded-full w-5 h-5 p-5 flex justify-center items-center">

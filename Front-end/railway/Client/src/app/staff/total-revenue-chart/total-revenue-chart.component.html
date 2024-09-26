@@ -1,0 +1,22 @@
+
+<div class="flex items-center flex-col h-screen hero" style="background-image: url('/images/new6.jpg'); background-size: cover; background-position: center;">
+    <div class="w-full max-w-5xl py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg" style="margin-top: 80px;">
+      <h1 class="text-4xl font-extrabold text-white text-center mb-4">Dailycash Transaction</h1>
+        <div id="chart">
+            <div class="btn-group mb-3">
+              <button type="button" class="btn btn-light" (click)="setYear(2023)">2023</button>
+              <button type="button" class="btn btn-light" (click)="setYear(2022)">2022</button>
+            </div>
+            
+            <apx-chart
+              [series]="series"
+              [chart]="chart"
+              [xaxis]="xaxis"
+              [yaxis]="yaxis"
+              [dataLabels]="dataLabels"
+              [title]="title"
+              [legend]="legend"
+            ></apx-chart>
+        </div>
+    </div>
+</div>

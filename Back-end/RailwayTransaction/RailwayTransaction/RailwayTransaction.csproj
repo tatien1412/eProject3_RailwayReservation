@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Application\Queries\Staff\Cash\**" />
+    <Content Remove="Application\Queries\Staff\Cash\**" />
+    <EmbeddedResource Remove="Application\Queries\Staff\Cash\**" />
+    <None Remove="Application\Queries\Staff\Cash\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />

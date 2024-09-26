@@ -4,7 +4,7 @@ namespace RailwayTransaction.Application.Commands.MasterManagement.CashTransacti
 {
     public class CreateCashTransactionCommand : IRequest<int>
     {
-        public String DateOftransaction { get; set; }
+        public string DateOftransaction { get; set; }
         public decimal Cashreceived { get; set; }
         public decimal CashRefunded { get; set; }
     }

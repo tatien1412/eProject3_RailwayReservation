@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
-    [Authorize(Roles = "Master Manager")]
+    [Authorize(Roles = "Master Manager, Transaction Staff")]
     [ApiController]
     [Route("api/[controller]")]
     public class TrainRouteController : ControllerBase

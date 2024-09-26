@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Ticket;
 using RailwayTransaction.Application.Commands.MasterManagement.Ticket;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "Master Manager, Transaction Staff")]
     [ApiController]
     [Route("api/[controller]")]
     public class TicketController : ControllerBase

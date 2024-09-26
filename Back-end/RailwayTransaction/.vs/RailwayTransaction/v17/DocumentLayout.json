@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -56,10 +60,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\ticket\\createticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\ticket\\createticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|d:\\quy project\\project 3\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,19 +129,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeleteScheduleCommandHandler.cs",
-              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
-              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T13:12:15.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Schedule.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Schedule.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Schedule.cs",
@@ -149,12 +137,11 @@
               "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Schedule.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T02:47:16.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T02:47:16.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CreateScheduleCommandHandler.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
@@ -166,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CreateScheduleCommand.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
@@ -178,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Train.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Train.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Train.cs",
@@ -190,20 +177,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Seat.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Seat.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Seat.cs",
               "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Seat.cs",
               "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Seat.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAA5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-19T10:31:18.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
+              "RelativeDocumentMoniker": "RailwayTransaction\\appsettings.json",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
+              "RelativeToolTip": "RailwayTransaction\\appsettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-21T02:08:18.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeleteScheduleCommandHandler.cs",
+              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
+              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T13:12:15.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UpdateScheduleCommandHandler.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
@@ -215,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "dbo.Schedules [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_EKJOT2A_ADMIN/eProject3_RailwayReservationDB/sa/SqlTable/dbo.Schedules.sql",
               "ToolTip": "dbo.Schedules [Data]",
@@ -236,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UpdateScheduleCommand.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
@@ -248,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ScheduleMapper.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
@@ -260,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ScheduleResponse_joined.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
@@ -272,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ScheduleResponse.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
@@ -284,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UpdateReservationCommandHandler.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
@@ -296,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CreateTicketCommand.cs",
               "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
@@ -353,18 +365,6 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T02:08:28.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
-              "RelativeDocumentMoniker": "RailwayTransaction\\appsettings.json",
-              "ToolTip": "D:\\Quy Project\\Project 3\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
-              "RelativeToolTip": "RailwayTransaction\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-21T02:08:18.873Z"
             },
             {
               "$type": "Document",

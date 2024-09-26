@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Reservation;
 using RailwayTransaction.Application.Commands.MasterManagement.Reservation;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "Master Manager, Transaction Staff")]
     [ApiController]
     [Route("api/[controller]")]
     public class ReservationController : ControllerBase

@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Seat;
 using RailwayTransaction.Application.Commands.MasterManagement.Seat;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+    [Authorize(Roles = "Master Manager, Transaction Staff")]
     [ApiController]
     [Route("api/[controller]")]
     public class SeatController : ControllerBase

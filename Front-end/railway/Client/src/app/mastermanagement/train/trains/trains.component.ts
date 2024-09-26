@@ -21,7 +21,7 @@ export class TrainsComponent implements OnInit {
   trainRoutes$: Observable<TrainRoute[]> = this.trainRouteService.getAllTrainRoutes();  // Gọi API từ TrainRouteService
 
   paginatedTrains$!: Observable<(Train & { trainRouteName: string })[]>; // Observable cho trang
-
+  totalTrain: number = 0;
   router = inject(Router);
   currentPage: number = 1; 
   pageSize: number = 5;
@@ -73,8 +73,8 @@ export class TrainsComponent implements OnInit {
   }
 
   onNextPage(): void {
-    this.currentPage++;
-    this.loadTrains();
+      this.currentPage++;
+      this.loadTrains();
   }
 
   trackById(index: number, item: Train): number {
