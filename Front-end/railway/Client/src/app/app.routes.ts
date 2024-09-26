@@ -21,6 +21,10 @@ import { TrainupdateComponent } from './mastermanagement/train/trainupdate/train
 import { TraindeleteComponent } from './mastermanagement/train/traindelete/traindelete.component';
 import { TrainsComponent } from './mastermanagement/train/trains/trains.component';
 import { TraindetailComponent } from './mastermanagement/train/traindetail/traindetail.component';
+import { TotalRevenueChartComponent } from './staff/total-revenue-chart/total-revenue-chart.component';
+import { SearchComponent } from './staff/search/search.component';
+import { BookingComponent } from './staff/booking/booking.component';
+import { TicketComponent } from './staff/ticket/ticket.component';
 
 export const routes: Routes = [
     {
@@ -127,5 +131,22 @@ export const routes: Routes = [
     //     path: 'compartment/create',
         
     // }
+    // Staff
+    {
+        path: 'booking',
+        component: BookingComponent
+    },
+    {
+        path: 'search/:FromStationId/:ToStationId/:DateOfTravel/:TotalPassengers',
+        component: SearchComponent
+    },
+    {
+        path: 'dashboard',
+        component: TotalRevenueChartComponent
+    },
+    {
+        path: 'ticket',
+        component: TicketComponent
+    }
 ];
 

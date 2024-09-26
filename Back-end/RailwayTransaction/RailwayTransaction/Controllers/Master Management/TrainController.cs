@@ -7,7 +7,7 @@ using RailwayTransaction.Domain.Entities;
 
 namespace RailwayTransaction.Controllers
 {
-    [Authorize(Roles = "Master Manager")]
+    //[Authorize(Roles = "Master Manager")]
     [ApiController]
     [Route("api/[controller]")]
     public class TrainController : ControllerBase

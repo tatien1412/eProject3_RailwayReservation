@@ -1,0 +1,48 @@
+
+  
+<div class="flex items-center flex-col h-screen hero" style="background-image: url('/images/new.png'); background-size: cover; background-position: center;">
+  <div class="w-full max-w-5xl py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg" style="margin-top: 60px;">
+    <div class="container mx-auto p-8">
+      <h1 class="text-2xl font-bold mb-4">Tìm kiếm vé tàu</h1>
+      
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">Nhập mã PNR:</label>
+        <input type="text" [(ngModel)]="PnrNo" class="w-full p-2 border rounded" placeholder="Nhập mã PNR" />
+      </div>
+    
+      <button (click)="searchTicket(PnrNo)" class="btn btn-primary mb-4">Tìm kiếm</button>
+  
+      <div *ngIf="ticket$ | async as ticket">
+        <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+          <table class="min-w-full table-auto rounded-lg overflow-hidden">
+              <thead class="bg-blue-500 text-white">
+                  <tr>
+                      <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">PnrNo</th>
+                      <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Name</th>
+                      <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Age</th>
+                      <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Gender</th>
+                      <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Total</th>
+                      <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider"></th>
+                  </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                      <td class="px-6 py-4 whitespace-nowrap">{{ PnrNo }}</td>
+                      <td class="px-6 py-4 whitespace-nowrap">{{ ticket.name }}</td>
+                      <td class="px-6 py-4 whitespace-nowrap">{{ ticket.age }}</td>
+                      <td class="px-6 py-4 whitespace-nowrap">{{ ticket.gender}}</td>
+                      <td class="px-6 py-4 whitespace-nowrap">{{ ticket.totalPassengers}}</td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                          <button type="button" class="btn btn-success"(click)="deleteticket(PnrNo)">Cancel</button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      </div>
+    
+  
+    </div>
+  </div>
+</div>
+  

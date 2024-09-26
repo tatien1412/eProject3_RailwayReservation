@@ -9,6 +9,7 @@ using RailwayTransaction.Data.DataContext;
 using RailwayTransaction.Domain.Entities;
 using RailwayTransaction.Domain.Entities.Dtos;
 using RailwayTransaction.Domain.Interface;
+using RailwayTransaction.Handler.MasterManagement.Schedule;
 using RailwayTransaction.Repositories.Admin;
 using RailwayTransaction.Repositories.MasterManagement;
 using System;
@@ -21,7 +22,7 @@ var JWTSetting = builder.Configuration.GetSection("JWTSetting");
 // Add services to the container.
 builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
-builder.Services.AddScoped<IRepository<CashTransaction, int>, CashTransactionRepository>();
+builder.Services.AddScoped<IRepository<CashTransaction,int> ,CashTransactionRepository>();
 builder.Services.AddScoped<IRepository<Compartment, int>, CompartmentRepository>();
 builder.Services.AddScoped<IRepository<Reservation, int>, ReservationRepository>();
 builder.Services.AddScoped<IRepository<RouteStation, int>, RouteStationRepository>();
@@ -36,15 +37,7 @@ builder.Services.AddScoped<IRepository<AppUser, string>, UsersRepository>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
-{
-    options.Password.RequireDigit = true;            // Yêu cầu có chữ số
-    options.Password.RequiredLength = 6;             // Độ dài tối thiểu
-    options.Password.RequireNonAlphanumeric = false; // Không yêu cầu ký tự đặc biệt
-    options.Password.RequireUppercase = true;        // Yêu cầu chữ in hoa
-    options.Password.RequireLowercase = true;        
-    options.Password.RequiredUniqueChars = 1;
-}).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 builder.Services.AddAuthentication(opt =>
 {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

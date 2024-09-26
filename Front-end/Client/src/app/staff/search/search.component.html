@@ -1,0 +1,60 @@
+<div class="flex items-center flex-col h-screen hero" style="background-image: url('/images/new.png'); background-size: cover; background-position: center;">
+    <div class="w-full max-w-5xl py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg" style="margin-top: 80px;">
+        <h1 class="text-4xl font-extrabold text-white text-center mb-4">Trains Management</h1>
+        <div class="flex justify-end mb-4"></div>
+        <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+            <table class="min-w-full table-auto rounded-lg overflow-hidden">
+                <thead class="bg-blue-500 text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Train Id</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Departure Time</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Arrival Time</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Fare</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider"></th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr *ngFor="let train of schedule$ | async ">
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.trainID }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.departureTime }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.arrivalTime }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap"></td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <button type="button" class="btn btn-success" (click)="openModal(train)">BookTicket</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div *ngIf="isModalOpen" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div class="bg-white rounded-lg p-8 shadow-lg w-full max-w-md">
+            <h2 class="text-2xl font-bold mb-4">Xác nhận giao dịch</h2>
+            <p>Bạn có chắc muốn đặt vé cho tàu: ?</p>
+            <form>
+                <!-- Form details here -->
+                <div class="mt-4">
+                    <label class="form-label1" for="form3Example1c">Họ tên:</label>
+                    <input type="text" [(ngModel)]="Name" name="Name" class="w-full p-2 border rounded" placeholder="Nhập họ tên">
+                </div>
+                <div class="mt-4">
+                    <label class="form-label1" for="form3Example1c">Tuổi:</label>
+                    <input type="text" [(ngModel)]="Age" name="Age" class="w-full p-2 border rounded" placeholder="Nhập tuổi của bạn">
+                </div>
+                <div class="mt-4">
+                    <label class="form-label1" for="form3Example1c">Giới tính</label>
+                    <select [(ngModel)]="Gender" name="Gender" id="" class="form-select">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <div class="mt-4 flex justify-end">
+                    <button type="button" class="btn btn-secondary mr-2" (click)="closeModal()">Hủy</button>
+                    <button type="submit" class="btn btn-primary" (click)="onSubmit(this.Name,this.Age,this.Gender)">Xác nhận</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
