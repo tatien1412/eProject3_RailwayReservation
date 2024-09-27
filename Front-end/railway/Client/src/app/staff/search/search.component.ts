@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { Observable, combineLatest } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable, combineLatest, forkJoin } from 'rxjs';
+import { map, mergeMap, switchMap } from 'rxjs/operators';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { BookingService } from '../../services/booking.service';
@@ -10,7 +10,12 @@ import { Fareschedule } from '../../interfaces/fareschedulemap';
 import { ScheduleSearch } from '../../interfaces/schedulesearch';
 import { Fare } from '../../interfaces/fare';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { Seat } from '../../interfaces/seat';
+import { TrainService } from '../../services/train.service';
+import { Train } from '../../interfaces/train';
+import { Trainall } from '../../interfaces/traingetall';
+import { Availableseat } from '../../interfaces/availableseat';
+import { AvailableSeatMap } from '../../interfaces/availableseatmap';
 @Component({
   selector: 'app-trains',
   standalone: true,
@@ -20,6 +25,7 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 })
 export class SearchComponent implements OnInit {
   bookingservice = inject(BookingService);
+  trainservice = inject(TrainService);
   schedule$: Observable<ScheduleSearch[]> = new Observable<ScheduleSearch[]>();
   compartment$: Observable<Compartment[]> = this.bookingservice.getCompartmentData();
   fareschedule$: Observable<Fareschedule[]> = new Observable<Fareschedule[]>();
@@ -37,7 +43,8 @@ export class SearchComponent implements OnInit {
   Name: string = '';
   Age: number = 0;
   Gender: string = '';
-  
+  trainID :number =0;
+
   Fare$: Observable<Fare[]> = new Observable<Fare[]>();
   seats: any[] = [];
   totalfare: number = 0;
@@ -48,7 +55,13 @@ export class SearchComponent implements OnInit {
   selectedFare: number = 0;
   snackBar = inject(MatSnackBar);
   isModalOpen = false;
+  Availableseattype1 = false;
+  Availableseattype2 = false;
+  Availableseattype3 = false;
 
+  count : number = 0;
+  AvailableSeat$: Observable<Availableseat> = new Observable<Availableseat>();
+  AvailableSeatMap$: Observable<AvailableSeatMap[]> = new Observable<AvailableSeatMap[]>();
   ngOnInit(): void {
     const fromStationIdString = this.route.snapshot.paramMap.get('FromStationId');
     const toStationIdString = this.route.snapshot.paramMap.get('ToStationId');
@@ -125,6 +138,7 @@ export class SearchComponent implements OnInit {
         });
       })
     );
+    
   }
 
   calculateFare(compartment: Compartment): number {
@@ -156,14 +170,18 @@ export class SearchComponent implements OnInit {
       map(schedules => schedules.slice(startIndex, endIndex)) // Cắt lịch trình dựa trên trang hiện tại
     );
   }
-
+  loadAvailableSeat(ttrainID:string):void{
+    
+  }
   loadFare(): void {}
 
-  openModal(value1: number, value2: number, value3: number) {
+  openModal(value1: number, value2: number, value3: number,value4:number) {
     this.isModalOpen = true;
     this.value1 = value1;
     this.value2 = value2;
     this.value3 = value3;
+    this.trainID =value4;
+    
   }
 
   closeModal() {
@@ -173,10 +191,22 @@ export class SearchComponent implements OnInit {
   updateFare(): void {
     if (this.CompartmentType === 'AC1') {
       this.selectedFare = this.value1;
+      this.Availableseattype1 = true;
+      this.Availableseattype2 =false;
+      this.Availableseattype3 =false;
+      this.AvailableSeat$ = this.bookingservice.getAvailableSeats(this.trainID);
     } else if (this.CompartmentType === 'AC2') {
       this.selectedFare = this.value2;
+      this.Availableseattype2 = true;
+      this.Availableseattype1 =false;
+      this.Availableseattype3 =false;
+      this.AvailableSeat$ = this.bookingservice.getAvailableSeats(this.trainID);
     } else if (this.CompartmentType === 'AC3') {
       this.selectedFare = this.value3;
+      this.Availableseattype3 = true;
+      this.Availableseattype2 =false;
+      this.Availableseattype1 =false;
+      this.AvailableSeat$ = this.bookingservice.getAvailableSeats(this.trainID);
     }
   }
 
@@ -238,5 +268,8 @@ export class SearchComponent implements OnInit {
         console.error('There was an error!', error);
       }
     );
+    this.bookingservice.updateseatstatus(this.trainID,this.CompartmentType,this.TotalPassengers);
   }
+
+  
 }

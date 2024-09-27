@@ -5,3 +5,17 @@
 @tailwind utilities;
 
 
+.apexcharts-xaxis text {
+    fill: white; /* Đổi màu chữ trục x */
+    font-size: 14px;
+}
+
+.apexcharts-yaxis text {
+    fill: white; /* Đổi màu chữ trục y */
+    font-size: 14px;
+}
+
+.apexcharts-title-text {
+    fill: white; /* Đổi màu tiêu đề */
+    font-size: 20px;
+}

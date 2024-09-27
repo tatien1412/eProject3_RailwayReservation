@@ -9,9 +9,6 @@
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Train ID</th>
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Departure Time</th>
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Arrival Time</th>
-                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">AC1</th>
-                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">AC2</th>
-                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">AC3</th>
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider"></th>
                     </tr>
                 </thead>
@@ -19,13 +16,10 @@
                     <tr *ngFor="let train of fareschedule$ | async">
                         <td class="px-6 py-4 whitespace-nowrap">{{ train.trainID }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{ train.departureTime }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">{{ train.arrivalTime }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">${{ train.FareAC1 }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">${{ train.FareAC2 }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">${{ train.FareAC3 }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.arrivalTime }}</td>      
                         <td class="px-6 py-4 whitespace-nowrap">
                             <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" 
-                                (click)="openModal(train.FareAC1, train.FareAC2, train.FareAC3)">
+                                (click)="openModal(train.FareAC1, train.FareAC2, train.FareAC3,train.trainID)">
                                 Book Ticket
                             </button>
                         </td>
@@ -77,12 +71,20 @@
                 <div class="mt-4">
                     <label class="form-label1" for="form3Example1c">Select Compartment Type:</label>
                     <select [(ngModel)]="CompartmentType" (change)="updateFare()" name="CompartmentType" class="w-full p-2 border rounded">
-                        <option value="AC1">AC1</option>
+                        <option value="AC1">AC1 </option>
                         <option value="AC2">AC2</option>
                         <option value="AC3">AC3</option>
                     </select>
                 </div>
-
+                <div class="mt-4" *ngIf="Availableseattype1">
+                    <p *ngIf="AvailableSeat$ | async as availableSeat">Available Seat: {{ availableSeat.totalAvailableSeatType1}}</p>
+                </div>
+                <div class="mt-4" *ngIf="Availableseattype2">
+                    <p *ngIf="AvailableSeat$ | async as availableSeat">Available Seat: {{ availableSeat.totalAvailableSeatType2}}</p>
+                </div>
+                <div class="mt-4" *ngIf="Availableseattype3">
+                    <p *ngIf="AvailableSeat$ | async as availableSeat">Available Seat: {{availableSeat.totalAvailableSeatType3}}</p>
+                </div>
                 <!-- Display fare based on selected compartment -->
                 <div class="mt-4">
                     <p>Selected Fare: ${{ selectedFare }}</p>

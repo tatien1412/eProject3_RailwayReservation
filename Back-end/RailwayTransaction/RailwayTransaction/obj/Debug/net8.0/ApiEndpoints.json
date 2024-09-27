@@ -17,6 +17,38 @@
   },
   {
     "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "Getseats",
+    "RelativePath": "api/Booking/AvailableSeat/{TrainId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TrainId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "DailyCash",
+    "RelativePath": "api/Booking/DailyCash/{DateOfTravel}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DateOfTravel",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
     "Method": "GetTrains",
     "RelativePath": "api/Booking/GetTrains/{FromStationId}/{ToStationId}/{DateOfTravel}/{TotalPassenger}",
     "HttpMethod": "GET",
@@ -40,6 +72,32 @@
       },
       {
         "Name": "TotalPassenger",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "UpdateSeatStatus",
+    "RelativePath": "api/Booking/UpdateConfirmTicket/{TrainID}/{CompartmentType}/{TotalConfirmTicket}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TrainID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CompartmentType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "TotalConfirmTicket",
         "Type": "System.Int32",
         "IsRequired": true
       }

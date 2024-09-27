@@ -104,10 +104,7 @@ export const routes: Routes = [
     {
         path: 'trains',
         component: TrainsComponent,
-        canActivate: [roleGuard],
-        data: {
-            role: 'Master Manager',
-        }
+       
     },
     {
         path: 'train/detail/:trainID',
@@ -135,10 +132,7 @@ export const routes: Routes = [
     {
         path: 'booking',
         component: BookingComponent,
-        canActivate: [roleGuard],
-        data: {
-            role: 'Transaction Staff',
-        }
+        
     },
     {
         path: 'search/:FromStationId/:ToStationId/:DateOfTravel/:TotalPassengers',

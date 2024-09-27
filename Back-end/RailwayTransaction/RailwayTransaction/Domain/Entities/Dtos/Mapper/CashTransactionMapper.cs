@@ -16,6 +16,18 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 DateOftransaction = cashTransaction.DateOftransaction,
             };
         }
+        public static DailyCash_joined ConvertToDailyResponse(CashTransaction cashTransaction,Schedule schedule)
+        {
+            return new DailyCash_joined
+            {
+                CashTransactionID = cashTransaction.CashTransactionID,
+                CashReceived = cashTransaction.CashReceived,
+                CashRefunded = cashTransaction.CashRefunded,
+                DateOftransaction = cashTransaction.DateOftransaction,
+                DayOfWeek = schedule.DayOfWeek,
+
+            };
+        }
         //public static CashTransactionResponse_joined ConvertToResponseAll(CashTransaction cashTransaction,
         //                                            List<Reservation> reservations)
         //{

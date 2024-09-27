@@ -1,264 +1,276 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\deleteseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\deleteseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\compartment\\createcompartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\compartment\\createcompartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\createseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\createseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\searchhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\searchhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\independent\\seatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\independent\\seatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\getallseatsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\getallseatsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\updateseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\updateseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\getseatbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\getseatbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\calfaremapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\calfaremapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\compartment\\getcompartmentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\compartment\\getcompartmentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\compartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\compartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\cashtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\cashtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\cashtransactionmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\cashtransactionmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\cashtransactionmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\trainmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\trainmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\dailycashhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\dailycashhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\tripmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\tripmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\dailycashquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\dailycashquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\bookingtrainreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\bookingtrainreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\searchhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\searchhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\staff\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\updateseatstatushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\updateseatstatushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\dailycash_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\dailycash_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\availableseathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\availableseathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\staff\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\staff\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\searchtrainquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\searchtrainquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\dailycashreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\dailycashreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\cashtransactionresponse_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\cashtransactionresponse_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\getseatbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\getseatbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\trainroutecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\station\\getstationbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\station\\getstationbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\bookingtrainreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\bookingtrainreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\updateseatstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\updateseatstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\staff\\updateseatstatuscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\staff\\updateseatstatuscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\schedule\\updateschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\schedule\\updateschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\schedule\\deleteschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\schedule\\deleteschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\schedule\\createschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\schedule\\createschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\trainroutecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\trainroutecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\traincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\routestationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\routestationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\updateseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\updateseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\getallseatsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\getallseatsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\compartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\compartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\station\\updatestationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\station\\updatestationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\cashtransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\cashtransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\station\\updatestationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\station\\updatestationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\availabelseatreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\staffreponse\\availabelseatreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\availabelseatquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\availabelseatquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\station\\deletestationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\station\\deletestationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\reservation\\createreservationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\reservation\\createreservationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\station\\createstationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\station\\createstationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\reservation\\createreservationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\reservation\\createreservationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\compartment\\updatecompartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\compartment\\updatecompartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\cashtransaction\\createcashtransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\cashtransaction\\createcashtransactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\compartmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\compartmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\cashtransaction\\createcashtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\cashtransaction\\createcashtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\train\\gettrainbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\train\\gettrainbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\searchtrainquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\searchtrainquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\reservationmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\reservationmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\routestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\routestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\seatmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\seatmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\trainroutemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\trainroutemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\availableseat_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\availableseat_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\ticketmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\ticketmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\compartmentresponse_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\compartmentresponse_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\independent\\scheduleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\compartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\compartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\independent\\scheduleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\independent\\scheduleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\routestationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\routestationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\compartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\compartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\master management\\cashtransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\master management\\cashtransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_EKJOT2A_ADMIN/eProject3_RailwayReservationDB/sa/SqlTable/dbo.Schedules.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\schedule\\updateschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\schedule\\updateschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\schedule\\updateschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\schedule\\deleteschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\schedule\\deleteschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\schedule\\deleteschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\schedule\\createschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\schedule\\createschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\schedule\\createschedulecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\schedule\\createschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\schedule\\createschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\schedule\\updateschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\schedule\\updateschedulecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\scheduleresponse_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\scheduleresponse_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\response\\dependent\\scheduleresponse_joined.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\schedulemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\domain\\entities\\dtos\\mapper\\schedulemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\domain\\entities\\dtos\\mapper\\schedulemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\reservation\\updatereservationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\reservation\\updatereservationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\reservation\\updatereservationcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\ticket\\createticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\ticket\\createticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\ticket\\createticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\compartment\\updatecompartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\compartment\\updatecompartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\data\\datacontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\data\\datacontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\data\\datacontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\train\\deletetraincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\train\\deletetraincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\train\\deletetraincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\train\\updatetraincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\train\\updatetraincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\train\\updatetraincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\compartment\\updatecompartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\compartment\\updatecompartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\compartment\\updatecompartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\train\\updatetraincompartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\commands\\mastermanagement\\train\\updatetraincompartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\commands\\mastermanagement\\train\\updatetraincompartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\aptechprj2\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\data\\migrations\\20240923131411_schedule-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\mastermanagement\\seat\\createseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\mastermanagement\\seat\\createseatcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\data\\migrations\\20240923131411_schedule-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\data\\migrations\\20240923131411_schedule-update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -269,7 +281,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -281,480 +293,458 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DailyCashHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\DailyCashHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\DailyCashHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\DailyCashHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\DailyCashHandler.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAtwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T03:02:10.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GetAllSeatsQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABhAAAAAAAAAA==",
+              "Title": "DailyCash_joined.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\DailyCash_joined.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\DailyCash_joined.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\DailyCash_joined.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\DailyCash_joined.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:26:34.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateSeatCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:26:17.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetSeatByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T10:30:45.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Searchhandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADcAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:02:41.01Z"
+              "WhenOpened": "2024-09-27T06:22:26.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DeleteSeatCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\DeleteSeatCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\DeleteSeatCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\DeleteSeatCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\DeleteSeatCommandHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CashTransactionMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:27:06.567Z",
+              "WhenOpened": "2024-09-27T06:21:11.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SeatResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\SeatResponse.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\SeatResponse.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\SeatResponse.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\SeatResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Title": "UpdateSeatStatusHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:46:48.75Z"
+              "WhenOpened": "2024-09-27T02:53:45.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateCompartmentCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\CreateCompartmentCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\CreateCompartmentCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\CreateCompartmentCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\CreateCompartmentCommandHandler.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAACcAAAApAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Searchhandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAawBMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:49:51.637Z"
+              "WhenOpened": "2024-09-26T22:08:00.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateSeatCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Title": "DailyCashQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\DailyCashQuery.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\DailyCashQuery.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\DailyCashQuery.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\DailyCashQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T10:31:46.784Z"
+              "WhenOpened": "2024-09-27T06:14:54.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetCompartmentByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\GetCompartmentByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\GetCompartmentByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\GetCompartmentByIdQueryHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\GetCompartmentByIdQueryHandler.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AvailableSeatHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\AvailableSeatHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\AvailableSeatHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\AvailableSeatHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\AvailableSeatHandler.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T21:25:00.923Z"
+              "WhenOpened": "2024-09-26T22:08:26.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Station.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Station.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Station.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Station.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Station.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:28:23.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Seat.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Seat.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Seat.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Seat.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Seat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T10:31:18.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Schedule.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Schedule.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Schedule.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Schedule.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Schedule.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T02:47:16.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CashTransaction.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\CashTransaction.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\CashTransaction.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\CashTransaction.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\CashTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:28:13.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Reservation.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Reservation.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Reservation.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Reservation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:03:00.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CashTransactionMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CashTransactionMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:28:02.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Compartment.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Compartment.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Compartment.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Compartment.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Compartment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T02:37:21.579Z"
+              "WhenOpened": "2024-09-26T19:04:38.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CalFareMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CalFareMapper.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CalFareMapper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CalFareMapper.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CalFareMapper.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "DailyCashReponse.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\DailyCashReponse.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\DailyCashReponse.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\DailyCashReponse.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\DailyCashReponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T20:36:27.933Z"
+              "WhenOpened": "2024-09-27T06:03:41.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TrainMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainMapper.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainMapper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainMapper.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainMapper.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "CashTransactionResponse_joined.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CashTransactionResponse_joined.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CashTransactionResponse_joined.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CashTransactionResponse_joined.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CashTransactionResponse_joined.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:10:26.471Z"
+              "WhenOpened": "2024-09-27T06:22:45.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetSeatByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetSeatByIdQueryHandler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:30:45.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetStationByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\GetStationByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Station\\GetStationByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\GetStationByIdQueryHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Station\\GetStationByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T06:16:21.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Schedule.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Schedule.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Schedule.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Schedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T02:47:16.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookingTrainReponse.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T06:04:10.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Seat.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Seat.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Seat.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Seat.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Seat.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAjwBIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:31:18.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UpdateSeatStatusCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\Staff\\UpdateSeatStatusCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\Staff\\UpdateSeatStatusCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\Staff\\UpdateSeatStatusCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\Staff\\UpdateSeatStatusCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:58:11.289Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "TripMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TripMapper.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TripMapper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TripMapper.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TripMapper.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DeleteScheduleCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\DeleteScheduleCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\DeleteScheduleCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\DeleteScheduleCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\DeleteScheduleCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:27:45.892Z"
+              "WhenOpened": "2024-09-27T03:44:14.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UpdateSeatStatusQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T03:44:43.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateScheduleCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T13:11:52.408Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "BookingTrainReponse.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\BookingTrainReponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CreateScheduleCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T20:28:41.204Z"
+              "WhenOpened": "2024-09-23T13:12:00.43Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAjwCEAAAAJAAAAAAAAAA==",
+              "Title": "TrainRouteController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T20:32:24.893Z"
+              "WhenOpened": "2024-09-26T19:06:48.35Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "SearchTrainQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
-              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "StationController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T20:27:48.314Z"
+              "WhenOpened": "2024-09-26T19:05:49.42Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "UserDetail.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\UserDetail.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\UserDetail.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\UserDetail.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\UserDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T20:33:35.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
               "Title": "TrainController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainController.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\TrainController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainController.cs",
               "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\TrainController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T03:26:33.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:33:37.538Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Interface\\IRepository.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Interface\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Interface\\IRepository.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Interface\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "TripController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TripController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\TripController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TripController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\TripController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:01:13.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RouteStationController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:33:39.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "SeatController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:33:43.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "StationController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\StationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:33:45.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "TicketController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:33:48.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CashTransactionController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:33:29.276Z"
+              "WhenOpened": "2024-09-26T19:06:50.677Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "TrainRouteController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\TrainRouteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Title": "SeatController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\SeatController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:33:55.786Z"
+              "WhenOpened": "2024-09-26T19:06:17.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ScheduleController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T02:35:23.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "TrainRouteMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainRouteMapper.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainRouteMapper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainRouteMapper.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TrainRouteMapper.cs",
+              "DocumentIndex": 25,
+              "Title": "UpdateSeatCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\UpdateSeatCommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:27:43.924Z"
+              "WhenOpened": "2024-09-27T03:26:31.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetAllSeatsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\GetAllSeatsQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T03:26:28.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UpdateStationCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\UpdateStationCommandHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Station\\UpdateStationCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Station\\UpdateStationCommandHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Station\\UpdateStationCommandHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:52:20.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateStationCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\UpdateStationCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\UpdateStationCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\UpdateStationCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\UpdateStationCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:54:08.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AvailabelSeatReponse.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\AvailabelSeatReponse.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\AvailabelSeatReponse.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\AvailabelSeatReponse.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\StaffReponse\\AvailabelSeatReponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T21:57:20.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AvailabelseatQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\AvailabelseatQuery.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\AvailabelseatQuery.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\AvailabelseatQuery.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\AvailabelseatQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T21:54:53.426Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "CompartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
-              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T02:35:54.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "CreateReservationCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Reservation\\CreateReservationCommand.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Reservation\\CreateReservationCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Reservation\\CreateReservationCommand.cs",
-              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Reservation\\CreateReservationCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:31:20.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
-              "RelativeDocumentMoniker": "RailwayTransaction\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
-              "RelativeToolTip": "RailwayTransaction\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-21T02:08:18.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "RouteStation.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\RouteStation.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\RouteStation.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\RouteStation.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\RouteStation.cs",
+              "Title": "DeleteStationCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\DeleteStationCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\DeleteStationCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\DeleteStationCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\DeleteStationCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:04:10.035Z"
+              "WhenOpened": "2024-09-27T02:58:29.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateStationCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\CreateStationCommand.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\CreateStationCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\CreateStationCommand.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Station\\CreateStationCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:58:29.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CompartmentMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CompartmentMapper.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CompartmentMapper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CompartmentMapper.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\CompartmentMapper.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAawCUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:24:09.286Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Program.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Program.cs",
-              "RelativeToolTip": "RailwayTransaction\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAABgAAABaAAAAAAAAAA==",
+              "Title": "GetTrainByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\GetTrainByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Train\\GetTrainByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\GetTrainByIdQueryHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Train\\GetTrainByIdQueryHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T02:08:28.408Z"
+              "WhenOpened": "2024-09-26T22:23:10.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 36,
+              "Title": "SearchTrainQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\SearchTrainQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T21:54:58.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "Train.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Train.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Train.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Train.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Train.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Train.cs",
               "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Train.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -762,107 +752,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "CreateCashTransactionCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\CashTransaction\\CreateCashTransactionCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\CashTransaction\\CreateCashTransactionCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\CashTransaction\\CreateCashTransactionCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\CashTransaction\\CreateCashTransactionCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "UpdateCompartmentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:32:21.797Z"
+              "WhenOpened": "2024-09-20T03:13:46.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "CreateReservationCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Reservation\\CreateReservationCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Reservation\\CreateReservationCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Reservation\\CreateReservationCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Reservation\\CreateReservationCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAArAAAAAAAAAA==",
+              "DocumentIndex": 38,
+              "Title": "ReservationMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ReservationMapper.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ReservationMapper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ReservationMapper.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ReservationMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:22:26.351Z"
+              "WhenOpened": "2024-09-26T22:26:19.703Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
-              "Title": "CreateCashTransactionCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\CashTransaction\\CreateCashTransactionCommand.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\CashTransaction\\CreateCashTransactionCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\CashTransaction\\CreateCashTransactionCommand.cs",
-              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\CashTransaction\\CreateCashTransactionCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Title": "SeatMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\SeatMapper.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\SeatMapper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\SeatMapper.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\SeatMapper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:32:25.568Z"
+              "WhenOpened": "2024-09-26T22:26:10.67Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "Trip.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Trip.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Trip.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Trip.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Trip.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AvailableSeat_joined.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\AvailableSeat_joined.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\AvailableSeat_joined.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\AvailableSeat_joined.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\AvailableSeat_joined.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:28:29.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Ticket.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Ticket.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Ticket.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Ticket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:28:25.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "TicketMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TicketMapper.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TicketMapper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TicketMapper.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\TicketMapper.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:27:41.242Z"
+              "WhenOpened": "2024-09-26T22:25:31.144Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "TrainRoute.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\TrainRoute.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\TrainRoute.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\TrainRoute.cs",
-              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\TrainRoute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CompartmentResponse_joined.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CompartmentResponse_joined.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CompartmentResponse_joined.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CompartmentResponse_joined.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\CompartmentResponse_joined.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:28:27.449Z"
+              "WhenOpened": "2024-09-26T22:23:53.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "UpdateScheduleCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBgAAAAvAAAA",
+              "DocumentIndex": 42,
+              "Title": "Compartment.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Compartment.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Compartment.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Compartment.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Compartment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T13:12:43.763Z"
+              "WhenOpened": "2024-09-20T02:37:21.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Interface\\IRepository.cs",
+              "RelativeToolTip": "RailwayTransaction\\Domain\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:07:53.238Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 47,
+              "Title": "RouteStationController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\RouteStationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T19:06:33.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "TicketController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\TicketController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T19:06:42.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
               "Title": "ScheduleResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
               "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\independent\\ScheduleResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -870,23 +872,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "CreateScheduleCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
-              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\CreateScheduleCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "DocumentIndex": 48,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\ReservationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T13:12:00.43Z"
+              "WhenOpened": "2024-09-26T19:06:30.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CashTransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\CashTransactionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T19:06:22.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\ScheduleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T02:35:23.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CompartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
+              "RelativeToolTip": "RailwayTransaction\\Controllers\\Master Management\\CompartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T02:35:54.576Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 51,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
+              "RelativeDocumentMoniker": "RailwayTransaction\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\appsettings.json",
+              "RelativeToolTip": "RailwayTransaction\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-21T02:08:18.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
               "Title": "CreateScheduleCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\CreateScheduleCommandHandler.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwBgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -894,11 +944,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "DeleteScheduleCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\DeleteScheduleCommandHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -906,7 +956,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
+              "Title": "UpdateScheduleCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Schedule\\UpdateScheduleCommandHandler.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T13:12:43.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
               "Title": "dbo.Schedules.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_EKJOT2A_ADMIN/eProject3_RailwayReservationDB/sa/SqlTable/dbo.Schedules.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_EKJOT2A_ADMIN/eProject3_RailwayReservationDB/sa/SqlTable/dbo.Schedules.sql",
@@ -915,11 +977,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "20240923131411_schedule-update.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\Migrations\\20240923131411_schedule-update.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\Migrations\\20240923131411_schedule-update.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Data\\Migrations\\20240923131411_schedule-update.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\Migrations\\20240923131411_schedule-update.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\Migrations\\20240923131411_schedule-update.cs",
               "RelativeToolTip": "RailwayTransaction\\Data\\Migrations\\20240923131411_schedule-update.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -927,23 +989,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "UpdateScheduleCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
-              "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Schedule\\UpdateScheduleCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T13:11:52.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "ScheduleMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
               "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Mapper\\ScheduleMapper.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwB0AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -951,11 +1001,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "ScheduleResponse_joined.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
               "RelativeToolTip": "RailwayTransaction\\Domain\\Entities\\Dtos\\Response\\dependent\\ScheduleResponse_joined.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -963,11 +1013,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "UpdateReservationCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Reservation\\UpdateReservationCommandHandler.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwBwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -975,11 +1025,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "CreateTicketCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
               "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Ticket\\CreateTicketCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -987,11 +1037,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "DeleteTrainCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\DeleteTrainCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\DeleteTrainCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Train\\DeleteTrainCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\DeleteTrainCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\DeleteTrainCommandHandler.cs",
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Train\\DeleteTrainCommandHandler.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwAUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -999,23 +1049,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "UpdateCompartmentCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Compartment\\UpdateCompartmentCommandHandler.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwEoAAAAAAAAA",
+              "DocumentIndex": 60,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Program.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Program.cs",
+              "RelativeToolTip": "RailwayTransaction\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T03:13:46.078Z"
+              "WhenOpened": "2024-09-21T02:08:28.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\DataContext\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\DataContext\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Data\\DataContext\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\DataContext\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Data\\DataContext\\ApplicationDbContext.cs",
               "RelativeToolTip": "RailwayTransaction\\Data\\DataContext\\ApplicationDbContext.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAAiwDIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1023,11 +1073,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "UpdateTrainCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\UpdateTrainCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\UpdateTrainCommandHandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Train\\UpdateTrainCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\UpdateTrainCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Train\\UpdateTrainCommandHandler.cs",
               "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Train\\UpdateTrainCommandHandler.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1035,11 +1085,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "UpdateCompartmentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Compartment\\UpdateCompartmentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Compartment\\UpdateCompartmentCommand.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Compartment\\UpdateCompartmentCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Compartment\\UpdateCompartmentCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Compartment\\UpdateCompartmentCommand.cs",
               "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Compartment\\UpdateCompartmentCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1047,15 +1097,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "UpdateTrainCompartmentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Train\\UpdateTrainCompartmentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Train\\UpdateTrainCompartmentCommand.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Train\\UpdateTrainCompartmentCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\aptechprj2\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Train\\UpdateTrainCompartmentCommand.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Commands\\MasterManagement\\Train\\UpdateTrainCompartmentCommand.cs",
               "RelativeToolTip": "RailwayTransaction\\Application\\Commands\\MasterManagement\\Train\\UpdateTrainCompartmentCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T03:17:04.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "CreateSeatCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\MasterManagement\\Seat\\CreateSeatCommandHandler.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:31:46.784Z"
             }
           ]
         }

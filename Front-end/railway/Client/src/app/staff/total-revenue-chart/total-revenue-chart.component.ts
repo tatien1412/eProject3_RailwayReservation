@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import {
   ApexAxisChartSeries,
   ApexChart,
@@ -12,6 +12,7 @@ import {
 } from 'ng-apexcharts';
 
 import { CommonModule } from '@angular/common';
+import { DailycashService } from '../../services/dailycash.service';
 @Component({
   selector: 'app-total-revenue-chart',
   standalone : true,
@@ -20,6 +21,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./total-revenue-chart.component.css']
 })
 export class TotalRevenueChartComponent implements OnInit {
+  dailycashservice = inject(DailycashService);
   public series: ApexAxisChartSeries;
   public chart: ApexChart;
   public xaxis: ApexXAxis;
@@ -29,10 +31,12 @@ export class TotalRevenueChartComponent implements OnInit {
   public legend: ApexLegend;
   public plotOptions: ApexPlotOptions;
 
-  public currentYear: number;
-
+  public currentYear: number=0;
+  public days: string[]=[];
+  public revenues: number[]=[];
   constructor() {
-    this.series = [];
+    this.series = [
+    ];
     this.plotOptions={
       bar: {
         borderRadius: 10, // Đặt border radius cho các cột
@@ -56,7 +60,7 @@ export class TotalRevenueChartComponent implements OnInit {
 
     this.yaxis = {
       min: 0,
-      max: 100
+      max: 2000
     };
 
     this.title = {
@@ -68,27 +72,48 @@ export class TotalRevenueChartComponent implements OnInit {
       position: 'top',
       horizontalAlign: 'left'
     };
+    this.days = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']; // Các ngày trong tuần
+    this.revenues = []; // Mảng lưu trữ tổng thu nhập cho mỗi ngày
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.updateChartData();  // Gọi API khi component khởi tạo
+  }
+
+  // Gọi API cho từng ngày trong tuần và cập nhật dữ liệu biểu đồ
   updateChartData(): void {
-    if (this.currentYear === 2023) {
-      this.series = [
-        {
-          name: '2023',
-          data: [10, 20, 15, 30, 25, 20, 10] // Dữ liệu của 2023
-        }
-      ];
-    } else if (this.currentYear === 2022) {
-      this.series = [
-        {
-          name: '2022',
-          data: [-10, -15, -5, -10, -5, -15, -10] // Dữ liệu của 2022
-        }
-      ];
+    const today = new Date();
+    this.revenues = []; // Khởi tạo mảng trống cho doanh thu mỗi ngày
+
+    for (let i = 0; i < 7; i++) {
+      const date = new Date(today);
+      date.setDate(today.getDate() - i); // Lùi lại i ngày so với hôm nay
+
+      const formattedDate = this.formatDate(date); // Định dạng ngày theo API
+
+      this.dailycashservice.getcash(formattedDate)
+        .subscribe(response => {
+          this.revenues[i] = response.cashReceived || 0; // Cập nhật doanh thu cho ngày đó
+
+          // Sau khi đã lấy đủ dữ liệu cho tất cả các ngày, cập nhật biểu đồ
+          if (this.revenues.length === 7) {
+            this.series = [
+              {
+                name: `${this.currentYear}`,
+                data: this.revenues.reverse()  // Đảo ngược mảng để hiển thị từ thứ Hai đến Chủ Nhật
+              }
+            ];
+          }
+        }, error => {
+          console.error(`Error fetching data for ${formattedDate}`, error);  // Xử lý lỗi nếu API trả về lỗi
+        });
     }
   }
-  setYear(year: number): void {
-    this.currentYear = year;
-    this.updateChartData();
+
+  // Định dạng ngày theo kiểu yyyy-mm-dd (phụ thuộc vào API)
+  formatDate(date: Date): string {
+    const year = date.getFullYear();
+    const month = ('0' + (date.getMonth() + 1)).slice(-2); // Thêm 0 vào trước nếu tháng < 10
+    const day = ('0' + date.getDate()).slice(-2); // Thêm 0 vào trước nếu ngày < 10
+    return `${year}-${month}-${day}`;
   }
 }

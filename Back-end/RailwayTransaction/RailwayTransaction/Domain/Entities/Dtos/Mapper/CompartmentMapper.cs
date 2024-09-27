@@ -35,5 +35,15 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
 
             };
         }
+        public static AvailableSeat_joined ConvertToAvailableseatResponse(int compartmentid,
+                                                    List<Seat> seats)
+        {
+            return new AvailableSeat_joined
+            {
+                
+                Seats = seats.Where(s => s.CompartmentID == compartmentid).Select(s => SeatMapper.ConvertToResponse(s)).ToList(),
+
+            };
+        }
     }
 }
