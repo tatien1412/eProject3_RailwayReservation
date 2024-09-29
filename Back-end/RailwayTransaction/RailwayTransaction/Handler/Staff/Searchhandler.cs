@@ -25,13 +25,15 @@ namespace RailwayTransaction.Handler.Staff
         private readonly IRepository<Domain.Entities.Schedule, int> _scheduleRepository;
         private readonly IRepository<Domain.Entities.Compartment, int> _compartmentRepository;
         private readonly IRepository<Domain.Entities.RouteStation, int> _routeStationRepository;
+        private readonly IRepository<Domain.Entities.Seat, int> _seatRepository;
         // Khởi tạo với DbContext
         public Searchhandler(IRepository<Domain.Entities.Train, int> trainRepository,
                                          IRepository<Domain.Entities.TrainRoute, int> trainRouteRepository,
                                          IRepository<Domain.Entities.Station, int> stationRepository,
                                          IRepository<Domain.Entities.Schedule, int> scheduleRepository,
                                          IRepository<Domain.Entities.Compartment,int> compartmentRepository,
-                                         IRepository<RouteStation, int> routeStationRepository)
+                                         IRepository<RouteStation, int> routeStationRepository,
+                                         IRepository<Domain.Entities.Seat,int> seatRepository)
         {
             _trainRepository = trainRepository;
             _trainRouteRepository = trainRouteRepository;
@@ -39,11 +41,15 @@ namespace RailwayTransaction.Handler.Staff
             _scheduleRepository = scheduleRepository;
             _routeStationRepository = routeStationRepository;
             _compartmentRepository = compartmentRepository;
+            _seatRepository = seatRepository;
         }
 
         // Phương thức để lấy tất cả các chuyến tàu dựa trên fromStationId, toStationId và dateOfTravel
         public async Task<List<Domain.Entities.Dtos.Response.independent.ScheduleResponse>> Handle(SearchTrainQuery request, CancellationToken cancellationToken)
         {
+
+
+
             var trains = await _trainRepository
             .GetAllAsync(); // Giả sử phương thức này trả về tất cả các tàu
             List<Domain.Entities.Compartment> compartment = (await _compartmentRepository.GetAllAsync()).ToList();
@@ -66,17 +72,41 @@ namespace RailwayTransaction.Handler.Staff
             foreach (var train in filteredTrains)
             {
                 bool bothInList = train.RouteStations.Any(rs => rs.StationID == element1) &&
-                     train.RouteStations.Any(rs => rs.StationID == element2)&&
-                     train.Compartments.Any(cpm => cpm.NumberOfSeats>=request.TotalPassenger);
+                     train.RouteStations.Any(rs => rs.StationID == element2);
                 if (bothInList)
                 {
-                    var trainSchedules = train.Schedules
+                    var matching = new Domain.Entities.Dtos.Response.StaffReponse.AvailabelSeatReponse();
+                    Train trainn = await _trainRepository.GetByIdAsync(train.TrainID);
+
+                    var trainRoute = await _trainRouteRepository.GetByIdAsync(trainn.TrainRouteID);
+                    matching.TrainId = train.TrainID;
+                    var trainmapper = TrainMapper.ConvertToResponseAll(trainn, trainRoute, compartment, schedule);
+                    foreach (var compartmentt in trainmapper.Compartments)
+                    {
+                        List<Seat> seat = (await _seatRepository.GetAllAsync()).ToList();
+                        List<Seat> filterseat = seat.Where(s => s.CompartmentID == compartmentt.CompartmentID).ToList();
+                        var res = new Domain.Entities.Dtos.Response.StaffReponse.AvailabelSeatReponse();
+                        var filter = CompartmentMapper.ConvertToAvailableseatResponse(compartmentt.CompartmentID, seat);
+                        var CompartmentType = compartmentt.CompartmentType;
+                        if (CompartmentType == "AC1")
+                            matching.TotalAvailableSeatType1 += filterseat.Count(ss => ss.SeatStatus == "Available");
+                        if (CompartmentType == "AC2")
+                            matching.TotalAvailableSeatType2 += filterseat.Count(ss => ss.SeatStatus == "Available");
+                        if (CompartmentType == "AC3")
+                            matching.TotalAvailableSeatType3 += filterseat.Count(ss => ss.SeatStatus == "Available");
+                    }
+
+                    var availableseat = matching.TotalAvailableSeatType1+ matching.TotalAvailableSeatType2+ matching.TotalAvailableSeatType3;
+                    if(availableseat > request.TotalPassenger)
+                    {
+                        var trainSchedules = train.Schedules
                     .Where(s => s.DateOfTravel == request.DateOfTravel) // Lọc theo ngày đi
                     .ToList();
 
-                    if (trainSchedules.Count > 0)
-                    {
-                        matchingSchedules.AddRange(trainSchedules);
+                        if (trainSchedules.Count > 0)
+                        {
+                            matchingSchedules.AddRange(trainSchedules);
+                        }
                     }
                    
                 }

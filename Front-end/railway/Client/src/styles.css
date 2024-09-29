@@ -19,3 +19,15 @@
     fill: white; /* Đổi màu tiêu đề */
     font-size: 20px;
 }
+/* Tùy chỉnh border-radius cho các cột */
+.apexcharts-bar-area .apexcharts-bar {
+    rx: 10px !important;  /* Bo tròn góc của cột theo trục x */
+    ry: 10px !important;  /* Bo tròn góc của cột theo trục y */
+    width: 10px !important;
+}
+
+/* Tùy chỉnh độ rộng của các cột */
+.apexcharts-bar {
+    width: 20px !important;  /* Đặt độ rộng cố định cho các cột là 20px */
+}
+
