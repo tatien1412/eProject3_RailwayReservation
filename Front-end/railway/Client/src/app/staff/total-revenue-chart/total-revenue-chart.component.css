@@ -21,7 +21,13 @@ input[type="date"] {
     border-color: #3182ce; /* Đổi màu viền khi focus */
     box-shadow: 0 0 8px rgba(49, 130, 206, 0.3); /* Hiệu ứng đổ bóng khi focus */
   }
-  
+  label {
+    font-size: 16px;          /* Kích thước chữ của nhãn */
+    margin-right: 15px;       /* Tạo khoảng cách giữa nhãn và input */
+    color: white;           /* Màu chữ của nhãn */
+    display: inline-block;    /* Hiển thị nhãn và input trên cùng một dòng */
+    vertical-align: middle;   /* Canh giữa nhãn và input */
+  }
   /* Tùy chỉnh placeholder (nếu có) */
   input[type="date"]::placeholder {
     color: #a0aec0; /* Màu placeholder */
@@ -42,4 +48,29 @@ input[type="date"] {
       width: 100%; /* Đầy đủ chiều rộng màn hình */
     }
   }
-  
+
+label {
+  font-size: 16px;  /* Tăng kích thước chữ nhãn nếu cần */
+  margin-right: 10px;  /* Tạo khoảng cách bên phải của nhãn */
+}
+/* Tạo khoảng cách và màu chữ cho phần chú thích */
+.apexcharts-legend {
+  padding-bottom: 20px; /* Tạo thêm khoảng cách giữa phần chú thích và biểu đồ */
+  color: #1f77b4; /* Màu xanh dương cho chữ "Doanh thu" */
+}
+
+.apexcharts-legend-series {
+  margin-right: 15px; /* Tạo khoảng cách giữa các nhãn "Doanh thu" và "Xu hướng" */
+}
+
+/* Tùy chỉnh màu sắc cho phần chữ chú thích */
+.apexcharts-legend-text {
+  color: #1f77b4; /* Màu xanh dương cho Doanh thu */
+}
+
+.apexcharts-legend-text:nth-child(2) {
+  color: #2ca02c; /* Màu xanh lá cho Xu hướng */
+}
+.searchinput{
+  padding-bottom: 20px;
+}

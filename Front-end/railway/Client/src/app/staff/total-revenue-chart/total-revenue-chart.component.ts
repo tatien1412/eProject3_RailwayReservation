@@ -84,9 +84,16 @@ export class TotalRevenueChartComponent implements OnInit {
     };
 
     this.legend = {
-      position: 'top',
-      horizontalAlign: 'left'
+      position: 'top',               // Đặt chú thích ở trên biểu đồ
+      horizontalAlign: 'left',        // Căn lề trái cho chú thích
+      labels: {
+        colors: ['#fafafa', '#fafafa'], // Màu sắc của chữ "Doanh thu" (xanh dương) và "Xu hướng" (xanh lá)
+        useSeriesColors: false         // Không sử dụng màu của series cho chữ
+      },
+      offsetY: -20,                    // Tạo khoảng cách giữa chú thích và biểu đồ
+      fontSize: '14px',               // Tăng kích thước chữ nếu cần
     };
+    
 
     this.stroke = {
       width: [0, 4],
