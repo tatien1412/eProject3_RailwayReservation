@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Commands.Staff;
 using RailwayTransaction.Application.Queries.Staff.Booking;
 using RailwayTransaction.Domain.Entities;
+using RailwayTransaction.Handler.Staff;
 
 namespace RailwayTransaction.Controllers.Staff
 {
@@ -53,6 +54,14 @@ namespace RailwayTransaction.Controllers.Staff
         public async Task<IActionResult> UpdateSeatStatus(int TrainID, string CompartmentType, int TotalConfirmTicket)
         {
             var query = new UpdateSeatStatusQuery(TrainID, CompartmentType, TotalConfirmTicket);
+            await _mediator.Send(query);
+            return NoContent();
+
+        }
+        [HttpPut("UpdateTicketInQuery/{TrainID}/{CompartmentType}/{TotalConfirmTicket}")]
+        public async Task<IActionResult> UpdateSeatQueryStatus(int TrainID, string CompartmentType, int TotalConfirmTicket)
+        {
+            var query = new UpdateSeatQueueStatusQuery(TrainID, CompartmentType, TotalConfirmTicket);
             await _mediator.Send(query);
             return NoContent();
 

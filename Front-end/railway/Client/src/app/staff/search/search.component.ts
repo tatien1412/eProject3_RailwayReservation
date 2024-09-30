@@ -58,7 +58,7 @@ export class SearchComponent implements OnInit {
   Availableseattype1 = false;
   Availableseattype2 = false;
   Availableseattype3 = false;
-
+  timeoutId: any;
   count : number = 0;
   AvailableSeat$: Observable<Availableseat> = new Observable<Availableseat>();
   AvailableSeatMap$: Observable<AvailableSeatMap[]> = new Observable<AvailableSeatMap[]>();
@@ -176,16 +176,26 @@ export class SearchComponent implements OnInit {
   loadFare(): void {}
 
   openModal(value1: number, value2: number, value3: number,value4:number) {
+    this.Age=0;
+    this.Name="";
+    this.Gender="";
+    this.CompartmentType='';
     this.isModalOpen = true;
     this.value1 = value1;
     this.value2 = value2;
     this.value3 = value3;
     this.trainID =value4;
-    
+    this.bookingservice.updateseatqueuestatus(this.trainID,this.CompartmentType,this.TotalPassengers);
+    this.timeoutId = setTimeout(() => {
+      this.closeModal();
+    }, 30000);
   }
 
   closeModal() {
     this.isModalOpen = false;
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
   }
 
   updateFare(): void {

@@ -38,5 +38,15 @@ export class BookingService {
       {} // Truyền một body rỗng vì API không yêu cầu body
     );
   }
+  updateseatqueuestatus(
+    TrainID: number, 
+    CompartmentType: string, 
+    TotalConfirmTicket: number
+  ): Observable<void> {
+    return this.http.put<void>(
+      `${this.apiUrl}Booking/UpdateTicketInQueue/${TrainID}/${CompartmentType}/${TotalConfirmTicket}`, 
+      {} // Truyền một body rỗng vì API không yêu cầu body
+    );
+  }
   }
 
