@@ -27,6 +27,10 @@ namespace RailwayTransaction.Handler.MasterManagement.RouteStation
             routeStation.StationID = request.StationID;
             routeStation.OrderInRoute = request.OrderInRoute;
 
+            if (request.OrderInRoute < 0)
+            {
+                throw new Exception("OrderInRoute out of valid range");
+            }
             await _routeStationRepository.UpdateAsync(routeStation);
 
             return Unit.Value;

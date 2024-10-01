@@ -25,6 +25,10 @@ namespace RailwayTransaction.Handler.MasterManagement.Seat
 
             };
 
+            if (request.Fare < 0)
+            {
+                throw new Exception("Fare out of valid range");
+            }
             await _seatRepository.AddAsync(seat);
 
             return seat.ReservationID;

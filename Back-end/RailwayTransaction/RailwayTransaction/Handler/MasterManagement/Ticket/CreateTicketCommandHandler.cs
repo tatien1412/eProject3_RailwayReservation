@@ -23,6 +23,14 @@ namespace RailwayTransaction.Handler.MasterManagement.Ticket
                 TotalPassengers = request.TotalPassengers,
             };
 
+            if (request.Age < 0)
+            {
+                throw new Exception("Age out of valid range");
+            }
+            if (request.TotalPassengers < 0)
+            {
+                throw new Exception("TotalPassengers out of valid range");
+            }
             await _ticketRepository.AddAsync(ticket);
 
             return ticket.PnrNo;

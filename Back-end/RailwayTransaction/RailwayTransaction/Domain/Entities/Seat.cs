@@ -22,7 +22,8 @@ namespace RailwayTransaction.Domain.Entities
 
         // Khóa ngoại đến bảng Reservation, cho phép null
         [ForeignKey("Reservation")]
-        public int? ReservationID { get; set; }  // Đây là sự thay đổi
+
+
         public Reservation? Reservation { get; set; }  // Cũng cần nullable ở đây
     }
 }

@@ -27,6 +27,16 @@ namespace RailwayTransaction.Handler.MasterManagement.Ticket
             ticket.Age = request.Age;
             ticket.Gender = request.Gender;
             ticket.TotalPassengers = request.TotalPassengers;
+
+
+            if (request.Age < 0)
+            {
+                throw new Exception("Age out of valid range");
+            }
+            if (request.TotalPassengers < 0)
+            {
+                throw new Exception("TotalPassengers out of valid range");
+            }
             await _trainRepository.UpdateAsync(ticket);
 
             return Unit.Value;
