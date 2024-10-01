@@ -1,0 +1,76 @@
+/* Tùy chỉnh chung cho input */
+input[type="date"] {
+    background-color: #f3f4f6; /* Màu nền nhạt */
+    border: 1px solid #cbd5e0; /* Màu viền */
+    border-radius: 8px; /* Bo tròn góc */
+    padding: 10px 15px; /* Khoảng cách giữa chữ và viền */
+    font-size: 16px; /* Kích thước chữ */
+    color: #4a5568; /* Màu chữ */
+    outline: none; /* Loại bỏ viền mặc định khi focus */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Tạo hiệu ứng chuyển đổi khi focus */
+    width: 250px; /* Chiều rộng */
+  }
+  
+  /* Khi người dùng di chuột vào input */
+  input[type="date"]:hover {
+    border-color: #a0aec0; /* Đổi màu viền khi hover */
+  }
+  
+  /* Khi người dùng focus vào input */
+  input[type="date"]:focus {
+    border-color: #3182ce; /* Đổi màu viền khi focus */
+    box-shadow: 0 0 8px rgba(49, 130, 206, 0.3); /* Hiệu ứng đổ bóng khi focus */
+  }
+  label {
+    font-size: 16px;          /* Kích thước chữ của nhãn */
+    margin-right: 15px;       /* Tạo khoảng cách giữa nhãn và input */
+    color: white;           /* Màu chữ của nhãn */
+    display: inline-block;    /* Hiển thị nhãn và input trên cùng một dòng */
+    vertical-align: middle;   /* Canh giữa nhãn và input */
+  }
+  /* Tùy chỉnh placeholder (nếu có) */
+  input[type="date"]::placeholder {
+    color: #a0aec0; /* Màu placeholder */
+    opacity: 1; /* Đảm bảo độ hiển thị cao */
+  }
+  
+  /* Tùy chỉnh icon mũi tên xuống trong input[type="date"] (chỉ với WebKit) */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #3182ce;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Tùy chỉnh chiều cao cho các thiết bị di động */
+  @media (max-width: 768px) {
+    input[type="date"] {
+      width: 100%; /* Đầy đủ chiều rộng màn hình */
+    }
+  }
+
+label {
+  font-size: 16px;  /* Tăng kích thước chữ nhãn nếu cần */
+  margin-right: 10px;  /* Tạo khoảng cách bên phải của nhãn */
+}
+/* Tạo khoảng cách và màu chữ cho phần chú thích */
+.apexcharts-legend {
+  padding-bottom: 20px; /* Tạo thêm khoảng cách giữa phần chú thích và biểu đồ */
+  color: #1f77b4; /* Màu xanh dương cho chữ "Doanh thu" */
+}
+
+.apexcharts-legend-series {
+  margin-right: 15px; /* Tạo khoảng cách giữa các nhãn "Doanh thu" và "Xu hướng" */
+}
+
+/* Tùy chỉnh màu sắc cho phần chữ chú thích */
+.apexcharts-legend-text {
+  color: #1f77b4; /* Màu xanh dương cho Doanh thu */
+}
+
+.apexcharts-legend-text:nth-child(2) {
+  color: #2ca02c; /* Màu xanh lá cho Xu hướng */
+}
+.searchinput{
+  padding-bottom: 20px;
+}

@@ -1,0 +1,12 @@
+.hero {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+table td {
+    padding: 10px;
+}
+input, select {
+    height: 40px;
+}

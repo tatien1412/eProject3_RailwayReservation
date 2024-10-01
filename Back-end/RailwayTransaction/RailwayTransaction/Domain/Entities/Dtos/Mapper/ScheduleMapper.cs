@@ -14,6 +14,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 DepartureTime = schedule.DepartureTime,
                 ArrivalTime = schedule.ArrivalTime,
                 DayOfWeek = schedule.DayOfWeek,
+                DateOfTravel = schedule.DateOfTravel,
             };
         }
         public static ScheduleResponse_joined ConvertToResponseAll(Schedule schedule,
@@ -26,6 +27,7 @@ namespace RailwayTransaction.Domain.Entities.Dtos.Mapper
                 DepartureTime = schedule.DepartureTime,
                 ArrivalTime = schedule.ArrivalTime,
                 DayOfWeek = schedule.DayOfWeek,
+                DateOfTravel = schedule.DateOfTravel,
 
                 Train = TrainMapper.ConvertToResponse(train),
             };

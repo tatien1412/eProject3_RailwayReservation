@@ -350,6 +350,10 @@ namespace RailwayTransaction.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("DateOfTravel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("DayOfWeek")
                         .IsRequired()
                         .HasMaxLength(50)

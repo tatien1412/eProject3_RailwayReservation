@@ -30,6 +30,7 @@ namespace RailwayTransaction.Handler.MasterManagement.Compartment
             // Cập nhật thông tin khoang tàu
             compartment.TrainID = request.TrainID;
             compartment.CompartmentType = request.CompartmentType;
+            compartment.SeatType = request.SeatType;
             compartment.NumberOfSeats = request.NumberOfSeats;
 
             if (request.NumberOfSeats <= 0 || request.NumberOfSeats > 50)

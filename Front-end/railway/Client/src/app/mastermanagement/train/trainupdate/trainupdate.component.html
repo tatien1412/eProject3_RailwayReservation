@@ -1,0 +1,199 @@
+<div class="hero" style="background-image: url('/images/new3.jpg');">
+  <div class="pt-40">
+    <div class="container bg-opacity-40 bg-gray-900 mx-auto p-6 max-w-4xl text-white rounded-lg">
+      <h2 class="text-3xl font-bold mb-6">Update Train</h2>
+      
+      <form [formGroup]="trainForm">
+        <!-- Train Details -->
+        <div class="mb-6 bg-white shadow-md rounded-lg p-6" style="background-color: rgba(255, 255, 255, 0.7);">
+          <h3 class="text-2xl font-bold mb-4 text-gray-700">Train Details</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <div class="mb-4">
+                <label for="trainName" class="block text-gray-700 font-bold mb-2">Train Name</label>
+                <input id="trainName" formControlName="trainName" type="text"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+              </div>
+              <div class="mb-4">
+                <label for="trainRouteID" class="block text-gray-700 font-bold mb-2">Train Route</label>
+                <select id="trainRouteID" formControlName="trainRouteID"
+                  class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  <option *ngFor="let route of trainRoutes" [value]="route.trainRouteID">{{ route.trainRouteName }}</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div class="mb-4">
+                <label for="trainStatus" class="block text-gray-700 font-bold mb-2">Train Status</label>
+                <select id="trainStatus" formControlName="trainStatus" class="border rounded w-full py-2 px-3 text-gray-700">
+                  <option value="Dừng">Dừng</option>
+                  <option value="Đang đi">Đang đi</option>
+                  <option value="Khởi hành">Khởi hành</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="numberOfCompartments" class="block text-gray-700 font-bold mb-2">Number of Compartments</label>
+                <input id="numberOfCompartments" formControlName="numberOfCompartments" type="number"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+              </div>
+            </div>
+          </div>
+          <button type="button" (click)="updateTrain()"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Update Train
+          </button>
+        </div>
+
+        <!-- Schedules Section -->
+        <div class="mb-6 bg-white shadow-md rounded-lg p-6" style="background-color: rgba(255, 255, 255, 0.7);">
+          <h3 class="text-2xl font-bold mb-4 text-gray-700">Schedules</h3>
+          <table class="min-w-full bg-white border-separate border-spacing-0" style="border-radius: 8px; overflow: hidden;">
+            <thead>
+              <tr class="bg-gray-200 border-b">
+                <th class="py-2 border-r text-gray-700">Day of Week</th>
+                <th class="py-2 border-r text-gray-700">Departure Time</th>
+                <th class="py-2 border-r text-gray-700">Arrival Time</th>
+                <th class="py-2 border-r text-gray-700">Date Of Travel</th> 
+                <th class="py-2 text-gray-700">Actions</th>
+              </tr>
+            </thead>
+            <tbody formArrayName="schedules">
+              <tr *ngFor="let schedule of schedulesFormArray.controls; let i = index" [formGroupName]="i" class="border-b">
+                <td class="text-center py-2 border-r">
+                  <input formControlName="dayOfWeek" type="text" class="w-full border rounded px-2 py-1 text-gray-700"/>
+                </td>
+                <td class="text-center py-2 border-r">
+                  <input formControlName="departureTime" type="text" class="w-full border rounded px-2 py-1 text-gray-700"/>
+                </td>
+                <td class="text-center py-2 border-r">
+                  <input formControlName="arrivalTime" type="text" class="w-full border rounded px-2 py-1 text-gray-700"/>
+                </td>
+                <td class="text-center py-2 border-r">
+                  <input formControlName="dateOfTravel" type="text" class="w-full border rounded px-2 py-1 text-gray-700"/>
+                </td>
+                <td class="text-center py-2">
+                  <button type="button" (click)="updateSchedule(i, trainDetail.schedules[i].scheduleID)"
+                    class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Compartments Section-->
+        <div class="mb-6 bg-white shadow-md rounded-lg p-6" style="background-color: rgba(255, 255, 255, 0.7);">
+          <h3 class="text-2xl text-gray-700 font-bold mb-4">Compartments</h3>
+          <div *ngIf="trainDetail?.compartments" style="max-height: 300px; overflow-y: auto;"> <!-- Thanh cuộn khi vượt quá chiều cao -->
+            <table class="min-w-full bg-white border-separate border-spacing-0" style="border-radius: 8px; overflow: hidden;">
+              <thead>
+                <tr class="bg-gray-200 border-b">
+                  <th class="py-2 border-r text-gray-700">Compartment Type</th>
+                  <th class="py-2 border-r text-gray-700">Seat Type</th>
+                  <th class="py-2 border-r text-gray-700">Number of Seats</th>
+                  <th class="py-2 text-gray-700">Actions</th>
+                </tr>
+              </thead>
+              <tbody formArrayName="compartments">
+                <tr *ngFor="let compartment of compartmentsFormArray.controls; let i = index" [formGroupName]="i" class="border-b">
+                  <td class="text-center py-2 border-r text-gray-700">
+                    <select formControlName="compartmentType" class="w-full border rounded px-2 py-1">
+                      <option value="AC1">AC1</option>
+                      <option value="AC2">AC2</option>
+                      <option value="AC3">AC3</option>
+                    </select>
+                  </td>
+                  <td class="text-center py-2 border-r text-gray-700">
+                    <select formControlName="seatType" class="w-full border rounded px-2 py-1">
+                      <option value="Normal">Normal</option>
+                      <option value="Sleep">Sleep</option>
+                    </select>
+                  </td>
+                  <td class="text-center py-2 border-r text-gray-700">
+                    <input formControlName="numberOfSeats" type="number" class="w-full border rounded px-2 py-1"/>
+                  </td>
+                  <td class="text-center py-2 text-gray-700">
+                    <button type="button" (click)="updateCompartment(i, trainDetail.compartments[i].compartmentID)"
+                      class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mr-2">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button *ngIf="showDeleteButtons" type="button" (click)="deleteCompartment(i)"
+                      class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Nút tạo Compartment nếu chưa đủ số lượng -->
+            <button *ngIf="trainDetail.compartments.length < trainForm.get('numberOfCompartments')?.value"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+            (click)="openCompartmentForm()">Create Compartments</button>
+          </div>
+        </div>
+      </form>
+
+      <button class="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" style="margin-top: -5px;" (click)="goBack()">Back to Trains</button>
+    </div>
+    <!-- Overlay form để tạo compartment -->
+    <div *ngIf="showCompartmentForm" class="overlay bg-gray-800 bg-opacity-75 flex items-center justify-center fixed inset-0 z-50">
+      <div class="bg-white p-6 rounded-lg w-full max-w-md">
+        <h3 class="text-xl font-bold mb-4 text-center">Create Compartments</h3>
+
+        <!-- Hiển thị các icon train-->
+        <div class="flex justify-center space-x-4 mb-4">
+          <div *ngFor="let compartment of compartments" class="cursor-pointer relative" (click)="selectCompartment(compartment)">
+            <div class="flex flex-col items-center">
+              <!-- Hiển thị icon train nếu khoang chưa được tạo, nếu đã tạo thì hiển thị dấu tích -->
+              <mat-icon [class.text-green-500]="createdCompartments.includes(compartment)">train</mat-icon>
+              <p class="text-center">
+                {{ createdCompartments.includes(compartment) ? '✔' : compartment }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form tạo compartment được căn giữa -->
+        <div class="flex justify-center">
+          <ng-container *ngIf="selectedCompartment && !createdCompartments.includes(selectedCompartment)">
+            <form [formGroup]="compartmentForm" (ngSubmit)="createCompartment()" class="mt-4 p-4 bg-gray-100 rounded shadow-lg w-full">
+              <div class="mb-4">
+                <label for="compartmentType" class="block text-gray-700">Compartment Type</label>
+                <select id="compartmentType" formControlName="compartmentType" class="border rounded w-full py-2 px-3">
+                  <option value="AC1">AC1</option>
+                  <option value="AC2">AC2</option>
+                  <option value="AC3">AC3</option>
+                </select>
+              </div>
+
+              <!-- Phần Seat Type với select option -->
+              <div class="mb-4">
+                <label for="seatType" class="block text-gray-700">Seat Type</label>
+                <select id="seatType" formControlName="seatType" class="border rounded w-full py-2 px-3">
+                  <option value="Normal">Normal</option>
+                  <option value="Sleep">Sleep</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="numberOfSeats" class="block text-gray-700">Number of Seats</label>
+                <input id="numberOfSeats" formControlName="numberOfSeats" type="number" 
+                      class="border rounded w-full py-2 px-3" />
+              </div>
+
+              <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+                Create Compartment
+              </button>
+            </form>
+          </ng-container>
+        </div>
+
+        <!-- Nút hủy tạo khoang -->
+        <div class="flex justify-center mt-4">
+          <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" (click)="closeCompartmentForm()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

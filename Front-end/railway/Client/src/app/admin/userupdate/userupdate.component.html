@@ -1,0 +1,84 @@
+<div class="hero" style="background-image: url('/images/new3.jpg');">
+    <div class="pt-40">
+      <div class="container bg-opacity-40 bg-gray-900 mx-auto p-6 max-w-4xl text-white rounded-lg">
+        <h2 class="text-3xl font-bold mb-6">Update User</h2>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Left Column -->
+            <div>
+              <div class="mb-4">
+                <label for="fullName" class="block text-white font-bold mb-2">Full Name</label>
+                <input id="fullName" formControlName="fullName" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  (click)="enableEditing('fullName')" />  <!-- Khi click, trường sẽ có thể chỉnh sửa -->
+                <div *ngIf="userForm.get('fullName')?.invalid && userForm.get('fullName')?.touched" class="text-red-500">
+                  Full Name is required.
+                </div>
+              </div>
+  
+              <div class="mb-4">
+                <label for="userName" class="block text-white font-bold mb-2">User Name</label>
+                <input id="userName" formControlName="userName" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  (click)="enableEditing('userName')" />
+                <div *ngIf="userForm.get('userName')?.invalid && userForm.get('userName')?.touched" class="text-red-500">
+                  User Name is required.
+                </div>
+              </div>
+  
+              <div class="mb-4">
+                <label for="email" class="block text-white font-bold mb-2">Email</label>
+                <input id="email" formControlName="email" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  (click)="enableEditing('email')" />
+                <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched" class="text-red-500">
+                  Valid email is required.
+                </div>
+              </div>
+            </div>
+  
+            <!-- Right Column -->
+            <div>
+              <div class="mb-4">
+                <label for="password" class="block text-white font-bold mb-2">Password</label>
+                <input id="password" formControlName="password" type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  (click)="enableEditing('password')" placeholder="Leave blank to keep current password" />
+              </div>
+  
+              <div class="mb-4">
+                <label for="phoneNumber" class="block text-white font-bold mb-2">Phone Number</label>
+                <input id="phoneNumber" formControlName="phoneNumber" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  (click)="enableEditing('phoneNumber')" />
+                <div *ngIf="userForm.get('phoneNumber')?.invalid && userForm.get('phoneNumber')?.touched" class="text-red-500">
+                  Valid phone number is required.
+                </div>
+              </div>
+  
+              <div class="mb-4">
+                <label for="role" class="block text-white font-bold mb-2">Role</label>
+                <div class="relative">
+                  <select id="role" formControlName="role" class="appearance-none shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    (click)="enableEditing('role')">
+                    <option *ngFor="let role of roles" [value]="role.name">{{ role.name }}</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+                  </div>
+                </div>
+                <div *ngIf="userForm.get('role')?.invalid && userForm.get('role')?.touched" class="text-red-500">
+                  Role is required.
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <button type="submit" [disabled]="userForm.invalid" class="bg-blue-500 hover:bg-blue-700 mr-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Update User
+          </button>
+          <button 
+            class="mt-6 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" 
+            (click)="goBack()">
+            Back to Users
+        </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

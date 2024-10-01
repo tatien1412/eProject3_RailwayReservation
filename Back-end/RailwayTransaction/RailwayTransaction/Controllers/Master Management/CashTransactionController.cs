@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.CashTransaction;
 using RailwayTransaction.Application.Commands.MasterManagement.CashTransaction;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
+   // [Authorize(Roles = "Master Manager, Transaction Staff")]
     [ApiController]
     [Route("api/[controller]")]
     public class CashTransactionController : ControllerBase

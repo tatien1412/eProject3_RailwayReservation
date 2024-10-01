@@ -1,0 +1,104 @@
+<div class="flex items-center flex-col h-screen hero" style="background-image: url('/images/new7.png'); background-size: cover; background-position: center;">
+    <div class="w-full max-w-5xl py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg mt-20">
+        <h1 class="text-4xl font-extrabold text-white text-center mb-8">Train Ticket Booking</h1>
+
+        <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+            <table class="min-w-full table-auto rounded-lg overflow-hidden">
+                <thead class="bg-blue-500 text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Train ID</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Departure Time</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Arrival Time</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider"></th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr *ngFor="let train of fareschedule$ | async">
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.trainID }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.departureTime }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">{{ train.arrivalTime }}</td>      
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" 
+                                (click)="openModal(train.FareAC1, train.FareAC2, train.FareAC3,train.trainID)">
+                                Book Ticket
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Pagination Controls -->
+        <div class="flex justify-between items-center mt-6 text-white">
+            <button 
+              class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg" 
+              [disabled]="currentPage === 1" 
+              (click)="onPreviousPage()">
+                Previous
+            </button>
+            <span class="text-lg font-semibold">Page {{currentPage}}</span>
+            <button 
+              class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg" 
+              (click)="onNextPage()">
+                Next
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div *ngIf="isModalOpen" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div class="bg-white rounded-lg p-8 shadow-lg w-full max-w-md">
+            <h2 class="text-2xl font-bold mb-4">Confirm Booking</h2>
+            <p>Are you sure you want to book a ticket?</p>
+            <form>
+                <!-- Passenger Details -->
+                <div class="mt-4">
+                    <label class="form-label1" for="form3Example1c">Full Name:</label>
+                    <input type="text" [(ngModel)]="Name" name="Name" class="w-full p-2 border rounded" placeholder="Enter your full name">
+                </div>
+                <div class="mt-4">
+                    <label class="form-label1" for="form3Example1c">Age:</label>
+                    <input type="text" [(ngModel)]="Age" name="Age" class="w-full p-2 border rounded" placeholder="Enter your age">
+                </div>
+                <div class="mt-4">
+                    <label class="form-label1" for="form3Example1c">Gender:</label>
+                    <select [(ngModel)]="Gender" name="Gender" class="w-full p-2 border rounded">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                
+                <!-- Compartment Type Selection -->
+                <div class="mt-4">
+                    <label class="form-label1" for="form3Example1c">Select Compartment Type:</label>
+                    <select [(ngModel)]="CompartmentType" (change)="updateFare()" name="CompartmentType" class="w-full p-2 border rounded">
+                        <option value="AC1">AC1 </option>
+                        <option value="AC2">AC2</option>
+                        <option value="AC3">AC3</option>
+                    </select>
+                </div>
+                <div class="mt-4" *ngIf="Availableseattype1">
+                    <p *ngIf="AvailableSeat$ | async as availableSeat">Available Seat: {{ availableSeat.totalAvailableSeatType1}}</p>
+                </div>
+                <div class="mt-4" *ngIf="Availableseattype2">
+                    <p *ngIf="AvailableSeat$ | async as availableSeat">Available Seat: {{ availableSeat.totalAvailableSeatType2}}</p>
+                </div>
+                <div class="mt-4" *ngIf="Availableseattype3">
+                    <p *ngIf="AvailableSeat$ | async as availableSeat">Available Seat: {{availableSeat.totalAvailableSeatType3}}</p>
+                </div>
+                <!-- Display fare based on selected compartment -->
+                <div class="mt-4">
+                    <p>Selected Fare: ${{ selectedFare }}</p>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-4 flex justify-end">
+                    <button type="button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2" (click)="closeModal()">Cancel</button>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" 
+                        (click)="onSubmit( Name, Age, Gender, CompartmentType)">
+                        Confirm
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

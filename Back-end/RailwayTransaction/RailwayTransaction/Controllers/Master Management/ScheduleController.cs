@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace RailwayTransaction.Controllers
 {
-    [Authorize(Roles = "Master Manager")]
+  //  [Authorize(Roles = "Master Manager, Transaction Staff")]
     [ApiController]
     [Route("api/[controller]")]
     public class ScheduleController : ControllerBase
@@ -19,7 +19,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get all schedules
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<IActionResult> GetAllSchedules()
         {
             var query = new GetAllSchedulesQuery();
@@ -34,7 +34,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Query: Get schedule by ID
-        [HttpGet("{id}")]
+        [HttpGet("detail/{id}")]
         public async Task<IActionResult> GetScheduleById(int id)
         {
             var query = new GetScheduleByIdQuery(id);
@@ -62,7 +62,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Update an existing schedule
-        [HttpPut("{id}")]
+        [HttpPut("update/{id}")]
         public async Task<IActionResult> UpdateSchedule(int id, [FromBody] UpdateScheduleCommand command)
         {
             if (id != command.ScheduleID)
@@ -75,7 +75,7 @@ namespace RailwayTransaction.Controllers
         }
 
         // Command: Delete a schedule
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteSchedule(int id)
         {
             await _mediator.Send(new DeleteScheduleCommand { ScheduleID = id });

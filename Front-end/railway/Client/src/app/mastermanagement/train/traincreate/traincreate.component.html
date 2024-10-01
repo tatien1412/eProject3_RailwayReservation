@@ -1,0 +1,60 @@
+<div class="hero" style="background-image: url('/images/new2.jpg');">
+  <div class="pt-40">
+    <div class="container bg-opacity-40 bg-gray-900 mx-auto p-6 max-w-lg text-white rounded-lg">
+      <h2 class="text-3xl font-bold mb-6">Create New Train</h2>
+      <form [formGroup]="trainForm" (ngSubmit)="onSubmit()">
+        
+        <!-- Train Name -->
+        <div class="mb-4">
+          <label for="trainName" class="block text-white font-bold mb-2">Train Name</label>
+          <input id="trainName" formControlName="trainName" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          <div *ngIf="trainForm.get('trainName')?.invalid && trainForm.get('trainName')?.touched" class="text-red-500">
+            Train Name is required.
+          </div>
+        </div>
+
+        <!-- Train Route (Select) -->
+        <div class="mb-4 relative">
+          <label for="trainRouteID" class="block text-white font-bold mb-2">Train Route</label>
+          
+          <div class="relative">
+            <select id="trainRouteID" formControlName="trainRouteID" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline text-gray-700">
+              <option *ngFor="let route of trainRoutes" [value]="route.trainRouteID">{{ route.trainRouteName }}</option>
+            </select>
+            <!-- Mũi tên hướng xuống -->
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+              </svg>
+            </div>
+          </div>
+          <div *ngIf="trainForm.get('trainRouteID')?.invalid && trainForm.get('trainRouteID')?.touched" class="text-red-500">
+            Train Route is required.
+          </div>
+        </div>
+        
+        <!-- Train Status -->
+        <div class="mb-4">
+          <label for="trainStatus" class="block text-white font-bold mb-2">Train Status</label>
+          <input id="trainStatus" formControlName="trainStatus" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          <div *ngIf="trainForm.get('trainStatus')?.invalid && trainForm.get('trainStatus')?.touched" class="text-red-500">
+            Route Details are required.
+          </div>
+        </div>
+
+        <!-- Number of Compartments -->
+        <div class="mb-4">
+          <label for="numberOfCompartments" class="block text-white font-bold mb-2">Number of Compartments</label>
+          <input id="numberOfCompartments" formControlName="numberOfCompartments" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+        </div>
+
+        <button type="submit" [disabled]="trainForm.invalid" class="bg-blue-500 hover:bg-blue-700 mr-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Create Train
+        </button>
+        <button class="mt-6 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" (click)="goBack()">
+          Back to Train List
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -3,10 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using RailwayTransaction.Application.Queries.MasterManagement.Train;
 using RailwayTransaction.Application.Commands.MasterManagement.Train;
 using Microsoft.AspNetCore.Authorization;
+using RailwayTransaction.Domain.Entities;
 
 namespace RailwayTransaction.Controllers
 {
-    [Authorize(Roles = "Master Manager")]
+   // [Authorize(Roles = "Master Manager, Transaction Staff")]
     [ApiController]
     [Route("api/[controller]")]
     public class TrainController : ControllerBase
@@ -79,6 +80,19 @@ namespace RailwayTransaction.Controllers
         public async Task<IActionResult> DeleteTrain(int id)
         {
             await _mediator.Send(new DeleteTrainCommand { TrainID = id });
+            return NoContent();
+        }
+
+        //Update compartments:
+        [HttpPut("updatecompartment/{id}")]
+        public async Task<IActionResult> UpdateNumberOfCompartment(int id, [FromBody] UpdateTrainCompartmentCommand command)
+        {
+            if (id != command.TrainID)
+            {
+                return BadRequest();
+            }
+
+            await _mediator.Send(command);
             return NoContent();
         }
     }

@@ -1,0 +1,31 @@
+<div class="hero" style="background-image: url('/images/new1.jpg');">
+    <div class="container mx-auto p-6 pt-40 max-w-lg">
+        <div *ngIf="stationDetail$ | async as stationDetail; else loading">
+          <h2 class="text-3xl font-bold mb-6 text-white">Station Details</h2>
+          <div class="bg-white opacity-70 shadow-md rounded-lg p-6 max-w-lg mx-auto">
+            <p class="text-lg mb-4">
+              <span class="font-semibold">Station ID:</span> {{ stationDetail.stationID }}
+            </p>
+            <p class="text-lg mb-4">
+              <span class="font-semibold">Station Code:</span> {{ stationDetail.stationCode }}
+            </p>
+            <p class="text-lg mb-4">
+                <span class="font-semibold">Station Name:</span> {{ stationDetail.stationName }}
+              </p>
+            <p class="text-lg mb-4">
+              <span class="font-semibold">Railway Division:</span> {{ stationDetail.railwayDivisionName }}
+            </p>
+          </div>
+    
+          <button 
+            class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" 
+            (click)="goBack()">
+            Back to Stations
+          </button>
+        </div>
+      
+        <ng-template #loading>
+          <p class="text-center text-gray-500">Loading station details...</p>
+        </ng-template>
+      </div>
+</div>

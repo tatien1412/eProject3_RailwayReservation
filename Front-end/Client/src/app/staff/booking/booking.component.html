@@ -1,0 +1,46 @@
+
+<div class="flex items-center flex-col h-screen hero" style="background-image: url('/images/new.png'); background-size: cover; background-position: center;">
+    <div class="w-full max-w-5xl py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg" style="margin-top: 60px;">
+        <div class="container">
+                <div class="blocks">
+                <!-- partial:index.partial.html -->
+                    <div class="left">
+                        <div class="select">
+                            <label class="form-label" for="form3Example1c">From Station</label>
+                            <select [(ngModel)]="FromStationId" name="fromStationId" id="" class="form-select">
+                                <option value="0">From Station</option>
+                                <option *ngFor="let item of station$ | async" [value]="item.stationID">
+                                  {{ item.stationName }}
+                                </option>
+                            </select>  
+                        </div>
+                        <div class="select">
+                            <label class="form-label" for="form3Example1c">To Station</label>
+                                <select [(ngModel)]="ToStationId" name="toStationId" id="" class="form-select">
+                                    <option value="0">To Station</option>
+                                    <option *ngFor="let item of station$ | async" [value]="item.stationID">
+                                                      {{ item.stationName }}
+                                    </option>
+                                </select>
+                        </div>
+                        <label class="form-label" for="form3Example1c">DateOfTravel</label>
+                        <div class="date-input-container">
+                            <input type="date" [(ngModel)]="DateOfTravel" name="dateOfTravel" class="form-control" /> 
+                        </div>
+                        <label class="form-label" for="form3Example1c">Passenger</label>
+                            <div class="counter">
+                                <button (click)="decrease()">-</button>
+                                <input type="text" [value]="value" readonly>
+                                <button (click)="increase()">+</button>
+                              </div>                            
+                        
+                    </div>
+                    
+                </div>
+                <div class="buttons">
+                    <button type="button"(click)="Onsearch(this.FromStationId,this.ToStationId,this.DateOfTravel,this.value)">Book Tickets</button>
+                </div>
+            </div>
+    </div>
+</div>
+    

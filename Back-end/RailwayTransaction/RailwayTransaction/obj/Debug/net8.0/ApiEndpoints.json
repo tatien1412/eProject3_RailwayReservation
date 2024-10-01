@@ -16,9 +16,124 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
-    "Method": "GetAllCompartments",
-    "RelativePath": "api/Compartment",
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "Getseats",
+    "RelativePath": "api/Booking/AvailableSeat/{TrainId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TrainId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "DailyCash",
+    "RelativePath": "api/Booking/DailyCash/{DateOfTravel}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DateOfTravel",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "GetTrains",
+    "RelativePath": "api/Booking/GetTrains/{FromStationId}/{ToStationId}/{DateOfTravel}/{TotalPassenger}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FromStationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ToStationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "DateOfTravel",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "TotalPassenger",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "UpdateSeatStatus",
+    "RelativePath": "api/Booking/UpdateConfirmTicket/{TrainID}/{CompartmentType}/{TotalConfirmTicket}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TrainID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CompartmentType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "TotalConfirmTicket",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "UpdateSeatQueryStatus",
+    "RelativePath": "api/Booking/UpdateTicketInQuery/{TrainID}/{CompartmentType}/{TotalConfirmTicket}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TrainID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CompartmentType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "TotalConfirmTicket",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.CashTransactionController",
+    "Method": "GetAllCashTransactions",
+    "RelativePath": "api/CashTransaction",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -26,9 +141,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
-    "Method": "GetCompartmentById",
-    "RelativePath": "api/Compartment/{id}",
+    "ContainingType": "RailwayTransaction.Controllers.CashTransactionController",
+    "Method": "CreateCashTransaction",
+    "RelativePath": "api/CashTransaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RailwayTransaction.Application.Commands.MasterManagement.CashTransaction.CreateCashTransactionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.CashTransactionController",
+    "Method": "GetCashTransactionById",
+    "RelativePath": "api/CashTransaction/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -42,9 +173,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
-    "Method": "UpdateCompartment",
-    "RelativePath": "api/Compartment/{id}",
+    "ContainingType": "RailwayTransaction.Controllers.CashTransactionController",
+    "Method": "UpdateCashTransaction",
+    "RelativePath": "api/CashTransaction/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -56,16 +187,16 @@
       },
       {
         "Name": "command",
-        "Type": "RailwayTransaction.Application.Commands.MasterManagement.Compartment.UpdateCompartmentCommand",
+        "Type": "RailwayTransaction.Application.Commands.MasterManagement.CashTransaction.UpdateCashTransactionCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
-    "Method": "DeleteCompartment",
-    "RelativePath": "api/Compartment/{id}",
+    "ContainingType": "RailwayTransaction.Controllers.CashTransactionController",
+    "Method": "DeleteCashTransaction",
+    "RelativePath": "api/CashTransaction/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -89,6 +220,69 @@
       {
         "Name": "command",
         "Type": "RailwayTransaction.Application.Commands.MasterManagement.Compartment.CreateCompartmentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
+    "Method": "DeleteCompartment",
+    "RelativePath": "api/Compartment/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
+    "Method": "GetCompartmentById",
+    "RelativePath": "api/Compartment/detail/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
+    "Method": "GetAllCompartments",
+    "RelativePath": "api/Compartment/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.CompartmentController",
+    "Method": "UpdateCompartment",
+    "RelativePath": "api/Compartment/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "RailwayTransaction.Application.Commands.MasterManagement.Compartment.UpdateCompartmentCommand",
         "IsRequired": true
       }
     ],
@@ -254,46 +448,15 @@
   },
   {
     "ContainingType": "RailwayTransaction.Controllers.ScheduleController",
-    "Method": "GetAllSchedules",
-    "RelativePath": "api/Schedule",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "RailwayTransaction.Controllers.ScheduleController",
-    "Method": "GetScheduleById",
-    "RelativePath": "api/Schedule/{id}",
-    "HttpMethod": "GET",
+    "Method": "CreateSchedule",
+    "RelativePath": "api/Schedule/create",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "RailwayTransaction.Controllers.ScheduleController",
-    "Method": "UpdateSchedule",
-    "RelativePath": "api/Schedule/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
       {
         "Name": "command",
-        "Type": "RailwayTransaction.Application.Commands.MasterManagement.Schedule.UpdateScheduleCommand",
+        "Type": "RailwayTransaction.Application.Commands.MasterManagement.Schedule.CreateScheduleCommand",
         "IsRequired": true
       }
     ],
@@ -302,7 +465,7 @@
   {
     "ContainingType": "RailwayTransaction.Controllers.ScheduleController",
     "Method": "DeleteSchedule",
-    "RelativePath": "api/Schedule/{id}",
+    "RelativePath": "api/Schedule/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -317,15 +480,46 @@
   },
   {
     "ContainingType": "RailwayTransaction.Controllers.ScheduleController",
-    "Method": "CreateSchedule",
-    "RelativePath": "api/Schedule/create",
-    "HttpMethod": "POST",
+    "Method": "GetScheduleById",
+    "RelativePath": "api/Schedule/detail/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.ScheduleController",
+    "Method": "GetAllSchedules",
+    "RelativePath": "api/Schedule/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.ScheduleController",
+    "Method": "UpdateSchedule",
+    "RelativePath": "api/Schedule/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
         "Name": "command",
-        "Type": "RailwayTransaction.Application.Commands.MasterManagement.Schedule.CreateScheduleCommand",
+        "Type": "RailwayTransaction.Application.Commands.MasterManagement.Schedule.UpdateScheduleCommand",
         "IsRequired": true
       }
     ],
@@ -642,6 +836,27 @@
       {
         "Name": "command",
         "Type": "RailwayTransaction.Application.Commands.MasterManagement.Train.UpdateTrainCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.TrainController",
+    "Method": "UpdateNumberOfCompartment",
+    "RelativePath": "api/Train/updatecompartment/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "RailwayTransaction.Application.Commands.MasterManagement.Train.UpdateTrainCompartmentCommand",
         "IsRequired": true
       }
     ],
