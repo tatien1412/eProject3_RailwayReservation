@@ -33,6 +33,10 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
             reservation.DateOfJourney = request.DateOfJourney;
             reservation.TotalFare = request.TotalFare;
 
+            if (request.TotalFare < 0)
+            {
+                throw new Exception("TotalFare out of valid range");
+            }
             await _reservationRepository.UpdateAsync(reservation);
 
             Domain.Entities.CashTransaction cashTransaction = (await _cashTransactionRepository.GetAllAsync()).Where(c => c.DateOftransaction.Equals(reservation.DateOfJourney)).FirstOrDefault();
@@ -50,7 +54,6 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
             {
                 if(reservation.TotalFare < request.TotalFare)
                 {
-                    
                     cashTransaction.CashReceived += request.TotalFare - reservation.TotalFare;
                     cashTransaction.CashRefunded = cashTransaction.CashRefunded;
                 }

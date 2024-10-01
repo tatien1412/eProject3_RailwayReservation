@@ -12,11 +12,15 @@ namespace RailwayTransaction.Handler.MasterManagement.Compartment
     {
         private readonly IRepository<Domain.Entities.Compartment, int> _compartmentRepository;
         private readonly IRepository<Domain.Entities.Seat, int> _seatRepository; // Repository cho Seat
+        private readonly IRepository<Domain.Entities.Train, int> _trainRepository;
 
-        public CreateCompartmentCommandHandler(IRepository<Domain.Entities.Compartment, int> compartmentRepository, IRepository<Domain.Entities.Seat, int> seatRepository)
+        public CreateCompartmentCommandHandler(IRepository<Domain.Entities.Compartment, int> compartmentRepository,
+                                                IRepository<Domain.Entities.Seat, int> seatRepository,
+                                                IRepository<Domain.Entities.Train, int> trainRepository)
         {
             _compartmentRepository = compartmentRepository;
             _seatRepository = seatRepository; // Inject Seat repository
+            _trainRepository = trainRepository;
         }
 
         public async Task<int> Handle(CreateCompartmentCommand request, CancellationToken cancellationToken)
@@ -28,6 +32,12 @@ namespace RailwayTransaction.Handler.MasterManagement.Compartment
                 SeatType = request.SeatType,  // Loại ghế được thêm từ request
                 NumberOfSeats = request.NumberOfSeats,
             };
+
+            if (request.NumberOfSeats <= 0 || request.NumberOfSeats >50)
+            {
+                throw new Exception("NumberOfSeats out of valid range");
+            }
+
 
             // Thêm khoang vào cơ sở dữ liệu
             await _compartmentRepository.AddAsync(compartment);

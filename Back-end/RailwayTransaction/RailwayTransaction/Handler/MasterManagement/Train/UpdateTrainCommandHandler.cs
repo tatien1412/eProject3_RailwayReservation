@@ -27,6 +27,12 @@ namespace RailwayTransaction.Handler.MasterManagement.Train
             train.TrainRouteID = request.TrainRouteID;
             train.TrainStatus = request.TrainStatus;
             train.NumberOfCompartments = request.NumberOfCompartments;
+
+
+            if (request.NumberOfCompartments < 0)
+            {
+                throw new Exception("NumberOfCompartments out of valid range");
+            }
             await _trainRepository.UpdateAsync(train);
 
             return Unit.Value;

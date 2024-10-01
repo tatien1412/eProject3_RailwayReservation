@@ -33,6 +33,11 @@ namespace RailwayTransaction.Handler.MasterManagement.Compartment
             compartment.SeatType = request.SeatType;
             compartment.NumberOfSeats = request.NumberOfSeats;
 
+            if (request.NumberOfSeats <= 0 || request.NumberOfSeats > 50)
+            {
+                throw new Exception("NumberOfSeats out of valid range");
+            }
+
             // Lấy danh sách ghế hiện tại của khoang
             var currentSeats = await _seatRepository.GetAllAsyncWithPredicate(s => s.CompartmentID == compartment.CompartmentID);
             int currentSeatCount = currentSeats.Count();

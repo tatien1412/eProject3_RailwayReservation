@@ -25,7 +25,11 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
                TotalFare = request.TotalFare,
             };
 
-            await _reservationRepository.AddAsync(reservation);
+            if (request.TotalFare < 0)
+            {
+                throw new Exception("TotalFare out of valid range");
+            }
+
 
 
             Domain.Entities.CashTransaction cashTransaction = (await _cashTransactionRepository.GetAllAsync()).Where(c => c.DateOftransaction.Equals(reservation.DateOfJourney)).FirstOrDefault();
@@ -37,14 +41,18 @@ namespace RailwayTransaction.Handler.MasterManagement.Reservation
                     CashRefunded = 0,
                     DateOftransaction = reservation.DateOfJourney,
                 };
-                _cashTransactionRepository.AddAsync(new_CashTransaction);
+                Domain.Entities.CashTransaction cashTransaction_created = await _cashTransactionRepository.AddAsync(new_CashTransaction);
+                reservation.CashTransactionID = cashTransaction_created.CashTransactionID;
             }
             else
             {
                 cashTransaction.CashReceived += reservation.TotalFare;
-                _cashTransactionRepository.UpdateAsync(cashTransaction);
+                await _cashTransactionRepository.UpdateAsync(cashTransaction);
+                reservation.CashTransactionID = cashTransaction.CashTransactionID;
             }
 
+
+            await _reservationRepository.AddAsync(reservation);
 
             return reservation.ReservationID;
         }
