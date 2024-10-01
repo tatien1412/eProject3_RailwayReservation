@@ -32,7 +32,7 @@ namespace RailwayTransaction.Handler.Staff
                 {
                     foreach (var item2 in seat)
                     {
-                        if (item2.CompartmentID == item.CompartmentID && val > 0 && item2.SeatStatus == "Available")
+                        if (item2.CompartmentID == item.CompartmentID && val > 0 && item2.SeatStatus == "InQueue")
                         {
                             var copy = item2;
                             copy.SeatStatus = "Unavailable";

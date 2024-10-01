@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\updateseatquerystatushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\updateseatqueuestatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\updateseatqueuestatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\updateseatstatushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\updateseatstatushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\updateseatstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\updateseatstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\controllers\\staff\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\controllers\\staff\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\updateseatstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\updateseatstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\updateseatqueuestatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\application\\queries\\staff\\booking\\updateseatqueuestatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\availabelseatquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\searchhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\searchhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\handler\\staff\\updateseatstatushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|solutionrelative:railwaytransaction\\handler\\staff\\updateseatstatushandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54347DC-179E-46B9-9BB4-860120144C52}|RailwayTransaction\\RailwayTransaction.csproj|c:\\users\\admin\\desktop\\prjaptech\\eproject3_railwayreservation\\back-end\\railwaytransaction\\railwaytransaction\\application\\queries\\staff\\booking\\searchtrainquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -289,7 +289,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -301,28 +301,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UpdateSeatStatusQuery.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
               "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatStatusQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T03:59:09.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateSeatQueueStatusQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
-              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T03:57:03.789Z",
               "EditorCaption": ""
             },
             {
@@ -333,27 +320,27 @@
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\UpdateSeatQueryStatusHandler.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\UpdateSeatQueryStatusHandler.cs",
               "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\UpdateSeatQueryStatusHandler.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T03:37:55.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
               "RelativeToolTip": "RailwayTransaction\\Controllers\\Staff\\BookingController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAD4vz8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAADcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T19:04:38.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Searchhandler.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
@@ -361,12 +348,36 @@
               "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\Searchhandler.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T22:08:00.733Z",
+              "WhenOpened": "2024-09-26T22:08:00.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateSeatStatusHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T02:53:45.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "UpdateSeatQueueStatusQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
+              "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
+              "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\UpdateSeatQueueStatusQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T03:57:03.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AvailabelseatQuery.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Application\\Queries\\Staff\\Booking\\AvailabelseatQuery.cs",
               "RelativeDocumentMoniker": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\AvailabelseatQuery.cs",
@@ -374,21 +385,7 @@
               "RelativeToolTip": "RailwayTransaction\\Application\\Queries\\Staff\\Booking\\AvailabelseatQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T21:54:53.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateSeatStatusHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
-              "RelativeDocumentMoniker": "RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\prjaptech\\eProject3_RailwayReservation\\Back-end\\RailwayTransaction\\RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
-              "RelativeToolTip": "RailwayTransaction\\Handler\\Staff\\UpdateSeatStatusHandler.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T02:53:45.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T21:54:53.426Z"
             },
             {
               "$type": "Document",

@@ -31,7 +31,7 @@ namespace RailwayTransaction.Handler.Staff
                         if (item2.CompartmentID == item.CompartmentID && val > 0 && item2.SeatStatus == "Available")
                         {
                             var copy = item2;
-                            copy.SeatStatus = "InQuery";
+                            copy.SeatStatus = "InQueue";
                             _seatRepository.UpdateAsync(copy);
                             val--;
                         }
