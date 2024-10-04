@@ -35,7 +35,17 @@ export class BookingService {
   ): Observable<void> {
     return this.http.put<void>(
       `${this.apiUrl}Booking/UpdateConfirmTicket/${TrainID}/${CompartmentType}/${TotalConfirmTicket}`, 
-      {} // Truyền một body rỗng vì API không yêu cầu body
+      {} 
+    );
+  }
+  updatereverseseatstatus(
+    TrainID: number, 
+    CompartmentType: string, 
+    TotalConfirmTicket: number
+  ): Observable<void> {
+    return this.http.put<void>(
+      `${this.apiUrl}Booking/UpdateCancelTicketInQueue/${TrainID}/${CompartmentType}/${TotalConfirmTicket}`, 
+      {} 
     );
   }
   updateseatqueuestatus(

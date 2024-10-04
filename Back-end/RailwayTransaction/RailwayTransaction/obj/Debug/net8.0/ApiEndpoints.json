@@ -80,6 +80,32 @@
   },
   {
     "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
+    "Method": "UpdateReverseSeatQueueStatus",
+    "RelativePath": "api/Booking/UpdateCancelTicketInQueue/{TrainID}/{CompartmentType}/{TotalConfirmTicket}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TrainID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CompartmentType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "TotalConfirmTicket",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
     "Method": "UpdateSeatStatus",
     "RelativePath": "api/Booking/UpdateConfirmTicket/{TrainID}/{CompartmentType}/{TotalConfirmTicket}",
     "HttpMethod": "PUT",
@@ -107,7 +133,7 @@
   {
     "ContainingType": "RailwayTransaction.Controllers.Staff.BookingController",
     "Method": "UpdateSeatQueryStatus",
-    "RelativePath": "api/Booking/UpdateTicketInQuery/{TrainID}/{CompartmentType}/{TotalConfirmTicket}",
+    "RelativePath": "api/Booking/UpdateTicketInQueue/{TrainID}/{CompartmentType}/{TotalConfirmTicket}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

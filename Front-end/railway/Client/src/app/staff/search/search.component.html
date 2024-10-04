@@ -9,14 +9,51 @@
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Train ID</th>
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Departure Time</th>
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">Arrival Time</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">   </th>
                         <th class="px-6 py-3 text-left text-sm font-medium uppercase tracking-wider"></th>
                     </tr>
+                    <tr class="bg-gray-200">
+                        <th colspan="3"></th> <!-- Ô trống cho các cột không liên quan đến giá vé -->
+                        <th class="text-center">
+                          <div class="flex justify-around">
+                            <span>Standard</span> <!-- Tên khoang Standard -->
+                            <span>1st Class</span> <!-- Tên khoang 1st Class -->
+                            <span>2nd Class</span> <!-- Tên khoang 2nd Class -->
+                          </div>
+                        </th>
+                        <th></th>
+                      </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
                     <tr *ngFor="let train of fareschedule$ | async">
                         <td class="px-6 py-4 whitespace-nowrap">{{ train.trainID }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{ train.departureTime }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{ train.arrivalTime }}</td>      
+                        <div class="flex items-center justify-start space-x-4"  > <!-- Flexbox để căn ngang các lựa chọn -->
+                        <!-- Sử dụng một tên duy nhất cho mỗi nhóm radio buttons dựa trên trainID -->
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            
+                            <!-- Standard (AC3) -->
+                            <label class="flex items-center">
+                                <input type="radio" name="fare-{{ train.scheduleID }}"  value="AC3" (change)="onFareChange($event)"/>
+                                <span class="ml-2">$ {{ train.FareAC3 }} </span>
+                            </label>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <!-- 1st class (AC1) -->
+                            <label class="flex items-center">
+                                <input type="radio" name="fare-{{ train.scheduleID }}" value="AC1" (change)="onFareChange($event)"/>
+                                <span class="ml-2">$ {{ train.FareAC1 }} </span>
+                            </label>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <label class="flex items-center">
+                                <input type="radio" name="fare-{{ train.scheduleID }}" value="AC2" (change)="onFareChange($event)"/>
+                                <span class="ml-2">$ {{ train.FareAC2 }}</span>
+                            </label>
+                        </td>
+                        </div>
+                   
                         <td class="px-6 py-4 whitespace-nowrap">
                             <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" 
                                 (click)="openModal(train.FareAC1, train.FareAC2, train.FareAC3,train.trainID)">
@@ -68,14 +105,7 @@
                 </div>
                 
                 <!-- Compartment Type Selection -->
-                <div class="mt-4">
-                    <label class="form-label1" for="form3Example1c">Select Compartment Type:</label>
-                    <select [(ngModel)]="CompartmentType" (change)="updateFare()" name="CompartmentType" class="w-full p-2 border rounded">
-                        <option value="AC1">AC1 </option>
-                        <option value="AC2">AC2</option>
-                        <option value="AC3">AC3</option>
-                    </select>
-                </div>
+                
                 <div class="mt-4" *ngIf="Availableseattype1">
                     <p *ngIf="AvailableSeat$ | async as availableSeat">Available Seat: {{ availableSeat.totalAvailableSeatType1}}</p>
                 </div>

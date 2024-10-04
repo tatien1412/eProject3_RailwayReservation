@@ -17,13 +17,13 @@ namespace RailwayTransaction.Domain.Entities
 
         [MaxLength(20)]
         public string SeatStatus { get; set; }
-
+       
         public decimal Fare { get; set; }
 
         // Khóa ngoại đến bảng Reservation, cho phép null
         [ForeignKey("Reservation")]
+        public int ? ReservationID {get; set;}
 
-
-        public Reservation? Reservation { get; set; }  // Cũng cần nullable ở đây
+    public Reservation? Reservation { get; set; }  // Cũng cần nullable ở đây
     }
 }

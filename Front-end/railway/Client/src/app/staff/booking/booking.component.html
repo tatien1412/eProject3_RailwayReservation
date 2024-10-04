@@ -1,54 +1,53 @@
 <div class="flex items-center justify-center h-screen hero bg-cover bg-center" style="background-image: url('/images/new5.jpg');">
-    <div class="w-full max-w-md py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg">
-      <div class="container space-y-6">
-        
-        <!-- From Station -->
-        <div class="select">
-          <label class="block text-white font-bold mb-2" for="form3Example1c">From Station</label>
-          <select [(ngModel)]="FromStationId" name="fromStationId" id="" class="form-select block w-full bg-gray-700 text-white border border-gray-600 py-2 px-3 rounded">
-            <option value="0">From Station</option>
-            <option *ngFor="let item of station$ | async" [value]="item.stationID">
-              {{ item.stationName }}
-            </option>
-          </select>
-        </div>
+<div class="w-full max-w-md py-8 px-8 bg-opacity-40 bg-gray-900 rounded-md shadow-lg">
   
-        <!-- To Station -->
-        <div class="select">
-          <label class="block text-white font-bold mb-2" for="form3Example1c">To Station</label>
-          <select [(ngModel)]="ToStationId" name="toStationId" id="" class="form-select block w-full bg-gray-700 text-white border border-gray-600 py-2 px-3 rounded">
-            <option value="0">To Station</option>
-            <option *ngFor="let item of station$ | async" [value]="item.stationID">
-              {{ item.stationName }}
-            </option>
-          </select>
-        </div>
-  
-        <!-- Date of Travel -->
-        <div class="date-input-container">
-          <label class="block text-white font-bold mb-2" for="form3Example1c">Date of Travel</label>
-          <input type="date" [(ngModel)]="DateOfTravel" name="dateOfTravel" class="form-controll block w-full bg-gray-700 text-white border border-gray-600 py-2 px-3 rounded">
-        </div>
-  
-        <!-- Passenger Counter -->
-        <div class="counter">
-          <label class="block text-white font-bold mb-2" for="form3Example1c">Passenger</label>
-          <div class="flex items-center justify-between space-x-4 bg-gray-700 text-white py-2 px-3 rounded">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="decrease()">-</button>
-            <input type="text" [value]="value" readonly class="text-center w-12 bg-transparent border-none">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="increase()">+</button>
-          </div>
-        </div>
-  
-        <!-- Book Tickets Button -->
-        <div class="buttons flex justify-center">
-          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded w-full mt-6"
-            type="button" (click)="Onsearch(this.FromStationId, this.ToStationId, this.DateOfTravel, this.value)">
-            Book Tickets
-          </button>
-        </div>
-  
+  <div class="container space-y-6">
+    
+    <!-- From Station -->
+    <div class="select">
+      <label class="block text-white font-bold mb-2" for="form3Example1c">From Station</label>
+      <select [(ngModel)]="FromStationId" name="fromStationId" id="" class="form-select block w-full bg-gray-700 text-white border border-gray-600 py-2 px-3 rounded">
+        <option value="0">From Station</option>
+        <option *ngFor="let item of station$ | async" [value]="item.stationID">
+          {{ item.stationName }}
+        </option>
+      </select>
+    </div>
+
+    <!-- To Station -->
+    <div class="select">
+      <label class="block text-white font-bold mb-2" for="form3Example1c">To Station</label>
+      <select [(ngModel)]="ToStationId" name="toStationId" id="" class="form-select block w-full bg-gray-700 text-white border border-gray-600 py-2 px-3 rounded">
+        <option value="0">To Station</option>
+        <option *ngFor="let item of station$ | async" [value]="item.stationID">
+          {{ item.stationName }}
+        </option>
+      </select>
+    </div>
+
+    <!-- Date of Travel -->
+    <div class="date-input-container">
+      <label class="block text-white font-bold mb-2" for="form3Example1c">Date of Travel</label>
+      <input type="date" [(ngModel)]="DateOfTravel" name="dateOfTravel" class="form-controll block w-full bg-gray-700 text-white border border-gray-600 py-2 px-3 rounded">
+    </div>
+
+    <!-- Passenger Counter -->
+    <div class="counter">
+      <label class="block text-white font-bold mb-2" for="form3Example1c">Passenger</label>
+      <div class="flex items-center justify-between space-x-4 bg-gray-700 text-white py-2 px-3 rounded">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="decrease()">-</button>
+        <input type="text" [value]="value" readonly class="text-center w-12 bg-transparent border-none">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="increase()">+</button>
       </div>
     </div>
+
+    <!-- Book Tickets Button -->
+    <div class="buttons flex justify-center">
+      <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded w-full mt-6"
+        type="button" (click)="Onsearch(this.FromStationId, this.ToStationId, this.DateOfTravel, this.value)">
+        Book Tickets
+      </button>
+    </div>
+    
   </div>
-  
+</div>

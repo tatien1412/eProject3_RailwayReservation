@@ -58,10 +58,18 @@ namespace RailwayTransaction.Controllers.Staff
             return NoContent();
 
         }
-        [HttpPut("UpdateTicketInQuery/{TrainID}/{CompartmentType}/{TotalConfirmTicket}")]
+        [HttpPut("UpdateTicketInQueue/{TrainID}/{CompartmentType}/{TotalConfirmTicket}")]
         public async Task<IActionResult> UpdateSeatQueryStatus(int TrainID, string CompartmentType, int TotalConfirmTicket)
         {
             var query = new UpdateSeatQueueStatusQuery(TrainID, CompartmentType, TotalConfirmTicket);
+            await _mediator.Send(query);
+            return NoContent();
+
+        }
+        [HttpPut("UpdateCancelTicketInQueue/{TrainID}/{CompartmentType}/{TotalConfirmTicket}")]
+        public async Task<IActionResult> UpdateReverseSeatQueueStatus(int TrainID, string CompartmentType, int TotalConfirmTicket)
+        {
+            var query = new UpdateReverseSeatQueueStatusQuery(TrainID, CompartmentType, TotalConfirmTicket);
             await _mediator.Send(query);
             return NoContent();
 

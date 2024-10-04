@@ -7,6 +7,7 @@ import { Station } from '../../interfaces/station';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { CounterComponent } from "../../components/counter/counter.component";
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { BookingService } from '../../services/booking.service';
 @Component({
   selector: 'app-booking',
   standalone: true,
@@ -14,8 +15,10 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
   templateUrl: './booking.component.html',
   styleUrl: './booking.component.css'
 })
+
 export class BookingComponent implements OnInit{
   StationService = inject(StationService);
+  BookingService = inject(BookingService);
   station$: Observable<Station[]> = this.StationService.getAll();
   FromStationId: number = 0;
   ToStationId: number = 0;
@@ -23,6 +26,7 @@ export class BookingComponent implements OnInit{
   arrivaldate: string='';
   router = inject(Router);
   snackBar = inject(MatSnackBar);
+  noTrainFound: boolean = false;
   ngOnInit(): void {
     
   }
@@ -36,7 +40,21 @@ export class BookingComponent implements OnInit{
       });
     } else {
       // Thực hiện điều hướng nếu thông tin hợp lệ
-      this.router.navigate([`search/${FromStationId}/${ToStationId}/${DateOfTravel}/${TotalPassengers}`]);
+      this.BookingService.getAll(FromStationId,ToStationId,DateOfTravel,TotalPassengers)
+          .subscribe(
+            (result) =>{
+              
+                this.noTrainFound = false;
+                this.router.navigate([`search/${FromStationId}/${ToStationId}/${DateOfTravel}/${TotalPassengers}`]);
+             
+            },
+            (error) => {
+              this.snackBar.open('No train found', 'Close', {
+                duration: 5001,
+                panelClass: ['bg-red-500', 'text-white'], // Thêm lớp CSS cho snackbar
+              });
+            }
+          );
     }
   }
   value: number = 0;
@@ -48,5 +66,8 @@ export class BookingComponent implements OnInit{
     if (this.value > 1) {
       this.value--;
     }
+  }
+  closeModal() {
+    this.noTrainFound = false; // Đóng modal
   }
 }

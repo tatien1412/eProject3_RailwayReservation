@@ -174,18 +174,28 @@ export class SearchComponent implements OnInit {
     
   }
   loadFare(): void {}
-
+  onFareChange(event: any) {
+    this.CompartmentType = event.target.value;
+    console.log('Selected Compartment:', this.CompartmentType);
+  }
   openModal(value1: number, value2: number, value3: number,value4:number) {
     this.Age=0;
     this.Name="";
     this.Gender="";
-    this.CompartmentType='';
     this.isModalOpen = true;
     this.value1 = value1;
     this.value2 = value2;
     this.value3 = value3;
     this.trainID =value4;
-    this.bookingservice.updateseatqueuestatus(this.trainID,this.CompartmentType,this.TotalPassengers);
+    console.log(this.CompartmentType);
+    this.bookingservice.updateseatqueuestatus(this.trainID,this.CompartmentType,this.TotalPassengers).subscribe({
+      next: (response) => {
+        console.log('Update successful', response);
+      },
+      error: (err) => {
+        console.error('Error updating seat status', err);
+      }
+    });
     this.timeoutId = setTimeout(() => {
       this.closeModal();
     }, 30000);
@@ -193,6 +203,14 @@ export class SearchComponent implements OnInit {
 
   closeModal() {
     this.isModalOpen = false;
+    this.bookingservice.updatereverseseatstatus(this.trainID,this.CompartmentType,this.TotalPassengers).subscribe({
+      next: (response) => {
+        console.log('Update successful', response);
+      },
+      error: (err) => {
+        console.error('Error updating seat status', err);
+      }
+    });
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
@@ -251,8 +269,8 @@ export class SearchComponent implements OnInit {
 
     this.bookingservice.createTicket(ticket).subscribe(
       (response: any) => {
-        if (response && response.PnrNo) {
-          this.serverResponse = response.PnrNo;
+        if (response ) {
+          this.serverResponse = response;
 
           const reservation = {
             PnrNo: this.serverResponse,
@@ -266,6 +284,15 @@ export class SearchComponent implements OnInit {
                 duration: 5001,
                 panelClass: ['bg-red-500', 'text-white'],
               });
+              this.bookingservice.updateseatstatus(this.trainID,this.CompartmentType,this.TotalPassengers).subscribe({
+                next: (response) => {
+                  console.log('Update successful', response);
+                },
+                error: (err) => {
+                  console.error('Error updating seat status', err);
+                }
+              });;
+              console.log("abc");
               this.router.navigate(['booking']);
             },
             error: (err) => console.error('Error creating reservation:', err)
@@ -278,7 +305,7 @@ export class SearchComponent implements OnInit {
         console.error('There was an error!', error);
       }
     );
-    this.bookingservice.updateseatstatus(this.trainID,this.CompartmentType,this.TotalPassengers);
+    
   }
 
   
